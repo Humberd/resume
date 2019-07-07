@@ -1,0 +1,5 @@
+
+@mixin changeFontSize($fontSize) {
+	font-size: $fontSize;
+	line-height: $fontSize * 1.618;
+}

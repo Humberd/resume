@@ -1,0 +1,20 @@
+@import "../pages/utils";
+
+.header {
+	margin-bottom: 20px;
+
+	.name {
+		@include changeFontSize(36px);
+		font-weight: bold;
+	}
+
+	.profession {
+		@include changeFontSize(16px);
+		margin-top: 8px;
+		margin-bottom: 15px;
+	}
+
+	.description {
+
+	}
+}

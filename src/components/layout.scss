@@ -1,4 +1,15 @@
+@import "../pages/utils";
+
 html {
 	font-family: sans-serif;
-	-webkit-text-size-adjust: 100%;
+}
+
+body {
+	@include changeFontSize(13px);
+}
+
+.content {
+	width: 21cm;
+	padding: 20px;
+	margin: auto;
 }
