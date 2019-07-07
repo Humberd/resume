@@ -3,3 +3,19 @@
 :root {
 	--main-color: #494E5C;
 }
+
+.columns {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	grid-column-gap: 40px;
+
+	.column {
+		& > * {
+			margin-bottom: 20px;
+			@media print {
+				break-inside: avoid;
+			}
+		}
+	}
+
+}
