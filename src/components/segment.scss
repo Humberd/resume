@@ -1,0 +1,8 @@
+@import "../pages/utils";
+
+.segment {
+	&--header {
+		@include changeFontSize(16px);
+		font-weight: 600;
+	}
+}
