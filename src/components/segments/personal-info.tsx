@@ -24,7 +24,7 @@ export interface SingleInfo {
 const SingleInfo = (props: SingleInfo) => {
   let value: React.ReactNode;
   if (props.href) {
-    value = <a href={props.href}>{props.value}</a>
+    value = <a href={props.href} target="_blank" rel="noopener noreferrer">{props.value}</a>
   } else {
     value = <span>{props.value}</span>
   }
