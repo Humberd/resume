@@ -5,8 +5,7 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React from 'react';
-import PropTypes from 'prop-types';
+import * as React from 'react';
 
 import './reset.scss';
 import './layout.scss';
@@ -19,8 +18,5 @@ const Layout = ({children}) => {
   );
 };
 
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
-};
 
 export default Layout;

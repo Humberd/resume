@@ -1,0 +1,25 @@
+@import "../../pages/utils";
+
+.segment {
+	&--header {
+		@include changeFontSize(16px);
+		font-weight: 600;
+		padding-bottom: 3px;
+		margin-bottom: 10px;
+
+		border-bottom: 1px solid var(--border-color);
+
+		display: flex;
+		align-items: center;
+
+		.icon {
+			width: 30px;
+			height: 30px;
+			border-radius: 50%;
+			background-color: var(--main-color);
+			color: #ffffff;
+
+			margin-right: 5px;
+		}
+	}
+}
