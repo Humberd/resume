@@ -3,12 +3,14 @@
 :root {
 	--main-color: #494E5C;
 	--border-color: #d5d6d6;
+	--segments-spacing: 40px;
+	--timeline-spacing: 10px;
 }
 
 .columns {
 	display: grid;
 	grid-template-columns: 1fr 2fr;
-	grid-column-gap: 40px;
+	grid-column-gap: var(--segments-spacing);
 
 	.column {
 		& > * {

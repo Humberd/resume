@@ -1,0 +1,9 @@
+@import "../../pages/utils";
+
+.work-history {
+	&--entry {
+		display: grid;
+		grid-template-columns: 100px 1fr;
+		grid-column-gap: var(--timeline-spacing);
+	}
+}
