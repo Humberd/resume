@@ -5,6 +5,7 @@ import Layout from '../components/layout';
 import './index.scss';
 import { Header } from '../components/header';
 import { Segment } from '../components/segments/segment';
+import { PersonalInfo } from '../components/segments/personal-info';
 
 const IndexPage = () => (
     <Layout>
@@ -16,7 +17,25 @@ const IndexPage = () => (
             icon: 'person.svg',
             title: 'Personal Info'
           }}>
-            hello
+            <PersonalInfo info={[
+              {
+                title: 'Address',
+                value: 'Białystok'
+              },
+              {
+                title: 'Phone',
+                value: '+48 507 847 934'
+              },
+              {
+                title: 'Email',
+                value: 'humberd2@gmail.com'
+              },
+              {
+                title: 'GitHub',
+                value: 'github.com/Humberd',
+                href: 'https://github.com/Humberd'
+              }
+            ]}/>
           </Segment>
         </div>
         <div className="column">

@@ -1,0 +1,15 @@
+@import "../../pages/utils";
+
+
+.personal-info {
+	&--single {
+
+		&:not(:last-child) {
+			margin-bottom: 8px;
+		}
+
+		.title {
+			font-weight: bold;
+		}
+	}
+}
