@@ -1,6 +1,7 @@
 import * as React from 'react';
 
 import './header.scss';
+import { pseudoMarkdownToReact } from './utils';
 
 export interface HeaderProps {
   name: string;
@@ -19,22 +20,3 @@ export const Header = (props: HeaderProps) => (
 );
 
 
-/**
- * Replaces every occurance of `**text**` to a `<strong>text</strong>`
- */
-function pseudoMarkdownToReact(value: string): React.ReactNode[] {
-  const splittedValue = value.split('**');
-
-  return splittedValue.map((piece, index) => {
-    if (isEven(index)) {
-      return <span key={index}>{piece}</span>
-    }
-
-    return <strong key={index}>{piece}</strong>
-  })
-
-}
-
-function isEven(value: number) {
-  return value %2 === 0;
-}
