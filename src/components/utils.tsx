@@ -1,3 +1,5 @@
+import * as React from 'react';
+
 export function getIcon(name: string) {
   try {
     return require(`../images/${name}`)
