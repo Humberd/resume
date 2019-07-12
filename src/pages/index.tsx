@@ -62,21 +62,33 @@ const WorkHistorySegment = () => (
       icon: 'work.svg',
       title: 'Work History'
     }}>
-      <WorkHistory history={[{
-        date: {
-          from: '2017-04',
-          to: 'Current'
+      <WorkHistory history={[
+        {
+          date: {
+            from: '2017.04',
+            to: 'Current'
+          },
+          position: 'Frontend Engineer',
+          company: 'Acaisoft',
+          projects: [
+            {
+              name: 'VR Portal',
+              technologies: ['Angular', 'Node.js', 'TypeScript', 'MongoDB', 'Docker'],
+              description: 'VR streaming content management portal with an embedded VR player.'
+            }
+          ]
         },
-        position: 'Fullstack Engineer',
-        company: 'Acaisoft',
-        projects: [
-          {
-            name: 'VR Portal',
-            technologies: ['Angular', 'Node.js', 'TypeScript', 'MongoDB', 'Docker'],
-            description: 'VR streaming content management portal with an embedded VR player.'
-          }
-        ]
-      },]}
+        {
+          date: {
+            from: '2016.07',
+            to: '2017.03'
+          },
+          position: 'Frontend Developer',
+          company: 'Transition Technologies',
+          projects: [
+          ]
+        }
+      ]}
       />
     </Segment>
 );

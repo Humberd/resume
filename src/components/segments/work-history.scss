@@ -1,9 +1,43 @@
 @import "../../pages/utils";
 
 .work-history {
-	&--entry {
+	.entry {
 		display: grid;
 		grid-template-columns: 100px 1fr;
 		grid-column-gap: var(--timeline-spacing);
+
+		.details {
+			.position {
+				font-weight: 600;
+				@include changeFontSize(14px)
+			}
+
+			.company {
+				font-style: italic;
+			}
+
+			.projects {
+				margin-top: 5px;
+			}
+		}
+	}
+}
+
+.work-project {
+
+	&:not(:last-child) {
+		margin-bottom: 5px;
+	}
+
+	.name {
+		font-weight: bold;
+	}
+
+	.separator {
+		margin: 0 8px;
+	}
+
+	.technologies {
+		font-style: italic;
 	}
 }

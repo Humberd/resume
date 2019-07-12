@@ -8,7 +8,7 @@ export interface PersonalInfo {
 export const PersonalInfo = (props: PersonalInfo) => (
     <ul className="personal-info">
       {props.info.map(it => (
-          <SingleInfo {...it}/>
+          <SingleInfo{...it} key={it.title}/>
       ))}
     </ul>
 );
@@ -24,14 +24,16 @@ export interface SingleInfo {
 const SingleInfo = (props: SingleInfo) => {
   let value: React.ReactNode;
   if (props.href) {
-    value = <a href={props.href} target={!props.href.startsWith('mailto:') && '_blank'} rel="noopener noreferrer">{props.value}</a>
+    value =
+        <a href={props.href} target={props.href.startsWith('mailto:') ? '' : '_blank'} rel="noopener noreferrer">{props.value}</a>;
   } else {
-    value = <span>{props.value}</span>
+    value = <span>{props.value}</span>;
   }
 
   return (
-    <li className="personal-info--single">
-      <div className="title">{props.title}</div>
-      {value}
-    </li>
-)};
+      <li className="personal-info--single">
+        <div className="title">{props.title}</div>
+        {value}
+      </li>
+  );
+};
