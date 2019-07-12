@@ -3,12 +3,12 @@ import './work-history.scss';
 import { DateEntry } from './date-entry';
 
 export interface WorkHistory {
-  history: WorkEntry[]
+  entries: WorkEntry[]
 }
 
 export const WorkHistory = (props: WorkHistory) => (
     <ul className="work-history">
-      {props.history.map(it => (
+      {props.entries.map(it => (
           <WorkEntry {...it} key={it.date.from}/>
       ))}
     </ul>

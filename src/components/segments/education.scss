@@ -1,0 +1,8 @@
+@import "../../pages/utils";
+
+.education-details {
+	.degree {
+		@include changeFontSize(1.1rem);
+		font-weight: bold;
+	}
+}
