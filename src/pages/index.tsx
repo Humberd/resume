@@ -31,7 +31,7 @@ const HeaderSegment = () => (
     <Header {...{
       name: 'Maciej Sawicki',
       profession: 'Fullstack Engineer',
-      description: 'Fullstack Engineer with Master\'s degree in Computer Science mostly focued on Angular. Fluent with a great number of languages and technologies both on a frontend and a backend side. Able to create an application from top to bottom and expose it to the world.'
+      description: '**Fullstack Engineer** with Master of Engineering degree in Computer Science mostly focued on **Angular**. Fluent with a great number of languages and technologies both on a frontend and a backend side. Able to create an application from top to bottom and expose it to the world.'
     }}/>
 );
 
