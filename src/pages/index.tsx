@@ -72,9 +72,28 @@ const WorkHistorySegment = () => (
           company: 'Acaisoft',
           projects: [
             {
+              name: 'User management portal',
+              technologies: ['Angular', 'TypeScript', 'Karma', 'Jasmine', 'Spring', 'Java', 'Cassandra', 'Kafka', 'Docker'],
+              position: 'Frontend and Backend',
+              description: 'A portal to group, monitor and manage access to other data backup portals.'
+            },
+            {
+              name: 'Data backup portal',
+              technologies: ['Angular', 'TypeScript'],
+              position: 'Frontend',
+              description: 'Data deduplication and replication platform that also allows to remotely monitor and configure a physical machine. Developing frontend.'
+            },
+            {
+              name: 'Car sharing platform',
+              technologies: ['React Native, Redux, Jest, Cucumber, JavaScript, Java, Kotlin'],
+              position: 'Mobile app',
+              description: 'Platform for managing car sharing fleet workers with real-time info and job batching. Developing mobile app.'
+            },
+            {
               name: 'VR Portal',
               technologies: ['Angular', 'Node.js', 'TypeScript', 'MongoDB', 'Docker'],
-              description: 'VR streaming content management portal with an embedded VR player.'
+              position: 'Frontend and Backend',
+              description: 'VR streaming content management portal with an embedded VR player. Developing both frontend and backend.'
             }
           ]
         },

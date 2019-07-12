@@ -1,24 +1,26 @@
 @import "../../pages/utils";
 
-.work-history {
-	.entry {
-		display: grid;
-		grid-template-columns: 100px 1fr;
-		grid-column-gap: var(--timeline-spacing);
+.work-entry {
+	display: grid;
+	grid-template-columns: 100px 1fr;
+	grid-column-gap: var(--timeline-spacing);
 
-		.details {
-			.position {
-				font-weight: 600;
-				@include changeFontSize(14px)
-			}
+	&:not(:last-child) {
+		margin-bottom: 15px;
+	}
 
-			.company {
-				font-style: italic;
-			}
+	.details {
+		.position {
+			font-weight: 600;
+			@include changeFontSize(14px)
+		}
 
-			.projects {
-				margin-top: 5px;
-			}
+		.company {
+			font-style: italic;
+		}
+
+		.projects {
+			margin-top: 5px;
 		}
 	}
 }
@@ -26,18 +28,18 @@
 .work-project {
 
 	&:not(:last-child) {
-		margin-bottom: 5px;
+		margin-bottom: 13px;
 	}
 
-	.name {
+	.project-name {
 		font-weight: bold;
 	}
 
-	.separator {
+	.project-separator {
 		margin: 0 8px;
 	}
 
-	.technologies {
+	.project-technologies {
 		font-style: italic;
 	}
 }

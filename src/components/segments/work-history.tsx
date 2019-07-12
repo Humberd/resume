@@ -24,7 +24,7 @@ export interface WorkEntry {
 }
 
 const WorkEntry = (props: WorkEntry) => (
-    <li className="entry">
+    <li className="work-entry">
       <div className="date">
         <div className="date--from">{props.date.from} -</div>
         <div className="date--to">{props.date.to}</div>
@@ -45,14 +45,16 @@ const WorkEntry = (props: WorkEntry) => (
 export interface WorkProject {
   name: string;
   technologies: string[];
+  position: string;
   description: string;
 }
 
 const WorkProject = (props: WorkProject) => (
     <li className="work-project">
-      <span className="name">{props.name}</span>
-      <span className="separator">&#9679;</span>
-      <span className="technologies">{props.technologies.join(', ')}</span>
-      <div className="description">{props.description}</div>
+      <span className="project-name">{props.name}</span>
+      <span className="project-separator">&#9679;</span>
+      <span className="project-position">{props.position}</span>
+      <div className="project-technologies">{props.technologies.join(', ')}</div>
+      <div className="project-description">{props.description}</div>
     </li>
 );
