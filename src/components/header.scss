@@ -4,12 +4,12 @@
 	margin-bottom: 20px;
 
 	.name {
-		@include changeFontSize(36px);
+		@include changeFontSize(2.9rem);
 		font-weight: bold;
 	}
 
 	.profession {
-		@include changeFontSize(16px);
+		@include changeFontSize(1.2rem);
 		margin-top: 8px;
 		margin-bottom: 15px;
 	}

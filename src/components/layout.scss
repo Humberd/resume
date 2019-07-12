@@ -2,10 +2,11 @@
 
 html {
 	font-family: 'Gill Sans', sans-serif;
+	font-size: 15px;
+	line-height: 1.618;
 }
 
 body {
-	@include changeFontSize(13px);
 }
 
 .content {

@@ -2,7 +2,7 @@
 
 .segment {
 	&--header {
-		@include changeFontSize(16px);
+		@include changeFontSize(1.2rem);
 		font-weight: 600;
 		padding-bottom: 3px;
 		margin-bottom: 10px;

@@ -12,7 +12,7 @@
 	.details {
 		.position {
 			font-weight: 600;
-			@include changeFontSize(14px)
+			@include changeFontSize(1.1rem)
 		}
 
 		.company {
