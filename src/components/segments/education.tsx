@@ -1,17 +1,18 @@
 import * as React from 'react';
 import './education.scss';
 import { DateEntry } from './date-entry';
+import { List } from '../list';
 
 export interface Education {
   entries: EducationEntry[];
 }
 
 export const Education = (props:Education) => (
-    <ul>
+    <List>
       {props.entries.map(it => (
           <EducationEntry {...it} key={it.date.from}/>
       ))}
-    </ul>
+    </List>
 );
 
 export interface EducationEntry {

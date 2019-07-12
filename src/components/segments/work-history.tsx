@@ -1,17 +1,18 @@
 import * as React from 'react';
 import './work-history.scss';
 import { DateEntry } from './date-entry';
+import { List } from '../list';
 
 export interface WorkHistory {
   entries: WorkEntry[]
 }
 
 export const WorkHistory = (props: WorkHistory) => (
-    <ul className="work-history">
+    <List>
       {props.entries.map(it => (
           <WorkEntry {...it} key={it.date.from}/>
       ))}
-    </ul>
+    </List>
 );
 
 export interface WorkEntry {
@@ -29,11 +30,11 @@ const WorkEntry = (props: WorkEntry) => (
       <div className="work-details">
         <div className="position">{props.position}</div>
         <div className="company">{props.company}</div>
-        <ul className="projects">
+        <List className="projects">
           {props.projects.map(it => (
               <WorkProject {...it} key={it.name}/>
           ))}
-        </ul>
+        </List>
       </div>
     </DateEntry>
 );
