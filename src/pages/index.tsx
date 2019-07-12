@@ -3,6 +3,7 @@ import * as React from 'react';
 import Layout from '../components/layout';
 
 import './index.scss';
+import '../fonts/style.css';
 import { Header } from '../components/header';
 import { Segment } from '../components/segments/segment';
 import { PersonalInfo } from '../components/segments/personal-info';
@@ -123,9 +124,9 @@ const WorkHistorySegment = () => (
           projects: [
             {
               name: 'Skills management portal',
-              technologies: ['AngularJS', 'JavaScript', 'Meteor', 'MongoDB'],
+              technologies: ['AngularJS', 'JavaScript', 'Meteor'],
               position: 'Frontend and Backend',
-              description: 'A web application to manage user skills and select the best people for a given problem.'
+              description: 'A web application that manages user skills and finds the best people for a given problem.'
             }
           ]
         }
