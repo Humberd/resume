@@ -18,6 +18,7 @@ const IndexPage = () => (
           <PersonalInfoSegment/>
         </div>
         <div className="column">
+          <AccomplishmentsSegment/>
           <WorkHistorySegment/>
           <EducationSegment/>
         </div>
@@ -175,6 +176,15 @@ const EducationSegment = () => (
           school: 'State Music School in Białystok'
         }
       ]}/>
+    </Segment>
+);
+
+const AccomplishmentsSegment = () => (
+    <Segment header={{
+      icon: 'trophy.svg',
+      title: 'Accomplishments'
+    }}>
+      <div>hello</div>
     </Segment>
 );
 
