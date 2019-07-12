@@ -6,6 +6,7 @@
 	.name {
 		@include changeFontSize(2.9rem);
 		font-weight: bold;
+		color: var(--main-color);
 	}
 
 	.profession {

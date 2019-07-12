@@ -131,22 +131,6 @@ const WorkHistorySegment = () => (
               description: 'A web application that manages user skills and finds the best people for a given problem.'
             }
           ]
-        },
-        {
-          date: {
-            from: '2016.06',
-            to: '2016.08'
-          },
-          position: 'Frontend Intern',
-          company: 'Transition Technologies',
-          projects: [
-            {
-              name: 'Skills management portal',
-              technologies: ['AngularJS', 'JavaScript', 'Meteor'],
-              position: 'Frontend and Backend',
-              description: 'A web application that manages user skills and finds the best people for a given problem.'
-            }
-          ]
         }
       ]}
       />

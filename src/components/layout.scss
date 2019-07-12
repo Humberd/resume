@@ -8,6 +8,9 @@ html {
 
 .content {
 	width: 21cm;
-	padding: 20px;
 	margin: auto;
+
+	@media screen {
+		padding: 20px;
+	}
 }
