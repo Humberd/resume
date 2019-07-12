@@ -3,11 +3,11 @@ import './education.scss';
 import { DateEntry } from './date-entry';
 import { List } from '../list';
 
-export interface Education {
-  entries: EducationEntry[];
+export interface EducationProps {
+  entries: EducationEntryProps[];
 }
 
-export const Education = (props:Education) => (
+export const Education = (props: EducationProps) => (
     <List>
       {props.entries.map(it => (
           <EducationEntry {...it} key={it.date.from}/>
@@ -15,7 +15,7 @@ export const Education = (props:Education) => (
     </List>
 );
 
-export interface EducationEntry {
+export interface EducationEntryProps {
   date: {
     from: string,
     to: string
@@ -24,11 +24,11 @@ export interface EducationEntry {
   school: string
 }
 
-export const EducationEntry = (props: EducationEntry) => (
+export const EducationEntry = (props: EducationEntryProps) => (
     <DateEntry date={props.date}>
       <div className="education-details">
-        <div className="degree">{props.degree}</div>
-        <div className="school">{props.school}</div>
+        <p className="degree">{props.degree}</p>
+        <p className="school">{props.school}</p>
       </div>
     </DateEntry>
-)
+);

@@ -1,7 +1,7 @@
 import * as React from 'react';
 import './list.scss';
 
-export interface List {
+export interface ListProps {
   children: React.ReactNode;
   className?: string;
 }
@@ -10,7 +10,7 @@ export interface List {
  * Ensures that every item on the list is not
  * split between 2 pages when printing to pdf
  */
-export const List = (props: List) => (
+export const List = (props: ListProps) => (
     <ul className={'generic-list ' + (props.className || '')}>
       {props.children}
     </ul>

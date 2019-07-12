@@ -3,11 +3,11 @@ import './work-history.scss';
 import { DateEntry } from './date-entry';
 import { List } from '../list';
 
-export interface WorkHistory {
-  entries: WorkEntry[]
+export interface WorkHistoryProps {
+  entries: WorkEntryProps[]
 }
 
-export const WorkHistory = (props: WorkHistory) => (
+export const WorkHistory = (props: WorkHistoryProps) => (
     <List>
       {props.entries.map(it => (
           <WorkEntry {...it} key={it.date.from}/>
@@ -15,21 +15,21 @@ export const WorkHistory = (props: WorkHistory) => (
     </List>
 );
 
-export interface WorkEntry {
+export interface WorkEntryProps {
   date: {
     from: string,
     to: string;
   },
   position: string;
   company: string;
-  projects: WorkProject[];
+  projects: WorkProjectProps[];
 }
 
-const WorkEntry = (props: WorkEntry) => (
+const WorkEntry = (props: WorkEntryProps) => (
     <DateEntry date={props.date}>
       <div className="work-details">
-        <div className="position">{props.position}</div>
-        <div className="company">{props.company}</div>
+        <p className="position">{props.position}</p>
+        <p className="company">{props.company}</p>
         <List className="projects">
           {props.projects.map(it => (
               <WorkProject {...it} key={it.name}/>
@@ -39,19 +39,19 @@ const WorkEntry = (props: WorkEntry) => (
     </DateEntry>
 );
 
-export interface WorkProject {
+export interface WorkProjectProps {
   name: string;
   technologies: string[];
   position: string;
   description: string;
 }
 
-const WorkProject = (props: WorkProject) => (
+const WorkProject = (props: WorkProjectProps) => (
     <li className="work-project">
       <span className="project-name">{props.name}</span>
       <span className="project-separator">&#9679;</span>
       <span className="project-position">{props.position}</span>
-      <div className="project-technologies">{props.technologies.join(', ')}</div>
-      <div className="project-description">{props.description}</div>
+      <p className="project-technologies">{props.technologies.join(', ')}</p>
+      <p className="project-description">{props.description}</p>
     </li>
 );

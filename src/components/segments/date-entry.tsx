@@ -2,7 +2,7 @@ import * as React from 'react';
 import './date-entry.scss';
 
 
-export interface DateEntry {
+export interface DateEntryProps {
   date: {
     from: string,
     to: string;
@@ -10,11 +10,11 @@ export interface DateEntry {
   children: React.ReactNode
 }
 
-export const DateEntry = (props: DateEntry) => (
+export const DateEntry = (props: DateEntryProps) => (
     <li className="date-entry">
       <div className="date">
-        <div className="date--from">{props.date.from} -</div>
-        <div className="date--to">{props.date.to}</div>
+        <p className="date--from">{props.date.from} -</p>
+        <p className="date--to">{props.date.to}</p>
       </div>
 
       {props.children}

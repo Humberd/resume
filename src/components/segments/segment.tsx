@@ -2,24 +2,24 @@ import * as React from 'react';
 
 import './segment.scss';
 
-export interface Segment {
-  header: SegmentHeader,
+export interface SegmentProps {
+  header: SegmentHeaderProps,
   children: React.ReactNode
 }
 
-export const Segment = (props: Segment) => (
+export const Segment = (props: SegmentProps) => (
     <section className="segment">
       <SegmentHeader {...props.header}/>
       {props.children}
     </section>
 );
 
-export interface SegmentHeader {
+export interface SegmentHeaderProps {
   icon: string;
   title: string;
 }
 
-const SegmentHeader = (props: SegmentHeader) => (
+const SegmentHeader = (props: SegmentHeaderProps) => (
     <header className="segment--header">
       <div className="icon-wrapper">
         <img

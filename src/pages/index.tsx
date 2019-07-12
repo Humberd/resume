@@ -1,7 +1,5 @@
 import * as React from 'react';
 
-import Layout from '../components/layout';
-
 import './index.scss';
 import '../fonts/style.css';
 import { Header } from '../components/header';
@@ -9,10 +7,11 @@ import { Segment } from '../components/segments/segment';
 import { PersonalInfo } from '../components/segments/personal-info';
 import { WorkHistory } from '../components/segments/work-history';
 import { Education } from '../components/segments/education';
+import { Layout } from '../components/layout';
 
 const IndexPage = () => (
     <Layout>
-      <Header/>
+      <HeaderSegment/>
 
       <div className="columns">
         <div className="column">
@@ -24,6 +23,14 @@ const IndexPage = () => (
         </div>
       </div>
     </Layout>
+);
+
+const HeaderSegment = () => (
+    <Header {...{
+      name: 'Maciej Sawicki',
+      profession: 'Fullstack Engineer',
+      description: 'Fullstack Engineer with Master\'s degree in Computer Science mostly focued on Angular. Fluent with a great number of languages and technologies both on a frontend and a backend side. Able to create an application from top to bottom and expose it to the world.'
+    }}/>
 );
 
 const PersonalInfoSegment = () => (
