@@ -68,7 +68,7 @@ const WorkHistorySegment = () => (
             from: '2017.04',
             to: 'Current'
           },
-          position: 'Frontend Engineer',
+          position: 'Fullstack Engineer',
           company: 'Acaisoft',
           projects: [
             {
@@ -81,30 +81,52 @@ const WorkHistorySegment = () => (
               name: 'Data backup portal',
               technologies: ['Angular', 'TypeScript'],
               position: 'Frontend',
-              description: 'Data deduplication and replication platform that also allows to remotely monitor and configure a physical machine. Developing frontend.'
+              description: 'Data deduplication and replication platform that also allows to remotely monitor and configure a physical server.'
             },
             {
               name: 'Car sharing platform',
               technologies: ['React Native, Redux, Jest, Cucumber, JavaScript, Java, Kotlin'],
               position: 'Mobile app',
-              description: 'Platform for managing car sharing fleet workers with real-time info and job batching. Developing mobile app.'
+              description: 'Platform for managing car sharing fleet workers with real-time info and job batching.'
             },
             {
               name: 'VR Portal',
               technologies: ['Angular', 'Node.js', 'TypeScript', 'MongoDB', 'Docker'],
               position: 'Frontend and Backend',
-              description: 'VR streaming content management portal with an embedded VR player. Developing both frontend and backend.'
+              description: 'VR streaming content management portal with an embedded VR player.'
             }
           ]
         },
         {
           date: {
-            from: '2016.07',
+            from: '2016.08',
             to: '2017.03'
           },
           position: 'Frontend Developer',
           company: 'Transition Technologies',
           projects: [
+            {
+              name: 'Social meetings app',
+              technologies: ['Angular', 'TypeScript'],
+              position: 'Frontend',
+              description: 'A Chrome extension that arranges meetings between people with problems and people who can solve them.'
+            }
+          ]
+        },
+        {
+          date: {
+            from: '2016.06',
+            to: '2016.08'
+          },
+          position: 'Frontend Intern',
+          company: 'Transition Technologies',
+          projects: [
+            {
+              name: 'Skills management portal',
+              technologies: ['AngularJS', 'JavaScript', 'Meteor', 'MongoDB'],
+              position: 'Frontend and Backend',
+              description: 'A web application to manage user skills and select the best people for a given problem.'
+            }
           ]
         }
       ]}
