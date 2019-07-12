@@ -8,6 +8,7 @@ import { Header } from '../components/header';
 import { Segment } from '../components/segments/segment';
 import { PersonalInfo } from '../components/segments/personal-info';
 import { WorkHistory } from '../components/segments/work-history';
+import { Education } from '../components/segments/education';
 
 const IndexPage = () => (
     <Layout>
@@ -19,6 +20,7 @@ const IndexPage = () => (
         </div>
         <div className="column">
           <WorkHistorySegment/>
+          <EducationSegment/>
         </div>
       </div>
     </Layout>
@@ -132,6 +134,15 @@ const WorkHistorySegment = () => (
         }
       ]}
       />
+    </Segment>
+);
+
+const EducationSegment = () => (
+    <Segment header={{
+      icon: 'school.svg',
+      title: 'Education'
+    }}>
+      <Education/>
     </Segment>
 );
 
