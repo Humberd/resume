@@ -21,10 +21,12 @@ export interface SegmentHeader {
 
 const SegmentHeader = (props: SegmentHeader) => (
     <header className="segment--header">
-      <img
-          className="icon"
-          src={require(`../../images/${props.icon}`)}
-      />
+      <div className="icon-wrapper">
+        <img
+            className="icon"
+            src={require(`../../images/${props.icon}`)}
+        />
+      </div>
       <h1>{props.title}</h1>
     </header>
 );
