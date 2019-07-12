@@ -76,7 +76,7 @@ const WorkHistorySegment = () => (
               name: 'User management portal',
               technologies: ['Angular', 'TypeScript', 'Karma', 'Jasmine', 'Spring', 'Java', 'Cassandra', 'Kafka', 'Docker'],
               position: 'Frontend and Backend',
-              description: 'A portal to group, monitor and manage access to other data backup portals.'
+              description: 'A portal to group, monitor and manage access to data backup portals.'
             },
             {
               name: 'Data backup portal',
