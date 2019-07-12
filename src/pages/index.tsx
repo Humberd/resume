@@ -44,14 +44,19 @@ const PersonalInfoSegment = () => (
       <PersonalInfo entries={[
         {
           title: 'Address',
-          value: 'Białystok, Poland'
+          icon: 'place.svg',
+          value: 'Białystok, Poland',
+          href: 'https://goo.gl/maps/z8hHudt2x29aaRsX6'
         },
         {
           title: 'Phone',
-          value: '+48 507 847 934'
+          icon: 'phone.svg',
+          value: '+48 507 847 934',
+          href: 'tel:+48507847934'
         },
         {
           title: 'Email',
+          icon: 'email.svg',
           value: 'humberd2@gmail.com',
           href: 'mailto:humberd2@gmail.com'
         },
@@ -63,6 +68,7 @@ const PersonalInfoSegment = () => (
         },
         {
           title: 'LinkedIn',
+          icon: 'linked-in.svg',
           value: 'linkedin.com/in/maciej-sawicki',
           href: 'https://www.linkedin.com/in/maciej-sawicki'
         }

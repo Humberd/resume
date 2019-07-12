@@ -26,7 +26,7 @@ const PersonalInfoEntry = (props: PersonalInfoEntryProps) => {
   let value: React.ReactNode;
   if (props.href) {
     value =
-        <a href={props.href} target={props.href.startsWith('mailto:') ? '' : '_blank'} rel="noopener noreferrer">{props.value}</a>;
+        <a href={props.href} target={props.href.startsWith('http') ? '_blank' : ''} rel="noopener noreferrer">{props.value}</a>;
   } else {
     value = <span>{props.value}</span>;
   }
