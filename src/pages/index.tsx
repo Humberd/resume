@@ -19,9 +19,9 @@ const IndexPage = () => (
           <PersonalInfoSegment/>
         </div>
         <div className="column">
-          <AccomplishmentsSegment/>
           <WorkHistorySegment/>
           <EducationSegment/>
+          <AccomplishmentsSegment/>
         </div>
       </div>
     </Layout>
