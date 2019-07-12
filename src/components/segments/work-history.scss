@@ -1,27 +1,17 @@
 @import "../../pages/utils";
 
-.work-entry {
-	display: grid;
-	grid-template-columns: 100px 1fr;
-	grid-column-gap: var(--timeline-spacing);
-
-	&:not(:last-child) {
-		margin-bottom: 15px;
+.work-details {
+	.position {
+		font-weight: 600;
+		@include changeFontSize(1.1rem)
 	}
 
-	.details {
-		.position {
-			font-weight: 600;
-			@include changeFontSize(1.1rem)
-		}
+	.company {
+		font-style: italic;
+	}
 
-		.company {
-			font-style: italic;
-		}
-
-		.projects {
-			margin-top: 5px;
-		}
+	.projects {
+		margin-top: 5px;
 	}
 }
 

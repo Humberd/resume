@@ -1,5 +1,6 @@
 import * as React from 'react';
 import './work-history.scss';
+import { DateEntry } from './date-entry';
 
 export interface WorkHistory {
   history: WorkEntry[]
@@ -24,13 +25,8 @@ export interface WorkEntry {
 }
 
 const WorkEntry = (props: WorkEntry) => (
-    <li className="work-entry">
-      <div className="date">
-        <div className="date--from">{props.date.from} -</div>
-        <div className="date--to">{props.date.to}</div>
-      </div>
-
-      <div className="details">
+    <DateEntry date={props.date}>
+      <div className="work-details">
         <div className="position">{props.position}</div>
         <div className="company">{props.company}</div>
         <ul className="projects">
@@ -39,7 +35,7 @@ const WorkEntry = (props: WorkEntry) => (
           ))}
         </ul>
       </div>
-    </li>
+    </DateEntry>
 );
 
 export interface WorkProject {

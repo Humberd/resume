@@ -1,0 +1,11 @@
+
+.date-entry {
+	display: grid;
+	grid-template-columns: 100px 1fr;
+	grid-column-gap: var(--timeline-spacing);
+
+	&:not(:last-child) {
+		margin-bottom: 15px;
+	}
+
+}
