@@ -13,7 +13,7 @@ export interface DateEntryProps {
 export const DateEntry = (props: DateEntryProps) => (
     <li className="date-entry">
       <div className="date">
-        <p className="date--from">{props.date.from} -</p>
+        <p className="date--from">{props.date.from} {props.date.to ? '-': ''}</p>
         <p className="date--to">{props.date.to}</p>
       </div>
 

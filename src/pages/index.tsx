@@ -8,6 +8,7 @@ import { PersonalInfo } from '../components/segments/personal-info';
 import { WorkHistory } from '../components/segments/work-history';
 import { Education } from '../components/segments/education';
 import { Layout } from '../components/layout';
+import { Accomplishments } from '../components/segments/accomplishments';
 
 const IndexPage = () => (
     <Layout>
@@ -184,7 +185,26 @@ const AccomplishmentsSegment = () => (
       icon: 'trophy.svg',
       title: 'Accomplishments'
     }}>
-      <div>hello</div>
+      <Accomplishments entries={[
+        {
+          date: '2017',
+          event: 'Białystok IT Test',
+          places: [
+            '1st in Mobile Development',
+            '1st in Object Oriented Programming',
+            '1st in Web Development',
+            '4th in Java Language Skills'
+          ]
+        },
+        {
+          date: '2016',
+          event: 'Białystok IT Test',
+          places: [
+            '1st in Java Language Skills',
+            '2nd in Object Oriented Programming'
+          ]
+        }
+      ]}/>
     </Segment>
 );
 
