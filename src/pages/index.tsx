@@ -39,7 +39,8 @@ const PersonalInfoSegment = () => (
         },
         {
           title: 'Email',
-          value: 'humberd2@gmail.com'
+          value: 'humberd2@gmail.com',
+          href: 'mailto:humberd2@gmail.com'
         },
         {
           title: 'GitHub',
