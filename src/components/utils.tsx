@@ -1,6 +1,10 @@
 import * as React from 'react';
 
 export function getIcon(name: string) {
+  if (!name) {
+    return '';
+  }
+
   try {
     return require(`../images/${name}`)
   } catch (e) {

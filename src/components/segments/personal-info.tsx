@@ -1,5 +1,6 @@
 import * as React from 'react';
 import './personal-info.scss';
+import { getIcon } from '../utils';
 
 export interface PersonalInfoProps {
   entries: PersonalInfoEntryProps[];
@@ -32,7 +33,13 @@ const PersonalInfoEntry = (props: PersonalInfoEntryProps) => {
 
   return (
       <li className="personal-info-entry">
-        <p className="title">{props.title}</p>
+        <div className="title">
+          {props.icon && <img
+              className="title-image"
+              src={getIcon(props.icon)}
+          />}
+          <p>{props.title}</p>
+        </div>
         {value}
       </li>
   );
