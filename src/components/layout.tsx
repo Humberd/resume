@@ -5,7 +5,7 @@ import './layout.scss';
 
 export const Layout = ({children}) => {
   return (
-      <main className="content">
+      <main className="main-content">
         {children}
       </main>
   );

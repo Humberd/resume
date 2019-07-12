@@ -9,20 +9,21 @@ import { WorkHistory } from '../components/segments/work-history';
 import { Education } from '../components/segments/education';
 import { Layout } from '../components/layout';
 import { Accomplishments } from '../components/segments/accomplishments';
+import { List } from '../components/list';
 
 const IndexPage = () => (
     <Layout>
       <HeaderSegment/>
 
       <div className="columns">
-        <div className="column">
+        <List className="column">
           <PersonalInfoSegment/>
-        </div>
-        <div className="column">
+        </List>
+        <List className="column">
           <WorkHistorySegment/>
           <EducationSegment/>
           <AccomplishmentsSegment/>
-        </div>
+        </List>
       </div>
     </Layout>
 );

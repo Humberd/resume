@@ -15,9 +15,6 @@
 	.column {
 		& > * {
 			margin-bottom: 20px;
-			@media print {
-				break-inside: avoid;
-			}
 		}
 	}
 
