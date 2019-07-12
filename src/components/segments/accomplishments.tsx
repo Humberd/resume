@@ -30,7 +30,7 @@ const AccomplishmentEntry = (props: AccomplishmentEntryProps) => (
         <p className="event-name">{props.event}</p>
         <List>
           {props.places.map(it => (
-              <li>- {it}</li>
+              <li key={it}>- {it}</li>
           ))}
         </List>
       </div>

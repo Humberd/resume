@@ -27,10 +27,10 @@ function pseudoMarkdownToReact(value: string): React.ReactNode[] {
 
   return splittedValue.map((piece, index) => {
     if (isEven(index)) {
-      return <span>{piece}</span>
+      return <span key={index}>{piece}</span>
     }
 
-    return <strong>{piece}</strong>
+    return <strong key={index}>{piece}</strong>
   })
 
 }

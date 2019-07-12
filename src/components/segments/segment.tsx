@@ -1,6 +1,7 @@
 import * as React from 'react';
 
 import './segment.scss';
+import { getIcon } from '../utils';
 
 export interface SegmentProps {
   header: SegmentHeaderProps,
@@ -24,7 +25,7 @@ const SegmentHeader = (props: SegmentHeaderProps) => (
       <div className="icon-wrapper">
         <img
             className="icon"
-            src={require(`../../images/${props.icon}`)}
+            src={getIcon(props.icon)}
         />
       </div>
       <h1>{props.title}</h1>

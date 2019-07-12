@@ -1,14 +1,13 @@
 @import "../../pages/utils";
 
-.personal-info {
-	&--single {
+.personal-info-entry {
 
-		&:not(:last-child) {
-			margin-bottom: 8px;
-		}
+	&:not(:last-child) {
+		margin-bottom: 8px;
+	}
 
-		.title {
-			font-weight: 500;
-		}
+	.title {
+		font-weight: 500;
 	}
 }
+

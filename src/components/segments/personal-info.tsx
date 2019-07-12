@@ -2,26 +2,26 @@ import * as React from 'react';
 import './personal-info.scss';
 
 export interface PersonalInfoProps {
-  info: SingleInfoProps[];
+  entries: PersonalInfoEntryProps[];
 }
 
 export const PersonalInfo = (props: PersonalInfoProps) => (
     <ul className="personal-info">
-      {props.info.map(it => (
-          <SingleInfo{...it} key={it.title}/>
+      {props.entries.map(it => (
+          <PersonalInfoEntry{...it} key={it.title}/>
       ))}
     </ul>
 );
 
 
-export interface SingleInfoProps {
+export interface PersonalInfoEntryProps {
   title: string;
   icon?: string;
   value: string;
   href?: string;
 }
 
-const SingleInfo = (props: SingleInfoProps) => {
+const PersonalInfoEntry = (props: PersonalInfoEntryProps) => {
   let value: React.ReactNode;
   if (props.href) {
     value =
@@ -31,7 +31,7 @@ const SingleInfo = (props: SingleInfoProps) => {
   }
 
   return (
-      <li className="personal-info--single">
+      <li className="personal-info-entry">
         <p className="title">{props.title}</p>
         {value}
       </li>

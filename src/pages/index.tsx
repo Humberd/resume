@@ -41,7 +41,7 @@ const PersonalInfoSegment = () => (
       icon: 'person.svg',
       title: 'Personal Info'
     }}>
-      <PersonalInfo info={[
+      <PersonalInfo entries={[
         {
           title: 'Address',
           value: 'Białystok, Poland'
@@ -57,6 +57,7 @@ const PersonalInfoSegment = () => (
         },
         {
           title: 'GitHub',
+          icon: 'github.svg',
           value: 'github.com/Humberd',
           href: 'https://github.com/Humberd'
         },
