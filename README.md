@@ -3,7 +3,9 @@
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/Humberd/cv2/graphs/commit-activity)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/Humberd/cv2/blob/master/LICENSE)
 
-> The project is my Resume written in React and optimized to be printable. 
+> The project is my Resume written in React.
+It is print-optimized, so you can print it either physically or to pdf
+without any layout bugs.
 
 ## Install
 
