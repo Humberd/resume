@@ -25,10 +25,10 @@ const IndexPage = () => (
           <LanguagesSegment/>
         </List>
         <List className="column">
-          <PersonalProjectsSegment/>
           <WorkHistorySegment/>
           <EducationSegment/>
           <AccomplishmentsSegment/>
+          <PersonalProjectsSegment/>
         </List>
       </div>
     </Layout>
