@@ -11,6 +11,7 @@ import { Layout } from '../components/layout';
 import { Accomplishments } from '../components/segments/accomplishments';
 import { List } from '../components/list';
 import { Languages } from '../components/segments/languages';
+import { Technologies } from '../components/segments/technologies';
 
 const IndexPage = () => (
     <Layout>
@@ -19,6 +20,7 @@ const IndexPage = () => (
       <div className="columns">
         <List className="column">
           <PersonalInfoSegment/>
+          <TechnologiesSegment/>
           <LanguagesSegment/>
         </List>
         <List className="column">
@@ -75,6 +77,15 @@ const PersonalInfoSegment = () => (
           href: 'https://www.linkedin.com/in/maciej-sawicki'
         }
       ]}/>
+    </Segment>
+);
+
+const TechnologiesSegment = () => (
+    <Segment header={{
+      icon: 'devices.svg',
+      title: 'Technologies'
+    }}>
+      <Technologies/>
     </Segment>
 );
 
