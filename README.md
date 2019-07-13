@@ -19,6 +19,14 @@ npm ci
 npm start
 ```
 
+## Generate PDF
+
+Before generating PDF make sure the server is running on port 8000.
+
+```sh
+npm run pdf
+```
+
 ## Author
 
 👤 **Maciej Sawicki**
