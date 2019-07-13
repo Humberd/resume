@@ -270,7 +270,7 @@ const PersonalProjectsSegment = () => (
           name: 'This Resume',
           href: 'https://github.com/Humberd/Resume',
           technologies: ['React', 'TypeScript'],
-          description: ''
+          description: 'This Resume has been generated from easily customizable web page.'
         },
         {
           name: 'MicroTwitter',
