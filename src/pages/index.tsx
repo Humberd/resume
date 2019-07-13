@@ -162,16 +162,16 @@ const EducationSegment = () => (
       <Education entries={[
         {
           date: {
-            from: '2017-02',
-            to: '2018-07'
+            from: '2017.02',
+            to: '2018.07'
           },
           degree: 'Master of Engineering: Software Engineering',
           school: 'Białystok Univerisity of Technology'
         },
         {
           date: {
-            from: '2013-09',
-            to: '2017-02'
+            from: '2013.09',
+            to: '2017.02'
           },
           degree: 'Bachelor of Engineering: Computer Science',
           school: 'Białystok University of Technology'
