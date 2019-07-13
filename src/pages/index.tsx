@@ -85,7 +85,44 @@ const TechnologiesSegment = () => (
       icon: 'devices.svg',
       title: 'Technologies'
     }}>
-      <Technologies/>
+      <Technologies entries={[
+        {
+          title: 'Frontend',
+          technologies: [
+            'Angular',
+            'AngularJS',
+            'React',
+            'React Native',
+            'RxJS',
+            'Redux',
+            'JavaScript',
+            'TypeScript',
+            'HTML',
+            'CSS',
+            'SCSS',
+          ]
+        },
+        {
+          title: 'Backend',
+          technologies: [
+            'Spring',
+            'Node.js',
+            'Java',
+            'Kotlin',
+            'JavaScript',
+            'TypeScript'
+          ]
+        },
+        {
+          title: 'DevOps',
+          technologies: [
+            'Docker',
+            'Kubernetes',
+            'Azure DevOps',
+            'Jenkins'
+          ]
+        }
+      ]}/>
     </Segment>
 );
 
