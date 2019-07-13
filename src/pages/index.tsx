@@ -119,6 +119,7 @@ const TechnologiesSegment = () => (
         {
           title: 'DevOps',
           technologies: [
+            'Git',
             'Docker',
             'Kubernetes',
             'Azure DevOps',
@@ -275,7 +276,7 @@ const PersonalProjectsSegment = () => (
           name: 'MicroTwitter',
           href: 'https://github.com/Humberd/MicroTwitter',
           technologies: ['Angular', 'TypeScript', 'Spring', 'Kotlin', 'PostgreSQL', 'Docker', 'Jenkins'],
-          description: 'A minimalistic Twitter clone with its core functionalities'
+          description: 'A minimalistic Twitter clone with its core functionalities, such as: posting, commenting, liking, etc.'
         },
         {
           name: 'StatApp',
