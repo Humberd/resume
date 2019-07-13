@@ -27,6 +27,19 @@ Before generating PDF make sure the server is running on port 8000.
 npm run pdf
 ```
 
+## Issues
+
+* GDPR consent is now directly below the last element. Now it looks ok, 
+because it is at the bottom, but if the last element is at the top the consent will also be at the top.
+The consent should be at the bottom of the last page.
+
+* Each segment now tries to fit a page as a whole, so when some part of it
+goes to the next page then the whole segment goes to the new page.
+This is not exactly a desired result, because there can be a big gaps as a result of that.
+Now it looks good, because I was lucky.
+The segment content should hangle how it flows, but the segment header cannot be alone on the page,
+it should have at least some part with it.
+
 ## Author
 
 👤 **Maciej Sawicki**
