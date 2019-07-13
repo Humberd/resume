@@ -267,6 +267,12 @@ const PersonalProjectsSegment = () => (
     }}>
       <PersonalProjects entries={[
         {
+          name: 'Erepublik game bot',
+          href: 'https://github.com/Humberd/headless-k-worker',
+          technologies: ['TypeScript', 'Node.js', 'Nest', 'PostgreSQL', 'Kotlin', 'Docker', 'Kubernetes', 'Azure DevOps'],
+          description: 'Headless bot that automates periodic game tasks, a native mobile app as a monitoring frontend and a backend server inbetween.'
+        },
+        {
           name: 'This Resume',
           href: 'https://github.com/Humberd/Resume',
           technologies: ['React', 'TypeScript'],
