@@ -81,9 +81,18 @@ const PersonalInfoSegment = () => (
 const LanguagesSegment = () => (
     <Segment header={{
       icon: 'flag.svg',
-      title: 'Languages'
+      title: 'Communication'
     }}>
-      <Languages/>
+      <Languages entries={[
+        {
+          name: 'Polish',
+          level: 'Native'
+        },
+        {
+          name: 'English',
+          level: 'Advanced, FCE'
+        }
+      ]}/>
     </Segment>
 );
 
