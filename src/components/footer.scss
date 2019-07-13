@@ -3,4 +3,12 @@
 .footer-consent {
 	@include changeFontSize(0.8rem);
 	line-height: 1.1;
+
+	@media print {
+
+		position: fixed;
+		bottom: 0;
+		left: 0;
+
+	}
 }

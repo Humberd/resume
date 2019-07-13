@@ -263,6 +263,34 @@ const EducationSegment = () => (
     </Segment>
 );
 
+const AccomplishmentsSegment = () => (
+    <Segment header={{
+      icon: 'trophy.svg',
+      title: 'Accomplishments'
+    }}>
+      <Accomplishments entries={[
+        {
+          date: '2017',
+          event: 'Białystok IT Test',
+          places: [
+            '1st in Mobile Development',
+            '1st in Object Oriented Programming',
+            '1st in Web Development',
+            '4th in Java Language Skills'
+          ]
+        },
+        {
+          date: '2016',
+          event: 'Białystok IT Test',
+          places: [
+            '1st in Java Language Skills',
+            '2nd in Object Oriented Programming'
+          ]
+        }
+      ]}/>
+    </Segment>
+);
+
 const PersonalProjectsSegment = () => (
     <Segment header={{
       icon: 'collections.svg',
@@ -298,34 +326,6 @@ const PersonalProjectsSegment = () => (
           href: 'https://github.com/Humberd/StatApp',
           technologies: ['TornadoFX', 'RxKotlin', 'Kotlin'],
           description: 'Desktop application to visualize and perform statistical calculations over large data sets'
-        }
-      ]}/>
-    </Segment>
-);
-
-const AccomplishmentsSegment = () => (
-    <Segment header={{
-      icon: 'trophy.svg',
-      title: 'Accomplishments'
-    }}>
-      <Accomplishments entries={[
-        {
-          date: '2017',
-          event: 'Białystok IT Test',
-          places: [
-            '1st in Mobile Development',
-            '1st in Object Oriented Programming',
-            '1st in Web Development',
-            '4th in Java Language Skills'
-          ]
-        },
-        {
-          date: '2016',
-          event: 'Białystok IT Test',
-          places: [
-            '1st in Java Language Skills',
-            '2nd in Object Oriented Programming'
-          ]
         }
       ]}/>
     </Segment>
