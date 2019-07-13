@@ -1,8 +1,8 @@
 {
   "name": "cv2",
-  "description": "My CV",
+  "description": "Print-optimized React version of my Resume",
   "version": "0.1.0",
-  "author": "Maciej Sawicki <humberd2@gmail.com>",
+  "author": "Maciej Sawicki",
   "private": true,
   "dependencies": {
     "gatsby": "^2.13.6",

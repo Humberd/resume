@@ -1,4 +1,4 @@
-# Welcome to Resume 👋
+# Welcome to My Resume 👋
 ![Version](https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/Humberd/cv2/graphs/commit-activity)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/Humberd/cv2/blob/master/LICENSE)
@@ -21,7 +21,7 @@ npm start
 
 ## Author
 
-👤 **Maciej Sawicki <humberd2@gmail.com>**
+👤 **Maciej Sawicki**
 
 * Github: [@Humberd](https://github.com/Humberd)
 
@@ -32,7 +32,7 @@ Give a ⭐️ if this project helped you!
 
 ## 📝 License
 
-Copyright © 2019 [Maciej Sawicki <humberd2@gmail.com>](https://github.com/Humberd).
+Copyright © 2019 [Maciej Sawicki](https://github.com/Humberd).
 
 This project is [MIT](https://github.com/Humberd/cv2/blob/master/LICENSE) licensed.
 
