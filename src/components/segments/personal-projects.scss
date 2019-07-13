@@ -1,0 +1,13 @@
+.personal-project-entry {
+
+	&:not(:last-child) {
+		margin-bottom: 8px;
+	}
+
+	.name {
+		font-weight: 500;
+	}
+	.technologies {
+		font-style: italic;
+	}
+}

@@ -12,6 +12,7 @@ import { Accomplishments } from '../components/segments/accomplishments';
 import { List } from '../components/list';
 import { Languages } from '../components/segments/languages';
 import { Technologies } from '../components/segments/technologies';
+import { PersonalProjects } from '../components/segments/personal-projects';
 
 const IndexPage = () => (
     <Layout>
@@ -24,6 +25,7 @@ const IndexPage = () => (
           <LanguagesSegment/>
         </List>
         <List className="column">
+          <PersonalProjectsSegment/>
           <WorkHistorySegment/>
           <EducationSegment/>
           <AccomplishmentsSegment/>
@@ -107,6 +109,7 @@ const TechnologiesSegment = () => (
           technologies: [
             'Spring',
             'Node.js',
+            'RxJava',
             'Java',
             'Kotlin',
             'JavaScript',
@@ -251,6 +254,28 @@ const EducationSegment = () => (
           },
           degree: 'Diploma',
           school: 'State Music School in Białystok'
+        }
+      ]}/>
+    </Segment>
+);
+
+const PersonalProjectsSegment = () => (
+    <Segment header={{
+      icon: 'collections.svg',
+      title: 'Personal Projects'
+    }}>
+      <PersonalProjects entries={[
+        {
+          name: 'MicroTwitter',
+          href: 'https://github.com/Humberd/MicroTwitter',
+          technologies: ['Angular', 'TypeScript', 'Spring', 'Kotlin', 'PostgreSQL', 'Docker', 'Jenkins'],
+          description: 'A minimalistic Twitter clone with its core functionalities'
+        },
+        {
+          name: 'StatApp',
+          href: 'https://github.com/Humberd/StatApp',
+          technologies: ['TornadoFX', 'RxKotlin', 'Kotlin'],
+          description: 'Desktop application to visualize and perform statistical calculations over large data sets'
         }
       ]}/>
     </Segment>
