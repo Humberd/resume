@@ -279,6 +279,12 @@ const PersonalProjectsSegment = () => (
           description: 'This Resume has been generated from easily customizable web page.'
         },
         {
+          name: 'Wykop++',
+          href: 'https://github.com/Humberd/Wykop-plus-plus',
+          technologies: ['RxJS', 'TypeScript'],
+          description: 'Browser extension that puts additional functionalities on wykop.pl, such as: comments hiding, infinite scroll, etc.'
+        },
+        {
           name: 'MicroTwitter',
           href: 'https://github.com/Humberd/MicroTwitter',
           technologies: ['Angular', 'TypeScript', 'Spring', 'Kotlin', 'PostgreSQL', 'Docker', 'Jenkins'],
