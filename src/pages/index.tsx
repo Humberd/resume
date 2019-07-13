@@ -266,6 +266,12 @@ const PersonalProjectsSegment = () => (
     }}>
       <PersonalProjects entries={[
         {
+          name: 'This Resume',
+          href: 'https://github.com/Humberd/Resume',
+          technologies: ['React', 'TypeScript'],
+          description: ''
+        },
+        {
           name: 'MicroTwitter',
           href: 'https://github.com/Humberd/MicroTwitter',
           technologies: ['Angular', 'TypeScript', 'Spring', 'Kotlin', 'PostgreSQL', 'Docker', 'Jenkins'],
