@@ -22,7 +22,9 @@
     "react-helmet": "^5.2.1"
   },
   "devDependencies": {
-    "prettier": "^1.18.2"
+    "@types/puppeteer": "^1.12.4",
+    "prettier": "^1.18.2",
+    "puppeteer": "^1.18.1"
   },
   "license": "MIT",
   "scripts": {
