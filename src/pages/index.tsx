@@ -41,7 +41,7 @@ const HeaderSegment = () => (
     <Header {...{
       name: 'Maciej Sawicki',
       profession: 'Fullstack Engineer',
-      description: '**Fullstack Engineer** with Master of Engineering degree in Computer Science mostly focued on **Angular**. Fluent with a great number of languages and technologies both on a frontend and a backend side. Able to create an application from top to bottom and expose it to the world.'
+      description: '**Fullstack Engineer** with Master of Engineering degree in Computer Science mostly focused on **Angular**. Fluent with a great number of languages and technologies both on frontend and backend side. Able to create an application from top to bottom and expose it to the world.'
     }}/>
 );
 
@@ -170,13 +170,13 @@ const WorkHistorySegment = () => (
               name: 'User management portal',
               technologies: ['Angular', 'TypeScript', 'Karma', 'Jasmine', 'Spring', 'Java', 'Cassandra', 'Kafka', 'Docker'],
               position: 'Frontend and Backend',
-              description: 'A portal to group, monitor and manage access to data backup portals.'
+              description: 'Web portal to group, monitor and manage access to data backup portals.'
             },
             {
               name: 'Data backup portal',
               technologies: ['Angular', 'TypeScript'],
               position: 'Frontend',
-              description: 'Data deduplication and replication platform that also allows to remotely monitor and configure a physical server.'
+              description: 'Data deduplication and replication platform allowing for remote monitoring and configuring a physical server.'
             },
             {
               name: 'Car sharing platform',
@@ -204,7 +204,7 @@ const WorkHistorySegment = () => (
               name: 'Social meetings app',
               technologies: ['Angular', 'TypeScript'],
               position: 'Frontend',
-              description: 'A Chrome extension that arranges meetings between people with problems and people who can solve them.'
+              description: 'Chrome extension arranging meetings between people with problems and their potential solvers.'
             }
           ]
         },
@@ -220,7 +220,7 @@ const WorkHistorySegment = () => (
               name: 'Skills management portal',
               technologies: ['AngularJS', 'JavaScript', 'Meteor'],
               position: 'Frontend and Backend',
-              description: 'A web application that manages user skills and finds the best people for a given problem.'
+              description: 'Web application for managing user skills and finding the best people for a given problem.'
             }
           ]
         }
@@ -301,7 +301,7 @@ const PersonalProjectsSegment = () => (
           name: 'Erepublik game bot',
           href: 'https://github.com/Humberd/headless-k-worker',
           technologies: ['TypeScript', 'Node.js', 'Nest', 'PostgreSQL', 'Kotlin', 'Docker', 'Kubernetes', 'Azure DevOps'],
-          description: 'Headless bot that automates periodic game tasks, a native mobile app as a monitoring frontend and a backend server inbetween.'
+          description: 'Headless bot which automates periodic game tasks, a native mobile app as a monitoring frontend, and a backend server inbetween.'
         },
         {
           name: 'This Resume',
@@ -313,7 +313,7 @@ const PersonalProjectsSegment = () => (
           name: 'Wykop++',
           href: 'https://github.com/Humberd/Wykop-plus-plus',
           technologies: ['RxJS', 'TypeScript'],
-          description: 'Browser extension that puts additional functionalities on wykop.pl, such as: comments hiding, infinite scroll, etc.'
+          description: 'Browser extension which puts additional functionalities on wykop.pl, such as: comments hiding, infinite scroll, etc.'
         },
         {
           name: 'MicroTwitter',
