@@ -301,7 +301,7 @@ const PersonalProjectsSegment = () => (
           name: 'Erepublik game bot',
           href: 'https://github.com/Humberd/headless-k-worker',
           technologies: ['TypeScript', 'Node.js', 'Nest', 'PostgreSQL', 'Kotlin', 'Docker', 'Kubernetes', 'Azure DevOps'],
-          description: 'Headless bot which automates periodic game tasks, a native mobile app as a monitoring frontend, and a backend server inbetween.'
+          description: 'Headless bot which automates periodic game tasks, a native Android app as a monitoring frontend, and a backend server inbetween.'
         },
         {
           name: 'This Resume',
