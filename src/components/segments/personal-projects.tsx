@@ -1,6 +1,7 @@
 import * as React from 'react';
 import './personal-projects.scss';
 import { List } from '../list';
+import { HorizontalSeparator } from '../horizontal-separator';
 
 export interface PersonalProjectsProps {
   entries: PersonalProjectEntryProps[];
@@ -23,12 +24,9 @@ interface PersonalProjectEntryProps {
 
 const PersonalProjectEntry = (props: PersonalProjectEntryProps) => (
     <li className="personal-project-entry">
-      <a
-          className="name"
-          href={props.href}
-      >
-        {props.name}
-      </a>
+      <span className="name">{props.name}</span>
+      <HorizontalSeparator/>
+      <a className="project-link" href={props.href}>{props.href.replace('https://', '')}</a>
       <p className="technologies">{props.technologies.join(', ')}</p>
       <p className="description">{props.description}</p>
     </li>
