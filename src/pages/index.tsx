@@ -41,7 +41,7 @@ const HeaderSegment = () => (
     <Header {...{
       name: 'Maciej Sawicki',
       profession: 'Fullstack Engineer',
-      description: '**Fullstack Engineer** with Master of Engineering degree in Computer Science mostly focused on **Angular**. Fluent with a great number of languages and technologies both on frontend and backend side. Able to create an application from top to bottom and expose it to the world.'
+      description: '**Fullstack Engineer** with Master of Engineering degree in Computer Science, mainly accustomed with and interested in **Angular**. Fluent with a great number of languages and technologies both on frontend and backend side. Able to create an application from top to bottom and expose it to the world.'
     }}/>
 );
 
@@ -325,7 +325,7 @@ const PersonalProjectsSegment = () => (
           name: 'StatApp',
           href: 'https://github.com/Humberd/StatApp',
           technologies: ['TornadoFX', 'RxKotlin', 'Kotlin'],
-          description: 'Desktop application to visualize and perform statistical calculations over large data sets'
+          description: 'Desktop application to visualize and perform statistical calculations over large data sets.'
         }
       ]}/>
     </Segment>
