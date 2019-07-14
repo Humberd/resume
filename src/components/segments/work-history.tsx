@@ -29,8 +29,9 @@ export interface WorkEntryProps {
 const WorkEntry = (props: WorkEntryProps) => (
     <DateEntry date={props.date}>
       <div className="work-details">
-        <p className="position">{props.position}</p>
-        <p className="company">{props.company}</p>
+        <span className="position">{props.position}</span>
+        <span className="separator">-</span>
+        <span className="company">{props.company}</span>
         <List className="projects">
           {props.projects.map(it => (
               <WorkProject {...it} key={it.name}/>
