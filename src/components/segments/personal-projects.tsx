@@ -26,7 +26,14 @@ const PersonalProjectEntry = (props: PersonalProjectEntryProps) => (
     <li className="personal-project-entry">
       <span className="name">{props.name}</span>
       <HorizontalSeparator/>
-      <a className="project-link" href={props.href}>{props.href.replace('https://', '')}</a>
+      <a
+          className="project-link"
+          href={props.href}
+          target={'_blank'}
+          rel="noopener noreferrer"
+      >
+        {props.href.replace('https://', '')}
+      </a>
       <p className="technologies">{props.technologies.join(', ')}</p>
       <p className="description">{props.description}</p>
     </li>
