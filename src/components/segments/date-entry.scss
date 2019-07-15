@@ -1,7 +1,7 @@
 
 .date-entry {
 	display: grid;
-	grid-template-columns: 100px 1fr;
+	grid-template-columns: 80px 1fr;
 	grid-column-gap: var(--timeline-spacing);
 
 	&:not(:last-child) {
