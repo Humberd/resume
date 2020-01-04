@@ -1,17 +1,17 @@
 import * as React from 'react';
 import './technologies.scss';
-import { List } from '../list';
+import { UnbreakableList } from '../unbreakableList';
 
 export interface TechnologiesProps {
   entries: TechnologyEntryProps[]
 }
 
 export const Technologies = (props: TechnologiesProps) => (
-    <List>
+    <UnbreakableList>
       {props.entries.map(it => (
           <TechnologyEntry {...it} key={it.title}/>
       ))}
-    </List>
+    </UnbreakableList>
 );
 
 export interface TechnologyEntryProps {

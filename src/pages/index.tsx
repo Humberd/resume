@@ -9,7 +9,7 @@ import { WorkHistory } from '../components/segments/work-history';
 import { Education } from '../components/segments/education';
 import { Layout } from '../components/layout';
 import { Accomplishments } from '../components/segments/accomplishments';
-import { List } from '../components/list';
+import { UnbreakableList } from '../components/unbreakableList';
 import { Languages } from '../components/segments/languages';
 import { Technologies } from '../components/segments/technologies';
 import { PersonalProjects } from '../components/segments/personal-projects';
@@ -21,22 +21,22 @@ const IndexPage = () => (
       <HeaderSegment/>
 
       <div className="columns">
-        <List>
+        <UnbreakableList>
           <PersonalInfoSegment/>
           <TechnologiesSegment/>
           <LanguagesSegment/>
-        </List>
-        <List>
+        </UnbreakableList>
+        <UnbreakableList>
           <WorkHistorySegment/>
-        </List>
+        </UnbreakableList>
       </div>
 
-      <List>
+      <UnbreakableList>
         <EducationSegment/>
         <AccomplishmentsSegment/>
         <OthersSegment/>
         <PersonalProjectsSegment/>
-      </List>
+      </UnbreakableList>
 
       <FooterSegment/>
     </Layout>
