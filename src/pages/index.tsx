@@ -401,12 +401,6 @@ const PersonalProjectsSegment = () => (
               technologies: ['Angular', 'TypeScript', 'Spring', 'Kotlin', 'PostgreSQL', 'Docker', 'Jenkins'],
               description: 'A minimalistic Twitter clone with its core functionalities, such as: posting, commenting, liking, etc.',
             },
-            {
-              name: 'StatApp',
-              href: 'https://github.com/Humberd/StatApp',
-              technologies: ['TornadoFX', 'RxKotlin', 'Kotlin'],
-              description: 'Desktop application to visualize and perform statistical calculations over large data sets.',
-            },
           ]}
       />
     </Segment>
