@@ -4,4 +4,11 @@
 	@include changeFontSize(0.8rem);
 	line-height: 1.1;
 
+	/**
+		There is no way to position footer at the bottom to the last page.
+		This is why you have to adjust the required margin every time you change something.
+	 */
+	@media print {
+		margin-top: 100px;
+	}
 }
