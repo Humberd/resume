@@ -170,7 +170,7 @@ const WorkHistorySegment = () => (
               name: 'Film localization workflow manager',
               technologies: ['Angular', 'TypeScript', 'Jest'],
               position: 'Frontend',
-              description: 'Web portal to manage film localization from a client order to the localized film.'
+              description: 'Web portal to manage film localizations from a client order to the localized film.'
             }
           ]
         },

@@ -7,7 +7,8 @@
 	--border-color: #d5d6d6;
 	--segments-spacing: 40px;
 	--timeline-spacing: 10px;
-	--entries-spacing: 15px;
+	--entries-group-spacing: 30px;
+	--entry-spacing: 20px;
 }
 
 .columns {
@@ -21,4 +22,10 @@
 		}
 	}
 
+}
+
+.entries-group {
+	&:not(:first-child) {
+		margin-top: var(--entries-group-spacing);
+	}
 }

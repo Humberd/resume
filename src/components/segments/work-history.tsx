@@ -27,7 +27,7 @@ export interface WorkEntryProps {
 }
 
 const WorkEntry = (props: WorkEntryProps) => (
-    <div className="work-details">
+    <div className="work-details entries-group">
       <DateEntry date={props.date}>
         <span className="position">{props.position}</span>
         <span className="separator">-</span>
