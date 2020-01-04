@@ -1,11 +1,15 @@
-
 .date-entry {
-	display: grid;
-	grid-template-columns: 80px 1fr;
-	grid-column-gap: var(--timeline-spacing);
+	display: flex;
+	margin-top: var(--entries-spacing);
 
-	&:not(:last-child) {
-		margin-bottom: 15px;
+	.date {
+		font-weight: 500;
+		color: var(--text-color--secondary);
+		margin-left: auto;
+
+		.date--separator {
+			margin: 0 10px;
+		}
 	}
 
 }

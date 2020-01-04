@@ -1,10 +1,13 @@
 @import "utils";
 
 :root {
-	--main-color: #494E5C;
+	--text-color--primary: #222;
+	--text-color--secondary: #727272;
+	--theme-color: #494E5C;
 	--border-color: #d5d6d6;
 	--segments-spacing: 40px;
 	--timeline-spacing: 10px;
+	--entries-spacing: 15px;
 }
 
 .columns {

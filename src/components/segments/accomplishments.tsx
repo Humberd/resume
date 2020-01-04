@@ -22,17 +22,19 @@ export interface AccomplishmentEntryProps {
 }
 
 const AccomplishmentEntry = (props: AccomplishmentEntryProps) => (
-    <DateEntry date={{
-      from: props.date,
-      to: ''
-    }}>
-      <div className="accomplishment-details">
+    <div className="accomplishment-details">
+      <DateEntry
+          date={{
+            from: props.date,
+          }}
+      >
         <p className="event-name">{props.event}</p>
-        <List>
-          {props.places.map(it => (
-              <li key={it}>- {it}</li>
-          ))}
-        </List>
-      </div>
-    </DateEntry>
+      </DateEntry>
+
+      <List>
+        {props.places.map(it => (
+            <li key={it}>- {it}</li>
+        ))}
+      </List>
+    </div>
 );

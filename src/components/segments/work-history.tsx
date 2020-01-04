@@ -1,8 +1,8 @@
 import * as React from 'react';
 import './work-history.scss';
-import { DateEntry } from './date-entry';
 import { List } from '../list';
 import { HorizontalSeparator } from '../horizontal-separator';
+import { DateEntry } from './date-entry';
 
 export interface WorkHistoryProps {
   entries: WorkEntryProps[]
@@ -27,18 +27,18 @@ export interface WorkEntryProps {
 }
 
 const WorkEntry = (props: WorkEntryProps) => (
-    <DateEntry date={props.date}>
-      <div className="work-details">
+    <div className="work-details">
+      <DateEntry date={props.date}>
         <span className="position">{props.position}</span>
         <span className="separator">-</span>
         <span className="company">{props.company}</span>
-        <List className="projects">
-          {props.projects.map(it => (
-              <WorkProject {...it} key={it.name}/>
-          ))}
-        </List>
-      </div>
-    </DateEntry>
+      </DateEntry>
+      <List className="projects">
+        {props.projects.map(it => (
+            <WorkProject {...it} key={it.name}/>
+        ))}
+      </List>
+    </div>
 );
 
 export interface WorkProjectProps {
