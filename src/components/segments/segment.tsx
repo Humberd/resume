@@ -9,7 +9,7 @@ export interface SegmentProps {
 }
 
 export const Segment = (props: SegmentProps) => (
-    <section className="segment">
+    <section className="segment entries-group">
       <SegmentHeader {...props.header}/>
       {props.children}
     </section>

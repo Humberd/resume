@@ -6,7 +6,6 @@
 	--theme-color: #494E5C;
 	--border-color: #d5d6d6;
 	--segments-spacing: 40px;
-	--timeline-spacing: 10px;
 	--entries-group-spacing: 30px;
 	--entry-spacing: 20px;
 }
@@ -15,17 +14,10 @@
 	display: grid;
 	grid-template-columns: 1fr 2fr;
 	grid-column-gap: var(--segments-spacing);
-
-	.column {
-		& > * {
-			margin-bottom: 20px;
-		}
-	}
-
 }
 
 .entries-group {
-	&:not(:first-child) {
-		margin-top: var(--entries-group-spacing);
+	& {
+		margin-bottom: var(--entries-group-spacing);
 	}
 }

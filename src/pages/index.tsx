@@ -20,18 +20,21 @@ const IndexPage = () => (
       <HeaderSegment/>
 
       <div className="columns">
-        <List className="column">
+        <List>
           <PersonalInfoSegment/>
           <TechnologiesSegment/>
           <LanguagesSegment/>
         </List>
-        <List className="column">
+        <List>
           <WorkHistorySegment/>
-          <EducationSegment/>
-          <AccomplishmentsSegment/>
-          <PersonalProjectsSegment/>
         </List>
       </div>
+
+      <List>
+        <EducationSegment/>
+        <AccomplishmentsSegment/>
+        <PersonalProjectsSegment/>
+      </List>
 
       <FooterSegment/>
     </Layout>
