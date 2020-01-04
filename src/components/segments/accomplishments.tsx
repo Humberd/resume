@@ -2,6 +2,7 @@ import * as React from 'react';
 import './accomplishments.scss';
 import { List } from '../list';
 import { DateEntry } from './date-entry';
+import { HorizontalSeparator } from '../horizontal-separator';
 
 export interface AccomplishmentsProps {
   entries: AccomplishmentEntryProps[];
@@ -10,14 +11,16 @@ export interface AccomplishmentsProps {
 export const Accomplishments = (props: AccomplishmentsProps) => (
     <List>
       {props.entries.map(it => (
-          <AccomplishmentEntry {...it} key={it.date + it.event}/>
+          <AccomplishmentEntry {...it} key={it.date + it.name}/>
       ))}
     </List>
 );
 
 export interface AccomplishmentEntryProps {
+  name: string;
   date: string;
-  event: string;
+  description?: string;
+  role?: string;
   places: string[];
 }
 
@@ -28,8 +31,17 @@ const AccomplishmentEntry = (props: AccomplishmentEntryProps) => (
             from: props.date,
           }}
       >
-        <p className="event-name">{props.event}</p>
+        <span className="name">{props.name}</span>
+
+        {props.role && (
+            <>
+              <HorizontalSeparator/>
+              <span>{props.role}</span>
+            </>
+        )}
       </DateEntry>
+
+      {props.description && <p className="description">{props.description}</p>}
 
       <List>
         {props.places.map(it => (

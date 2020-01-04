@@ -313,16 +313,27 @@ const AccomplishmentsSegment = () => (
       <Accomplishments
           entries={[
             {
+              name: 'HackYeah 2019',
               date: '2019.09',
-              event: 'HackYeah 2019',
+              description: `l
+                During the biggest stationary hackathon in Europe our team created in 24 hours data categorizing portal, 
+                which given a lot of uncategorized documents
+                (such as tweets, blog posts, application logs, random data) groups them by similatiy of discussed topics.
+              `,
+              role: 'Frontend and Backend',
               places: [
                 '1st in Data Categorizing Software',
               ],
             },
             {
+              name: 'Białystok IT Test',
               date: '2017.11',
-              event: 'Białystok IT Test',
+              description: `
+                In the biggest IT-oriented test in the city the students from all High Schools and Universities
+                are challenged in 10 different categories.
+              `,
               places: [
+                '3rd in Overall Classification',
                 '1st in Mobile Development',
                 '1st in Object Oriented Programming',
                 '1st in Web Development',
@@ -330,8 +341,8 @@ const AccomplishmentsSegment = () => (
               ],
             },
             {
+              name: 'Białystok IT Test',
               date: '2016.11',
-              event: 'Białystok IT Test',
               places: [
                 '1st in Java Language Skills',
                 '2nd in Object Oriented Programming',
@@ -360,7 +371,7 @@ const OthersSegment = () => (
                 I crated an app that looks and behaves nicely, but
                 is completely inaccessible to the visually imapired users.
                 By gradually adding ARIA attributes and using a narrator I showed that
-                doing very little we can open our website to all people with disabilities.
+                doing very little we can open our website to all the people with disabilities.
               `.trim(),
             },
           ]}
