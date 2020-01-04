@@ -327,7 +327,7 @@ const AccomplishmentsSegment = () => (
               name: 'Białystok IT Test',
               date: '2017.11',
               description: `
-                In the biggest IT-oriented test in the city the students from all High Schools and Universities
+                In the biggest IT-oriented test in the city students from all High Schools and Universities
                 are challenged in 10 different categories.
               `,
               places: [
