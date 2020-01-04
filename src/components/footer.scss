@@ -3,6 +3,7 @@
 .footer-consent {
 	@include changeFontSize(0.8rem);
 	line-height: 1.1;
+	text-align: justify;
 
 	/**
 		There is no way to position footer at the bottom to the last page.
