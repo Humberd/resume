@@ -313,7 +313,7 @@ const AccomplishmentsSegment = () => (
             {
               name: 'HackYeah 2019',
               date: '2019.09',
-              description: `l
+              description: `
                 During the biggest stationary hackathon in Europe our team created in 24 hours data categorizing portal, 
                 which given a lot of uncategorized documents
                 (such as tweets, blog posts, application logs, random data) groups them by similatiy of discussed topics.
@@ -328,7 +328,8 @@ const AccomplishmentsSegment = () => (
               date: '2017.11',
               description: `
                 In the biggest IT-oriented test in the city students from all High Schools and Universities
-                are challenged in 10 different categories.
+                are challenged in 10 different categories among which are programming languages, databases, data
+                exploration and software engineering concepts.
               `,
               places: [
                 '3rd in Overall Classification',
