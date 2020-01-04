@@ -328,7 +328,7 @@ const AccomplishmentsSegment = () => (
               date: '2017.11',
               description: `
                 In the biggest IT-oriented test in the city students from all High Schools and Universities
-                are challenged in 10 different categories among which are programming languages, databases, data
+                are challenged in 10 different categories, among which are programming languages, databases, data
                 exploration and software engineering concepts.
               `,
               places: [
