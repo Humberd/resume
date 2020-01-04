@@ -23,7 +23,7 @@ interface PersonalProjectEntryProps {
 }
 
 const PersonalProjectEntry = (props: PersonalProjectEntryProps) => (
-    <li className="personal-project-entry">
+    <li className="personal-project-entry entries-group">
       <span className="name">{props.name}</span>
       <HorizontalSeparator/>
       <a

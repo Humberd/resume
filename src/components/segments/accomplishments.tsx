@@ -22,7 +22,7 @@ export interface AccomplishmentEntryProps {
 }
 
 const AccomplishmentEntry = (props: AccomplishmentEntryProps) => (
-    <div className="accomplishment-details">
+    <div className="accomplishment-details entries-group">
       <DateEntry
           date={{
             from: props.date,

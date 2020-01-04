@@ -1,14 +1,10 @@
 @import "../../pages/utils";
 
 .personal-project-entry {
-
-	&:not(:last-child) {
-		margin-bottom: 13px;
-	}
-
 	.name {
 		font-weight: 500;
 	}
+
 	.technologies {
 		font-style: italic;
 	}

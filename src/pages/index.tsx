@@ -269,8 +269,8 @@ const EducationSegment = () => (
         },
         {
           date: {
-            from: '2001',
-            to: '2007'
+            from: '2001.09',
+            to: '2007.06'
           },
           degree: 'Diploma',
           school: 'State Music School in Białystok'
@@ -286,14 +286,14 @@ const AccomplishmentsSegment = () => (
     }}>
       <Accomplishments entries={[
         {
-          date: '2019',
+          date: '2019.09',
           event: 'HackYeah 2019',
           places: [
               '1st in Data Categorizing Software'
           ]
         },
         {
-          date: '2017',
+          date: '2017.11',
           event: 'Białystok IT Test',
           places: [
             '1st in Mobile Development',
@@ -303,7 +303,7 @@ const AccomplishmentsSegment = () => (
           ]
         },
         {
-          date: '2016',
+          date: '2016.11',
           event: 'Białystok IT Test',
           places: [
             '1st in Java Language Skills',

@@ -25,7 +25,7 @@ export interface EducationEntryProps {
 }
 
 export const EducationEntry = (props: EducationEntryProps) => (
-    <div className="education-details">
+    <div className="education-details entries-group">
       <DateEntry date={props.date}>
         <p className="degree">{props.degree}</p>
       </DateEntry>
