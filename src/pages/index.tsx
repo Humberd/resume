@@ -31,12 +31,10 @@ const IndexPage = () => (
         </UnbreakableList>
       </div>
 
-      <UnbreakableList>
-        <EducationSegment/>
-        <AccomplishmentsSegment/>
-        <OthersSegment/>
-        <PersonalProjectsSegment/>
-      </UnbreakableList>
+      <EducationSegment/>
+      <AccomplishmentsSegment/>
+      <OthersSegment/>
+      <PersonalProjectsSegment/>
 
       <FooterSegment/>
     </Layout>
