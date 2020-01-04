@@ -54,8 +54,8 @@ const PersonalInfoSegment = () => (
         {
           title: 'Address',
           icon: 'place.svg',
-          value: 'Białystok, Poland',
-          href: 'https://goo.gl/maps/z8hHudt2x29aaRsX6'
+          value: 'Warsaw, Poland',
+          href: 'https://goo.gl/maps/fSBP7oMDgsZUzzmq6'
         },
         {
           title: 'Phone',
@@ -160,8 +160,24 @@ const WorkHistorySegment = () => (
       <WorkHistory entries={[
         {
           date: {
-            from: '2017.04',
+            from: '2019.11',
             to: 'Current'
+          },
+          position: 'Senior Frontend Engineer',
+          company: 'SDI Media',
+          projects: [
+            {
+              name: 'Film localization workflow manager',
+              technologies: ['Angular', 'TypeScript', 'Jest'],
+              position: 'Frontend',
+              description: 'Web portal to manage film localization from a client order to the localized film.'
+            }
+          ]
+        },
+        {
+          date: {
+            from: '2017.04',
+            to: '2019.10'
           },
           position: 'Fullstack Engineer',
           company: 'Acaisoft',
@@ -211,7 +227,7 @@ const WorkHistorySegment = () => (
         {
           date: {
             from: '2016.06',
-            to: '2016.08'
+            to: '2016.07'
           },
           position: 'Frontend Intern',
           company: 'Transition Technologies',
@@ -269,6 +285,13 @@ const AccomplishmentsSegment = () => (
       title: 'Accomplishments'
     }}>
       <Accomplishments entries={[
+        {
+          date: '2019',
+          event: 'HackYeah 2019',
+          places: [
+              '1st in Data Categorizing Software'
+          ]
+        },
         {
           date: '2017',
           event: 'Białystok IT Test',
