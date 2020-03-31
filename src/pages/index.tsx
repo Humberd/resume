@@ -339,7 +339,7 @@ const AccomplishmentsSegment = () => (
               ],
             },
             {
-              name: 'Białystok IT Test',
+              name: 'Białystok IT Test 2017',
               date: '2017.11',
               description: `
                 In the biggest IT-oriented test in the city students from all High Schools and Universities
@@ -355,7 +355,7 @@ const AccomplishmentsSegment = () => (
               ],
             },
             {
-              name: 'Białystok IT Test',
+              name: 'Białystok IT Test 2016',
               date: '2016.11',
               places: [
                 '1st in Java Language Skills',
