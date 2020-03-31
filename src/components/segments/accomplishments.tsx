@@ -31,7 +31,7 @@ const AccomplishmentEntry = (props: AccomplishmentEntryProps) => (
             from: props.date,
           }}
       >
-        <span className="name">{props.name}</span>
+        <h4 className="name">{props.name}</h4>
 
         {props.role && (
             <>

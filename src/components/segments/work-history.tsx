@@ -29,7 +29,7 @@ export interface WorkEntryProps {
 const WorkEntry = (props: WorkEntryProps) => (
     <li className="work-details entries-group">
       <DateEntry date={props.date}>
-        <span className="position">{props.position}</span>
+        <h3 className="position">{props.position}</h3>
         <span className="separator">-</span>
         <span className="company">{props.company}</span>
       </DateEntry>

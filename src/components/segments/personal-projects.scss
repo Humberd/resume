@@ -1,8 +1,12 @@
 @import "../../pages/utils";
 
 .personal-project-entry {
-	.name {
-		font-weight: 500;
+	.personal-project-header-section {
+		display: flex;
+
+		.name {
+			font-weight: 500;
+		}
 	}
 
 	.technologies {

@@ -10,7 +10,7 @@ export interface DateEntryProps {
 }
 
 export const DateEntry = (props: DateEntryProps) => (
-    <div className="date-entry">
+    <header className="date-entry">
       {props.children}
 
       <div className="date">
@@ -22,5 +22,5 @@ export const DateEntry = (props: DateEntryProps) => (
             </>
         )}
       </div>
-    </div>
+    </header>
 );

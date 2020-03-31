@@ -21,7 +21,18 @@ export interface TechnologyEntryProps {
 
 export const TechnologyEntry = (props: TechnologyEntryProps) => (
     <li className="technology-entry">
-      <p className="title">{props.title}</p>
-      <p>{props.technologies.join(', ')}</p>
+      <h4 className="title">{props.title}</h4>
+
+      <ul
+          className="list-of-technologies"
+          aria-label={`List of ${props.title} technologies`}
+      >
+        {props.technologies.map((it, index) => (
+            <li
+                className="technology"
+                key={it}
+            >{it}{index < props.technologies.length ? ',' : ''}</li>
+        ))}
+      </ul>
     </li>
 );

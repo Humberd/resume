@@ -29,6 +29,6 @@ const SegmentHeader = (props: SegmentHeaderProps) => (
             aria-hidden={true}
         />
       </div>
-      <h1>{props.title}</h1>
+      <h2>{props.title}</h2>
     </header>
 );

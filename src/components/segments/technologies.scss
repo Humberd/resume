@@ -7,4 +7,13 @@
 	.title {
 		font-weight: 500;
 	}
+
+	.list-of-technologies {
+		display: flex;
+		flex-wrap: wrap;
+
+		.technology {
+			margin-right: 2px;
+		}
+	}
 }
