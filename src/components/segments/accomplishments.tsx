@@ -25,7 +25,7 @@ export interface AccomplishmentEntryProps {
 }
 
 const AccomplishmentEntry = (props: AccomplishmentEntryProps) => (
-    <div className="accomplishment-details entries-group">
+    <li className="accomplishment-details entries-group">
       <DateEntry
           date={{
             from: props.date,
@@ -48,5 +48,5 @@ const AccomplishmentEntry = (props: AccomplishmentEntryProps) => (
             <li key={it}>- {it}</li>
         ))}
       </UnbreakableList>
-    </div>
+    </li>
 );
