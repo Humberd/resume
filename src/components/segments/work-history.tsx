@@ -1,6 +1,6 @@
 import * as React from 'react';
 import './work-history.scss';
-import { UnbreakableList } from '../unbreakableList';
+import { UnbreakableSegments } from '../unbreakableSegments';
 import { HorizontalSeparator } from '../horizontal-separator';
 import { DateEntry } from './date-entry';
 
@@ -9,11 +9,11 @@ export interface WorkHistoryProps {
 }
 
 export const WorkHistory = (props: WorkHistoryProps) => (
-    <UnbreakableList>
+    <UnbreakableSegments>
       {props.entries.map(it => (
           <WorkEntry {...it} key={it.date.from}/>
       ))}
-    </UnbreakableList>
+    </UnbreakableSegments>
 );
 
 export interface WorkEntryProps {
@@ -33,11 +33,11 @@ const WorkEntry = (props: WorkEntryProps) => (
         <span className="separator">-</span>
         <span className="company">{props.company}</span>
       </DateEntry>
-      <UnbreakableList className="projects">
+      <UnbreakableSegments className="projects">
         {props.projects.map(it => (
             <WorkProject {...it} key={it.name}/>
         ))}
-      </UnbreakableList>
+      </UnbreakableSegments>
     </div>
 );
 

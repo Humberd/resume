@@ -1,6 +1,6 @@
 import * as React from 'react';
 import './accomplishments.scss';
-import { UnbreakableList } from '../unbreakableList';
+import { UnbreakableSegments } from '../unbreakableSegments';
 import { DateEntry } from './date-entry';
 import { HorizontalSeparator } from '../horizontal-separator';
 
@@ -9,11 +9,11 @@ export interface AccomplishmentsProps {
 }
 
 export const Accomplishments = (props: AccomplishmentsProps) => (
-    <UnbreakableList>
+    <UnbreakableSegments>
       {props.entries.map(it => (
           <AccomplishmentEntry {...it} key={it.date + it.name}/>
       ))}
-    </UnbreakableList>
+    </UnbreakableSegments>
 );
 
 export interface AccomplishmentEntryProps {
@@ -43,10 +43,10 @@ const AccomplishmentEntry = (props: AccomplishmentEntryProps) => (
 
       {props.description && <p className="description">{props.description}</p>}
 
-      <UnbreakableList>
+      <UnbreakableSegments>
         {props.places.map(it => (
             <li key={it}>- {it}</li>
         ))}
-      </UnbreakableList>
+      </UnbreakableSegments>
     </div>
 );
