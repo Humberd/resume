@@ -1,6 +1,6 @@
 import * as React from 'react';
 import './others.scss';
-import { UnbreakableSegments } from '../unbreakableSegments';
+import { UnbreakableList } from '../unbreakableList';
 import { DateEntry } from './date-entry';
 import { HorizontalSeparator } from '../horizontal-separator';
 
@@ -10,11 +10,11 @@ export interface OthersProps {
 
 export const Others = (props: OthersProps) => {
   return (
-      <UnbreakableSegments>
+      <UnbreakableList>
         {props.entries.map(entry => (
             <OtherEntry {...entry} key={entry.name}/>
         ))}
-      </UnbreakableSegments>
+      </UnbreakableList>
   );
 };
 

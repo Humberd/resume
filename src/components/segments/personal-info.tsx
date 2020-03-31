@@ -26,21 +26,26 @@ const PersonalInfoEntry = (props: PersonalInfoEntryProps) => {
   let value: React.ReactNode;
   if (props.href) {
     value =
-        <a href={props.href} target={props.href.startsWith('http') ? '_blank' : ''} rel="noopener noreferrer">{props.value}</a>;
+        <a
+            href={props.href}
+            target={props.href.startsWith('http') ? '_blank' : ''}
+            rel="noopener noreferrer"
+            aria-label={props.title}
+        >{props.value}</a>;
   } else {
     value = <span>{props.value}</span>;
   }
 
   return (
       <li className="personal-info-entry">
-        <div className="title">
+        <label className="title">
           {props.icon && <img
               className="title-image"
               src={getIcon(props.icon)}
               aria-hidden={true}
           />}
           <p>{props.title}</p>
-        </div>
+        </label>
         {value}
       </li>
   );

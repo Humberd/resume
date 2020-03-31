@@ -1,17 +1,17 @@
 import * as React from 'react';
 import './technologies.scss';
-import { UnbreakableSegments } from '../unbreakableSegments';
+import { UnbreakableList } from '../unbreakableList';
 
 export interface TechnologiesProps {
   entries: TechnologyEntryProps[]
 }
 
 export const Technologies = (props: TechnologiesProps) => (
-    <UnbreakableSegments>
+    <UnbreakableList>
       {props.entries.map(it => (
           <TechnologyEntry {...it} key={it.title}/>
       ))}
-    </UnbreakableSegments>
+    </UnbreakableList>
 );
 
 export interface TechnologyEntryProps {

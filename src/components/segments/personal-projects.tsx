@@ -1,6 +1,6 @@
 import * as React from 'react';
 import './personal-projects.scss';
-import { UnbreakableSegments } from '../unbreakableSegments';
+import { UnbreakableList } from '../unbreakableList';
 import { HorizontalSeparator } from '../horizontal-separator';
 
 export interface PersonalProjectsProps {
@@ -8,11 +8,11 @@ export interface PersonalProjectsProps {
 }
 
 export const PersonalProjects = (props: PersonalProjectsProps) => (
-    <UnbreakableSegments>
+    <UnbreakableList>
       {props.entries.map(it => (
           <PersonalProjectEntry {...it} key={it.name}/>
       ))}
-    </UnbreakableSegments>
+    </UnbreakableList>
 );
 
 interface PersonalProjectEntryProps {

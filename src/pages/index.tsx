@@ -10,7 +10,7 @@ import { WorkHistory } from '../components/segments/work-history';
 import { Education } from '../components/segments/education';
 import { Layout } from '../components/layout';
 import { Accomplishments } from '../components/segments/accomplishments';
-import { UnbreakableSegments } from '../components/unbreakableSegments';
+import { UnbreakableList } from '../components/unbreakableList';
 import { Languages } from '../components/segments/languages';
 import { Technologies } from '../components/segments/technologies';
 import { PersonalProjects } from '../components/segments/personal-projects';
@@ -21,22 +21,26 @@ const IndexPage = () => (
     <>
       <Helmet>
         <html lang="en"/>
-        <meta charSet="utf-8" />
+        <meta charSet="utf-8"/>
         <title>Maciej Sawicki - Resume</title>
-        <meta name="description" content="Web based Resume created in React allowing pdf printing." />
+        <meta
+            name="description"
+            content="Web based Resume created in React allowing pdf printing."
+        />
       </Helmet>
+
       <Layout>
         <HeaderSegment/>
 
         <div className="columns">
-          <UnbreakableSegments>
-            <PersonalInfoSegment/>
-            <TechnologiesSegment/>
-            <LanguagesSegment/>
-          </UnbreakableSegments>
-          <UnbreakableSegments>
-            <WorkHistorySegment/>
-          </UnbreakableSegments>
+          <UnbreakableList>
+            <li><PersonalInfoSegment/></li>
+            <li><TechnologiesSegment/></li>
+            <li><TechnologiesSegment/></li>
+          </UnbreakableList>
+          <UnbreakableList>
+            <li><WorkHistorySegment/></li>
+          </UnbreakableList>
         </div>
 
         <EducationSegment/>
@@ -142,9 +146,10 @@ const TechnologiesSegment = () => (
               title: 'DevOps',
               technologies: [
                 'Git',
+                'Azure DevOps',
                 'Docker',
                 'Kubernetes',
-                'Azure DevOps',
+                'Terraform',
                 'Jenkins',
               ],
             },

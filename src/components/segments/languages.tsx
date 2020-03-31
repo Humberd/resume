@@ -1,6 +1,6 @@
 import * as React from 'react';
 import './languages.scss';
-import { UnbreakableSegments } from '../unbreakableSegments';
+import { UnbreakableList } from '../unbreakableList';
 import { HorizontalSeparator } from '../horizontal-separator';
 
 export interface LanguagesProps {
@@ -8,11 +8,11 @@ export interface LanguagesProps {
 }
 
 export const Languages = (props: LanguagesProps) => (
-    <UnbreakableSegments>
+    <UnbreakableList>
       {props.entries.map(it => (
           <LanguageEntry {...it} key={it.name}/>
       ))}
-    </UnbreakableSegments>
+    </UnbreakableList>
 );
 
 export interface LanguageEntryProps {

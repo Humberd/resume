@@ -1,18 +1,18 @@
 import * as React from 'react';
 import './education.scss';
 import { DateEntry } from './date-entry';
-import { UnbreakableSegments } from '../unbreakableSegments';
+import { UnbreakableList } from '../unbreakableList';
 
 export interface EducationProps {
   entries: EducationEntryProps[];
 }
 
 export const Education = (props: EducationProps) => (
-    <UnbreakableSegments>
+    <UnbreakableList>
       {props.entries.map(it => (
           <EducationEntry {...it} key={it.date.from}/>
       ))}
-    </UnbreakableSegments>
+    </UnbreakableList>
 );
 
 export interface EducationEntryProps {
