@@ -26,6 +26,7 @@ const SegmentHeader = (props: SegmentHeaderProps) => (
         <img
             className="icon"
             src={getIcon(props.icon)}
+            aria-hidden={true}
         />
       </div>
       <h1>{props.title}</h1>

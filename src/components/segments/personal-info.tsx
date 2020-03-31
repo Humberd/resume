@@ -37,6 +37,7 @@ const PersonalInfoEntry = (props: PersonalInfoEntryProps) => {
           {props.icon && <img
               className="title-image"
               src={getIcon(props.icon)}
+              aria-hidden={true}
           />}
           <p>{props.title}</p>
         </div>

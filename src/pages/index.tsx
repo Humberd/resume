@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { Helmet } from 'react-helmet';
 
 import './index.scss';
 import '../fonts/style.css';
@@ -17,27 +18,35 @@ import { Footer } from '../components/footer';
 import { Others } from '../components/segments/others';
 
 const IndexPage = () => (
-    <Layout>
-      <HeaderSegment/>
+    <>
+      <Helmet>
+        <html lang="en"/>
+        <meta charSet="utf-8" />
+        <title>Maciej Sawicki - Resume</title>
+        <meta name="description" content="Web based Resume created in React allowing pdf printing." />
+      </Helmet>
+      <Layout>
+        <HeaderSegment/>
 
-      <div className="columns">
-        <UnbreakableList>
-          <PersonalInfoSegment/>
-          <TechnologiesSegment/>
-          <LanguagesSegment/>
-        </UnbreakableList>
-        <UnbreakableList>
-          <WorkHistorySegment/>
-        </UnbreakableList>
-      </div>
+        <div className="columns">
+          <UnbreakableList>
+            <PersonalInfoSegment/>
+            <TechnologiesSegment/>
+            <LanguagesSegment/>
+          </UnbreakableList>
+          <UnbreakableList>
+            <WorkHistorySegment/>
+          </UnbreakableList>
+        </div>
 
-      <EducationSegment/>
-      <AccomplishmentsSegment/>
-      <OthersSegment/>
-      <PersonalProjectsSegment/>
+        <EducationSegment/>
+        <AccomplishmentsSegment/>
+        <OthersSegment/>
+        <PersonalProjectsSegment/>
 
-      <FooterSegment/>
-    </Layout>
+        <FooterSegment/>
+      </Layout>
+    </>
 );
 
 const HeaderSegment = () => (
