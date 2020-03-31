@@ -34,12 +34,13 @@ const IndexPage = () => (
 
         <div className="columns">
           <UnbreakableList>
+            <li><WorkHistorySegment/></li>
+          </UnbreakableList>
+
+          <UnbreakableList>
             <li><PersonalInfoSegment/></li>
             <li><TechnologiesSegment/></li>
-            <li><TechnologiesSegment/></li>
-          </UnbreakableList>
-          <UnbreakableList>
-            <li><WorkHistorySegment/></li>
+            <li><LanguagesSegment/></li>
           </UnbreakableList>
         </div>
 
