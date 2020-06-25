@@ -39,6 +39,12 @@ Now it looks good, because I was lucky.
 The segment content should hangle how it flows, but the segment header cannot be alone on the page,
 it should have at least some part with it.
 
+## CI
+
+The project is automatically built when pushing to master using GitHub Actions.
+
+Output files are stored in `gh-pages` branch and from there they are accessible via GitHub Pages at humberd.github.io/resume.
+
 ## Author
 
 👤 **Maciej Sawicki**
