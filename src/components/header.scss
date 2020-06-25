@@ -3,10 +3,41 @@
 .header {
 	margin-bottom: 20px;
 
-	.name {
-		@include changeFontSize(2.9rem);
-		font-weight: bold;
-		color: var(--theme-color);
+	.main-header {
+		display: flex;
+		align-items: center;
+
+		.name {
+			@include changeFontSize(2.9rem);
+			font-weight: bold;
+			color: var(--theme-color);
+		}
+
+		button.download {
+			@include resetButtonStyles();
+			@include changeFontSize(17px);
+
+			border: 2px solid var(--theme-color);
+
+			margin-left: auto;
+			padding: 5px 15px;
+			border-radius: 7px;
+
+			transition: background-color 100ms ease-in-out;
+
+			@media print {
+				display: none;
+			}
+
+			&:hover,
+			&:focus{
+				background-color: #efefef;
+			}
+
+			&:active {
+				background-color: #e7e7e7;
+			}
+		}
 	}
 
 	.profession {

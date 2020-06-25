@@ -1,7 +1,7 @@
-import * as React from 'react';
+import * as React from "react"
 
-import './header.scss';
-import { pseudoMarkdownToReact } from './utils';
+import "./header.scss"
+import { pseudoMarkdownToReact } from "./utils"
 
 export interface HeaderProps {
   name: string;
@@ -11,7 +11,12 @@ export interface HeaderProps {
 
 export const Header = (props: HeaderProps) => (
     <header className="header">
-      <h1 className="name">{props.name}</h1>
+
+      <div className="main-header">
+        <h1 className="name">{props.name}</h1>
+        <button className="download">Download</button>
+      </div>
+
       <p className="profession">{props.profession}</p>
       <p className="description">
         {pseudoMarkdownToReact(props.description)}
