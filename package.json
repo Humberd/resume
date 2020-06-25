@@ -5,11 +5,11 @@
   "author": "Maciej Sawicki",
   "license": "MIT",
   "scripts": {
-    "build": "gatsby build --prefix-paths",
+    "build:ci": "gatsby build --prefix-paths",
+    "serve:ci": "gatsby serve --prefix-paths",
     "develop": "gatsby develop",
     "format": "prettier --write src/**/*.{js,jsx}",
     "start": "npm run develop",
-    "serve": "gatsby serve",
     "deploy-manual": "gatsby build --prefix-paths && gh-pages -d public",
     "pdf": "node pdf.js"
   },

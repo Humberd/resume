@@ -39,7 +39,12 @@ jobs:
 
     # Runs a set of commands using the runners shell
     - name: Build
-      run: npm run build
+      run: npm run build:ci
+
+    - name: Create pdf
+      run: |
+        npm run pdf
+        cp *.pdf ./public
 
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
