@@ -40,6 +40,7 @@
   "devDependencies": {
     "@types/puppeteer": "^2.0.1",
     "concurrently": "^5.2.0",
+    "gatsby-plugin-no-javascript": "^2.0.5",
     "gh-pages": "^2.2.0",
     "prettier": "^2.0.2",
     "puppeteer": "^2.1.1"
