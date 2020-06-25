@@ -1,21 +1,21 @@
-import * as React from 'react';
-import { Helmet } from 'react-helmet';
+import * as React from "react"
+import { Helmet } from "react-helmet"
 
-import './index.scss';
-import '../fonts/style.css';
-import { Header } from '../components/header';
-import { Segment } from '../components/segments/segment';
-import { PersonalInfo } from '../components/segments/personal-info';
-import { WorkHistory } from '../components/segments/work-history';
-import { Education } from '../components/segments/education';
-import { Layout } from '../components/layout';
-import { Accomplishments } from '../components/segments/accomplishments';
-import { UnbreakableList } from '../components/unbreakableList';
-import { Languages } from '../components/segments/languages';
-import { Technologies } from '../components/segments/technologies';
-import { PersonalProjects } from '../components/segments/personal-projects';
-import { Footer } from '../components/footer';
-import { Others } from '../components/segments/others';
+import "./index.scss"
+import "../fonts/style.css"
+import { Header } from "../components/header"
+import { Segment } from "../components/segments/segment"
+import { PersonalInfo } from "../components/segments/personal-info"
+import { WorkHistory } from "../components/segments/work-history"
+import { Education } from "../components/segments/education"
+import { Layout } from "../components/layout"
+import { Accomplishments } from "../components/segments/accomplishments"
+import { UnbreakableList } from "../components/unbreakableList"
+import { Languages } from "../components/segments/languages"
+import { Technologies } from "../components/segments/technologies"
+import { PersonalProjects } from "../components/segments/personal-projects"
+import { Footer } from "../components/footer"
+import { Others } from "../components/segments/others"
 
 const IndexPage = () => (
     <>
@@ -410,7 +410,7 @@ const PersonalProjectsSegment = () => (
             },
             {
               name: 'This Resume',
-              href: 'https://github.com/Humberd/Resume',
+              href: 'https://github.com/Humberd/resume',
               technologies: ['React', 'TypeScript'],
               description: 'This Resume has been generated from easily customizable web page.',
             },
