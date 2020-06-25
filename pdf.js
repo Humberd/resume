@@ -4,6 +4,7 @@ const MARGIN = '1cm';
 
 const isCI = (process.argv[2] || '').toLowerCase() === 'ci';
 const port = isCI ? '9000' : '8000';
+const CITimeout = 3000;
 
 const main = async () => {
   const browser = await puppeteer.launch();
@@ -29,11 +30,20 @@ const main = async () => {
   }
 };
 
-main()
-  .catch(error => {
-    console.error(error)
-    process.exit(1)
-  })
+const mainInvoker = () =>
+  main()
+    .catch(error => {
+      console.error(error)
+      process.exit(1)
+    })
+
+if (isCI) {
+  setTimeout(() => {
+    mainInvoker()
+  }, CITimeout)
+} else {
+  mainInvoker()
+}
 
 // language=HTML
 const footerTemplate = `
