@@ -13,7 +13,7 @@
 			color: var(--theme-color);
 		}
 
-		button.download {
+		a.download {
 			@include resetButtonStyles();
 			@include changeFontSize(17px);
 
@@ -32,6 +32,7 @@
 			&:hover,
 			&:focus{
 				background-color: #efefef;
+				text-decoration: none;
 			}
 
 			&:active {
