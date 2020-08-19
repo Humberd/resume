@@ -3,7 +3,8 @@
 .work-details {
 	.position {
 		font-weight: 600;
-		@include changeFontSize(1.1rem)
+		@include changeFontSize(1.1rem);
+		color: var(--theme-color);
 	}
 
 	.separator {

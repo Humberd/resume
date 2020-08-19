@@ -1,22 +1,19 @@
 @import "../../pages/utils";
 
 .personal-info-entry {
-
 	&:not(:last-child) {
 		margin-bottom: 8px;
 	}
 
-	.title {
-		font-weight: 500;
-
+	.link {
 		display: flex;
 		align-items: center;
+	}
 
-		.title-image {
-			width: 20px;
-			height: 20px;
-			margin-right: 5px;
-		}
+	.title-image {
+		width: 20px;
+		height: 20px;
+		margin-right: 10px;
 	}
 }
 
