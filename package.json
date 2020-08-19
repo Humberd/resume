@@ -7,6 +7,8 @@
   "scripts": {
     "build:ci": "gatsby build --prefix-paths",
     "serve:ci": "gatsby serve --prefix-paths",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
     "pdf:ci": "node pdf.js ci",
     "pdf-sequence:ci": "concurrently --kill-others --success=first \"npm run serve:ci\" \"npm run pdf:ci\"",
     "develop": "gatsby develop",
