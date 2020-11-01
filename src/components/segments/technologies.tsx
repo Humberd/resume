@@ -1,6 +1,6 @@
-import * as React from 'react';
-import './technologies.scss';
-import { UnbreakableList } from '../unbreakableList';
+import * as React from "react"
+import "./technologies.scss"
+import { UnbreakableList } from "../unbreakableList"
 
 export interface TechnologiesProps {
   entries: TechnologyEntryProps[]
@@ -31,7 +31,7 @@ export const TechnologyEntry = (props: TechnologyEntryProps) => (
             <li
                 className="technology"
                 key={it}
-            >{it}{index < props.technologies.length ? ',' : ''}</li>
+            >{it}{index < props.technologies.length - 1 ? ',' : ''}</li>
         ))}
       </ul>
     </li>

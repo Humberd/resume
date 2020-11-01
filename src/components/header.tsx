@@ -18,7 +18,7 @@ export const Header = (props: HeaderProps) => (
         <a className="download" href={props.downloadUrl}>Download</a>
       </div>
 
-      <p className="profession">{props.profession}</p>
+      <h3 className="profession">{props.profession}</h3>
       <p className="description">
         {pseudoMarkdownToReact(props.description)}
       </p>

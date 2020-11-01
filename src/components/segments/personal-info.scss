@@ -1,12 +1,14 @@
 @import "../../pages/utils";
 
 .personal-info-entry {
+	line-height: 1;
+
 	&:not(:last-child) {
 		margin-bottom: 8px;
 	}
 
 	.link {
-		display: flex;
+		display: inline-flex;
 		align-items: center;
 	}
 
@@ -14,6 +16,7 @@
 		width: 20px;
 		height: 20px;
 		margin-right: 10px;
+		user-select: none;
 	}
 }
 

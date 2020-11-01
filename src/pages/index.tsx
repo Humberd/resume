@@ -58,7 +58,7 @@ const HeaderSegment = () => (
     <Header {...{
       name: 'Maciej Sawicki',
       downloadUrl: 'https://github.com/Humberd/resume/raw/gh-pages/Maciej%20Sawicki%20-%20Resume.pdf',
-      profession: 'Frontend/Fullstack Engineer',
+      profession: 'Team Lead, Frontend / Fullstack Engineer',
       description: '**Frontend/Fullstack Engineer** with Master of Engineering degree in Computer Science, mainly accustomed with and interested in **Angular**. Fluent with a great number of languages and technologies both on frontend and backend side. Able to create an application from top to bottom and expose it to the world.',
     }}/>
 );
@@ -309,7 +309,7 @@ const EducationSegment = () => (
                 from: '2001.09',
                 to: '2007.06',
               },
-              degree: 'Diploma',
+              degree: 'Diploma in Piano',
               school: 'State Music School in Białystok',
             },
           ]}

@@ -42,7 +42,9 @@
 	}
 
 	.profession {
-		@include changeFontSize(1.2rem);
+		@include changeFontSize(1.5rem);
+		font-weight: 500;
+		color: var(--theme-color);
 		margin-bottom: 10px;
 	}
 

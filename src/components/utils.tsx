@@ -1,4 +1,4 @@
-import * as React from 'react';
+import * as React from "react"
 
 export function getIcon(name: string) {
   if (!name) {
@@ -14,7 +14,7 @@ export function getIcon(name: string) {
 }
 
 /**
- * Replaces every occurance of `**text**` to a `<strong>text</strong>`
+ * Replaces every occurrence of `**text**` to a `<strong>text</strong>`
  */
 export function pseudoMarkdownToReact(value: string): React.ReactNode[] {
   const splittedValue = value.split('**');
