@@ -14,6 +14,10 @@
 	display: grid;
 	grid-template-columns: 2fr 1fr;
 	grid-column-gap: var(--segments-spacing);
+
+	@include forMobileDevice {
+		display: block;
+	}
 }
 
 .entries-group {

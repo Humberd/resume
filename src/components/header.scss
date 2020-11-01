@@ -22,11 +22,19 @@
 			margin-left: auto;
 			padding: 5px 15px;
 			border-radius: 7px;
+			background-color: #fff;
 
 			transition: background-color 100ms ease-in-out;
 
-			@media print {
+			@include forPrinter {
 				display: none;
+			}
+
+			@include forMobileDevice {
+				position: fixed;
+				bottom: 0;
+				right: 0;
+				margin: 20px;
 			}
 
 			&:hover,

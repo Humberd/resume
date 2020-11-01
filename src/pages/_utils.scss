@@ -15,3 +15,15 @@
 	font: inherit;
 	line-height: normal;
 }
+
+@mixin forMobileDevice() {
+	@media (max-width: 792px) {
+		@content;
+	}
+}
+
+@mixin forPrinter() {
+	@media print {
+		@content;
+	}
+}

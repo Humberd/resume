@@ -6,6 +6,10 @@ html {
 	line-height: 1.618;
 }
 
+* {
+	box-sizing: border-box;
+}
+
 strong {
 	font-weight: 500;
 }
@@ -26,5 +30,9 @@ a {
 
 	@media screen {
 		padding: 20px;
+	}
+
+	@include forMobileDevice {
+		width: 100%;
 	}
 }
