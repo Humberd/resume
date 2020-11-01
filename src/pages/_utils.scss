@@ -17,7 +17,7 @@
 }
 
 @mixin forMobileDevice() {
-	@media (max-width: 792px) {
+	@media screen and (max-width: 792px) {
 		@content;
 	}
 }
