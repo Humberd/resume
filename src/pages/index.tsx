@@ -129,7 +129,7 @@ const TechnologiesSegment = () => (
                 'TypeScript',
                 'HTML',
                 'CSS',
-                'SCSS',
+                'SCSS'
               ],
             },
             {
@@ -141,7 +141,7 @@ const TechnologiesSegment = () => (
                 'Java',
                 'Kotlin',
                 'JavaScript',
-                'TypeScript',
+                'TypeScript'
               ],
             },
             {
@@ -152,7 +152,7 @@ const TechnologiesSegment = () => (
                 'Docker',
                 'Kubernetes',
                 'Terraform',
-                'Jenkins',
+                'Jenkins'
               ],
             },
           ]}
