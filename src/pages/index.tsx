@@ -294,7 +294,7 @@ const EducationSegment = () => (
                 to: '2018.07',
               },
               degree: 'Master of Engineering: Software Engineering',
-              school: 'Białystok Univerisity of Technology',
+              school: 'Białystok University of Technology',
             },
             {
               date: {
