@@ -79,12 +79,6 @@ const PersonalInfoSegment = () => (
               href: 'https://goo.gl/maps/fSBP7oMDgsZUzzmq6',
             },
             {
-              title: 'Phone',
-              icon: 'phone.svg',
-              value: '+48 507 847 934',
-              href: 'tel:+48507847934',
-            },
-            {
               title: 'Email',
               icon: 'email.svg',
               value: 'humberd2@gmail.com',
