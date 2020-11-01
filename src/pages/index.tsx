@@ -175,7 +175,7 @@ const LanguagesSegment = () => (
             },
             {
               name: 'English',
-              level: 'Advanced, FCE',
+              level: 'Fluent',
             },
           ]}
       />
