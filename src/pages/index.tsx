@@ -187,7 +187,7 @@ const WorkHistorySegment = () => (
     <Segment
         header={{
           icon: 'work.svg',
-          title: 'Work History',
+          title: 'Experience',
         }}
     >
       <WorkHistory
