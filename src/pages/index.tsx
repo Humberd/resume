@@ -386,7 +386,7 @@ const OthersSegment = () => (
               description: `
                 During the lecture I talked about accessibility when building web pages.
                 I crated an app that looks and behaves nicely, but
-                is completely inaccessible to the visually imapired users.
+                is completely inaccessible to the visually impaired users.
                 By gradually adding ARIA attributes and using a narrator I showed that
                 doing very little we can open our website to all the people with disabilities.
               `.trim(),
