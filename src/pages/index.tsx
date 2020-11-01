@@ -332,7 +332,7 @@ const AccomplishmentsSegment = () => (
               description: `
                 During the biggest stationary hackathon in Europe our team created in 24 hours data categorizing portal, 
                 which given a lot of uncategorized documents
-                (such as tweets, blog posts, application logs, random data) groups them by similatiy of discussed topics.
+                (such as tweets, blog posts, application logs, random data) groups them by similarity of discussed topics.
               `,
               url: 'https://hackyeah.pl/winners-2019/#Data%20categorizing%20software%20by%20EXATEL',
               role: 'Frontend and Backend',
@@ -385,7 +385,7 @@ const OthersSegment = () => (
               date: '2019.11',
               description: `
                 During the lecture I talked about accessibility when building web pages.
-                I crated an app that looks and behaves nicely, but
+                I created an app that looks and behaves nicely, but
                 is completely inaccessible to the visually impaired users.
                 By gradually adding ARIA attributes and using a narrator I showed that
                 doing very little we can open our website to all the people with disabilities.
