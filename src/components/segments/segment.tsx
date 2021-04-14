@@ -1,7 +1,7 @@
-import * as React from 'react';
+import * as React from "react"
 
-import './segment.scss';
-import { getIcon } from '../utils';
+import "./segment.scss"
+import { getIcon } from "../utils"
 
 export interface SegmentProps {
   header: SegmentHeaderProps,
@@ -21,14 +21,15 @@ export interface SegmentHeaderProps {
 }
 
 const SegmentHeader = (props: SegmentHeaderProps) => (
-    <header className="segment--header">
-      <div className="icon-wrapper">
-        <img
-            className="icon"
-            src={getIcon(props.icon)}
-            aria-hidden={true}
-        />
-      </div>
-      <h2>{props.title}</h2>
-    </header>
-);
+  <header className="segment--header">
+    <div className="icon-wrapper">
+      <img
+        className="icon"
+        src={getIcon(props.icon)}
+        aria-hidden={true}
+      />
+    </div>
+    <h2>{props.title}</h2>
+    <div className="highlight-border"></div>
+  </header>
+)
