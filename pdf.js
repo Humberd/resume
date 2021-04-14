@@ -1,6 +1,6 @@
 const puppeteer = require('puppeteer');
 
-const MARGIN = '1cm';
+const MARGIN = '0.5cm';
 
 const isCI = (process.argv[2] || '').toLowerCase() === 'ci';
 const urlSuffix = isCI ? '9000/resume' : '8000';

@@ -1,6 +1,8 @@
+@import "../pages/utils";
+
 .generic-list {
 	& > * {
-		@media print {
+		@include forPrinter {
 			break-inside: avoid;
 		}
 	}
