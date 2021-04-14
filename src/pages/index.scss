@@ -25,3 +25,9 @@
 .entries-group {
 	margin-bottom: var(--entries-group-spacing);
 }
+
+.spacer {
+	@include forPrinter {
+		height: 50px;
+	}
+}

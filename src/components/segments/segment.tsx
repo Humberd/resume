@@ -30,6 +30,6 @@ const SegmentHeader = (props: SegmentHeaderProps) => (
       />
     </div>
     <h2>{props.title}</h2>
-    <div className="highlight-border"></div>
+    <div className="highlight-border"/>
   </header>
 )

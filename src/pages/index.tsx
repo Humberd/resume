@@ -46,6 +46,8 @@ const IndexPage = () => (
 
         <EducationSegment/>
         <AccomplishmentsSegment/>
+        {/* Artificial spacer so that printing works */}
+        <div className="spacer"/>
         <OthersSegment/>
         <PersonalProjectsSegment/>
 

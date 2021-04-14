@@ -23,7 +23,8 @@ const main = async () => {
       },
       displayHeaderFooter: true,
       headerTemplate: `<div></div>`,
-      footerTemplate: footerTemplate,
+      // fixme: footer doesn't work when margin is 0.5 cm :/ It worked for 1cm though
+      // footerTemplate: footerTemplate,
     });
   } finally {
     await browser.close();
