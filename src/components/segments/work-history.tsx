@@ -1,8 +1,8 @@
-import * as React from 'react';
-import './work-history.scss';
-import { UnbreakableList } from '../unbreakableList';
-import { HorizontalSeparator } from '../horizontal-separator';
-import { DateEntry } from './date-entry';
+import * as React from "react"
+import "./work-history.scss"
+import { UnbreakableList } from "../unbreakableList"
+import { HorizontalSeparator } from "../horizontal-separator"
+import { DateEntry } from "./date-entry"
 
 export interface WorkHistoryProps {
   entries: WorkEntryProps[]
@@ -22,17 +22,22 @@ export interface WorkEntryProps {
     to: string;
   },
   position: string;
+  shortDescription?: string;
   company: string;
   projects: WorkProjectProps[];
 }
 
 const WorkEntry = (props: WorkEntryProps) => (
     <li className="work-details entries-group">
+      <div className="border-left"></div>
       <DateEntry date={props.date}>
         <h3 className="position">{props.position}</h3>
         <span className="separator">-</span>
         <span className="company">{props.company}</span>
       </DateEntry>
+      <p>{props.shortDescription}</p>
+
+      {props.shortDescription && <h5 className="projects-header">Projects:</h5>}
       <UnbreakableList className="projects">
         {props.projects.map(it => (
             <WorkProject {...it} key={it.name}/>

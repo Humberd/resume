@@ -58,8 +58,15 @@ const HeaderSegment = () => (
     <Header {...{
       name: 'Maciej Sawicki',
       downloadUrl: 'https://github.com/Humberd/resume/raw/gh-pages/Maciej%20Sawicki%20-%20Resume.pdf',
-      profession: 'Team Lead, Frontend / Fullstack Engineer',
-      description: '**Frontend/Fullstack Engineer** with Master of Engineering degree in Computer Science, mainly accustomed with and interested in **Angular**. Fluent with a great number of languages and technologies both on frontend and backend side. Able to create an application from top to bottom and expose it to the world.',
+      profession: 'Technical Team Lead / Frontend Engineer',
+      description: `Throughout the career I've learned how to cooperate with people
+      and when to say 'No' if a feature has flaws. By being the creator and the first user of a functionality
+      I pay close attention to a design and UX, and predict various scenarios that had not been caught before.
+      Afterwards, I work with analysts and designers to find the best solution in a given timeframe.
+      Among other things I enjoy doing are: leading people, training interns, passing a knowledge,
+      presenting in front of an audience and learning other technologies.
+      By hiring me I'm confident I'll bring a great value to the project.
+      `,
     }}/>
 );
 
@@ -191,14 +198,17 @@ const WorkHistorySegment = () => (
                 from: '2019.11',
                 to: 'Current',
               },
-              position: 'Senior Frontend Engineer',
+              position: 'Technical Team Lead',
+              shortDescription: `I was a Leader and a Developer in a team of 7 in a project of 30.
+              I was mainly responsible for: reporting to the management, doing code reviews, 
+              performing weekly presentations, delivering features and a whole frontend part of the app.`,
               company: 'SDI Media',
               projects: [
                 {
-                  name: 'Film localization workflow manager',
+                  name: 'SPS - Single Production System',
                   technologies: ['Angular', 'TypeScript', 'Jest'],
                   position: 'Frontend',
-                  description: 'Web portal to manage film localizations starting with a client order and ending up with localized film.',
+                  description: `Web system for managing end-to-end produciton orders.`,
                 },
               ],
             },
@@ -208,6 +218,9 @@ const WorkHistorySegment = () => (
                 to: '2019.10',
               },
               position: 'Fullstack Engineer',
+              shortDescription: `Apart from regular programming duties
+              I was also responsible for: creating and reviewing frontend-related recruitment tasks, 
+              doing interviews, training interns and representing the company in trade show booths during several events.`,
               company: 'Acaisoft',
               projects: [
                 {
@@ -238,7 +251,7 @@ const WorkHistorySegment = () => (
             },
             {
               date: {
-                from: '2016.08',
+                from: '2016.06',
                 to: '2017.03',
               },
               position: 'Frontend Developer',
@@ -246,20 +259,10 @@ const WorkHistorySegment = () => (
               projects: [
                 {
                   name: 'Social meetings app',
-                  technologies: ['Angular', 'TypeScript'],
+                  technologies: ['Angular', 'TypeScript', "AngularJS", "Meteor"],
                   position: 'Frontend',
                   description: 'Chrome extension arranging meetings between people with problems and their potential solvers.',
                 },
-              ],
-            },
-            {
-              date: {
-                from: '2016.06',
-                to: '2016.07',
-              },
-              position: 'Frontend Intern',
-              company: 'Transition Technologies',
-              projects: [
                 {
                   name: 'Skills management portal',
                   technologies: ['AngularJS', 'JavaScript', 'Meteor'],
