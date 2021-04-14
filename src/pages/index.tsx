@@ -328,7 +328,7 @@ const AccomplishmentsSegment = () => (
                 which given a lot of uncategorized documents
                 (such as tweets, blog posts, application logs, random data) groups them by similarity of discussed topics.
               `,
-              url: 'https://hackyeah.pl/winners-2019/#Data%20categorizing%20software%20by%20EXATEL',
+              url: 'external-resources/hackyeah-2019-winners.html',
               role: 'Frontend and Backend',
               places: [
                 '1st in Data Categorizing Software',
