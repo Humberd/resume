@@ -201,14 +201,14 @@ const WorkHistorySegment = () => (
               position: 'Technical Team Lead',
               shortDescription: `I was a Leader and a Developer in a team of 7 in a project of 30.
               I was mainly responsible for: reporting to the management, doing code reviews, 
-              performing weekly presentations, delivering features and a whole frontend part of the app.`,
+              performing weekly presentations, delivering features, and a whole frontend part of the app.`,
               company: 'SDI Media',
               projects: [
                 {
                   name: 'SPS - Single Production System',
                   technologies: ['Angular', 'TypeScript', 'Jest'],
                   position: 'Frontend',
-                  description: `Web system for managing end-to-end produciton orders.`,
+                  description: `Web system for managing end-to-end production orders.`,
                 },
               ],
             },
@@ -220,7 +220,8 @@ const WorkHistorySegment = () => (
               position: 'Fullstack Engineer',
               shortDescription: `Apart from regular programming duties
               I was also responsible for: creating and reviewing frontend-related recruitment tasks, 
-              doing interviews, training interns and representing the company in trade show booths during several events.`,
+              doing interviews, training interns and representing the company in 
+              trade show booths during several events.`,
               company: 'Acaisoft',
               projects: [
                 {
