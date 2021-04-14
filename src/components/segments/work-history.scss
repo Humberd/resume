@@ -1,16 +1,6 @@
 @import "../../pages/utils";
 
 .work-details {
-	position: relative;
-
-	.border-left {
-		position: absolute;
-		height: calc(100% - 30px);
-		width: 1px;
-		left: -10px;
-		top: 32px;
-		background-color: var(--theme-color);
-	}
 	.position {
 		font-weight: 600;
 		@include changeFontSize(1.1rem);
