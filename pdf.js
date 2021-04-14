@@ -1,6 +1,6 @@
 const puppeteer = require('puppeteer');
 
-const MARGIN = '0.5cm';
+const MARGIN = '1cm';
 
 const isCI = (process.argv[2] || '').toLowerCase() === 'ci';
 const urlSuffix = isCI ? '9000/resume' : '8000';
@@ -24,7 +24,7 @@ const main = async () => {
       displayHeaderFooter: true,
       headerTemplate: `<div></div>`,
       // fixme: footer doesn't work when margin is 0.5 cm :/ It worked for 1cm though
-      // footerTemplate: footerTemplate,
+      footerTemplate: `<div></div>`,
     });
   } finally {
     await browser.close();
