@@ -67,7 +67,6 @@ const HeaderSegment = () => (
       Afterwards, I work with analysts and designers to find the best solution in a given timeframe.
       Among other things I enjoy doing are: leading people, training interns, passing a knowledge,
       presenting in front of an audience and learning other technologies.
-      By hiring me I'm confident I'll bring a great value to the project.
       `,
     }}/>
 );
