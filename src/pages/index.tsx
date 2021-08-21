@@ -60,7 +60,7 @@ const HeaderSegment = () => (
     <Header {...{
       name: 'Maciej Sawicki',
       downloadUrl: 'https://github.com/Humberd/resume/raw/gh-pages/Maciej%20Sawicki%20-%20Resume.pdf',
-      profession: 'Technical Team Lead / Frontend Engineer',
+      profession: 'Technical Team Lead | Senior Frontend Engineer',
       description: `Throughout the career I've learned how to cooperate with people
       and when to say 'No' if a feature has flaws. By being the creator and the first user of a functionality
       I pay close attention to a design and UX, and predict various scenarios that had not been caught before.
@@ -199,7 +199,7 @@ const WorkHistorySegment = () => (
                 from: '2019.11',
                 to: 'Current',
               },
-              position: 'Technical Team Lead',
+              position: 'Technical Team Lead, Senior Frontend Engineer',
               shortDescription: `I was a Leader and a Developer in a team of 7 in a project of 30.
               I was mainly responsible for: reporting to the management, doing code reviews, 
               performing weekly presentations, delivering features, and a whole frontend part of the app.`,
