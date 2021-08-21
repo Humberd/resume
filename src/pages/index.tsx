@@ -397,7 +397,6 @@ const OthersSegment = () => (
 );
 
 const PersonalProjectsSegment = () => (
-
     <Segment
         header={{
           icon: 'collections.svg',
