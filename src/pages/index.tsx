@@ -201,8 +201,9 @@ const WorkHistorySegment = () => (
               },
               positions: ['Technical Team Lead', 'Senior Frontend Engineer'],
               shortDescription: `I was a Leader and a Developer in a team of 8 in a project of 30.
-              I was mainly responsible for: reporting to the management, doing code reviews, 
-              performing weekly presentations, delivering features, and a whole frontend part of the app.`,
+              My responsibilities were: frontend feature design and implementation,
+              frontend core architecture, core reviews, reporting to the management and
+              performing weekly presentations.`,
               company: 'SDI Media',
               projects: [
                 {
