@@ -9,11 +9,11 @@ export interface WorkHistoryProps {
 }
 
 export const WorkHistory = (props: WorkHistoryProps) => (
-    <UnbreakableList>
+    <div>
       {props.entries.map(it => (
           <WorkEntry {...it} key={it.date.from}/>
       ))}
-    </UnbreakableList>
+    </div>
 );
 
 export interface WorkEntryProps {
