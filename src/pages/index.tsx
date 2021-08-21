@@ -199,8 +199,8 @@ const WorkHistorySegment = () => (
                 from: '2019.11',
                 to: 'Current',
               },
-              position: 'Technical Team Lead, Senior Frontend Engineer',
-              shortDescription: `I was a Leader and a Developer in a team of 7 in a project of 30.
+              positions: ['Technical Team Lead', 'Senior Frontend Engineer'],
+              shortDescription: `I was a Leader and a Developer in a team of 8 in a project of 30.
               I was mainly responsible for: reporting to the management, doing code reviews, 
               performing weekly presentations, delivering features, and a whole frontend part of the app.`,
               company: 'SDI Media',
@@ -218,7 +218,7 @@ const WorkHistorySegment = () => (
                 from: '2017.04',
                 to: '2019.10',
               },
-              position: 'Fullstack Engineer',
+              positions: ['Fullstack Engineer'],
               shortDescription: `Apart from regular programming duties
               I was also responsible for: creating and reviewing frontend-related recruitment tasks, 
               doing interviews, training interns and representing the company in 
@@ -256,7 +256,7 @@ const WorkHistorySegment = () => (
                 from: '2016.06',
                 to: '2017.03',
               },
-              position: 'Frontend Developer',
+              positions: ['Frontend Developer'],
               company: 'Transition Technologies',
               projects: [
                 {

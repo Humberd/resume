@@ -21,7 +21,7 @@ export interface WorkEntryProps {
     from: string,
     to: string;
   },
-  position: string;
+  positions: string[];
   shortDescription?: string;
   company: string;
   projects: WorkProjectProps[];
@@ -30,7 +30,15 @@ export interface WorkEntryProps {
 const WorkEntry = (props: WorkEntryProps) => (
     <li className="work-details entries-group">
       <DateEntry date={props.date}>
-        <h3 className="position">{props.position}</h3>
+        <h3 className="position">
+          {props.positions.map((position, index)=> (
+            <>
+              <div>
+                {position}
+                {index !== props.positions.length - 1 && <span>,</span>}</div>
+            </>
+          ))}
+        </h3>
         <span className="separator">-</span>
         <span className="company">{props.company}</span>
       </DateEntry>
