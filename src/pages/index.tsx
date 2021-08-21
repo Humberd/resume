@@ -16,6 +16,7 @@ import { Technologies } from "../components/segments/technologies"
 import { PersonalProjects } from "../components/segments/personal-projects"
 import { Footer } from "../components/footer"
 import { Others } from "../components/segments/others"
+import { Enjoyments } from "../components/segments/enjoyments"
 
 const IndexPage = () => (
     <>
@@ -41,6 +42,7 @@ const IndexPage = () => (
             <li><PersonalInfoSegment/></li>
             <li><TechnologiesSegment/></li>
             <li><LanguagesSegment/></li>
+            <li><EnjoymentsSegment/></li>
           </UnbreakableList>
         </div>
 
@@ -184,6 +186,22 @@ const LanguagesSegment = () => (
     </Segment>
 );
 
+const EnjoymentsSegment = () => (
+    <Segment
+        header={{
+          icon: 'toy.svg',
+          title: 'Things I Enjoy',
+        }}
+    >
+      <Enjoyments
+        entries={[
+          "Singing && Playing Piano",
+          "Travelling",
+          "Running Marathons",
+        ]}
+      />
+    </Segment>
+)
 
 const WorkHistorySegment = () => (
     <Segment
