@@ -220,7 +220,7 @@ const WorkHistorySegment = () => (
               positions: ['Technical Team Lead', 'Senior Frontend Engineer'],
               shortDescription: `I was a Leader and a Developer in a team of 8 in a project of 30.
               My responsibilities were: frontend feature design and implementation,
-              frontend core architecture, core reviews, reporting to the management and
+              frontend core architecture, code reviews, reporting to the management and
               performing weekly presentations.`,
               company: 'SDI Media',
               projects: [
