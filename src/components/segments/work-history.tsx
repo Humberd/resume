@@ -32,11 +32,10 @@ const WorkEntry = (props: WorkEntryProps) => (
       <DateEntry date={props.date}>
         <h3 className="position">
           {props.positions.map((position, index)=> (
-            <>
-              <div>
+              <div key={position}>
                 {position}
-                {index !== props.positions.length - 1 && <span>,</span>}</div>
-            </>
+                {index !== props.positions.length - 1 && <span>,</span>}
+              </div>
           ))}
         </h3>
         <span className="separator">-</span>

@@ -6,7 +6,7 @@ export function getIcon(name: string) {
   }
 
   try {
-    return require(`../images/${name}`)
+    return require(`../images/${name}`).default
   } catch (e) {
     console.warn(`Icon ${name} does not exist`);
     return ''
