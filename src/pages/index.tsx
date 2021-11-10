@@ -278,10 +278,10 @@ const WorkHistorySegment = () => (
               optimized to display tens of thousands points, and more.`,
               company: 'Plumettaz',
               projects: [{
-                name: 'IntelliJet™',
+                name: 'OptiJet™',
                 description: `A web application to monitor work and generate pdf reports
                 running on a low-spec Android tablet for a microwave-sized device that
-                blows telecommunication cables in preinstalled ducts.`,
+                blows optical cables in preinstalled ducts.`,
                 position: 'Frontend',
                 technologies: [
                   'React',
