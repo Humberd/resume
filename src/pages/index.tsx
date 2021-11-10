@@ -122,7 +122,7 @@ const HeaderSegment = () => (
       and when to say 'No' if a feature has flaws. By being the creator and the first user of a functionality
       I pay close attention to a design and UX, and predict various scenarios that had not been caught before.
       Afterwards, I work with analysts and designers to find the best solution in a given timeframe.
-      Among other things I enjoy doing are: leading people, training interns, passing a knowledge,
+      Among other things I enjoy doing are: leading people, training interns, passing knowledge,
       presenting in front of an audience and learning other technologies.
       `,
     }}/>
@@ -502,6 +502,12 @@ const PersonalProjectsSegment = () => (
       <PersonalProjects
           entries={[
             {
+              name: 'Salary Comparator',
+              href: 'https://github.com/Humberd/salary-comparator',
+              technologies: ['Kotlin', 'Jetpack Compose'],
+              description: 'Android Application converting my salary expectations from one currency to another in a given time frame. For example USD/year to EUR/day'
+            },
+            {
               name: 'Erepublik game bot',
               href: 'https://github.com/Humberd/headless-k-worker',
               technologies: ['TypeScript', 'Node.js', 'Nest', 'MongoDB', 'Kotlin', 'Docker', 'Kubernetes', 'Azure DevOps'],
@@ -517,13 +523,7 @@ const PersonalProjectsSegment = () => (
               name: 'Wykop++',
               href: 'https://github.com/Humberd/Wykop-plus-plus',
               technologies: ['RxJS', 'TypeScript'],
-              description: 'Browser extension which puts additional functionalities on wykop.pl, such as: comments hiding, infinite scroll, etc.',
-            },
-            {
-              name: 'MicroTwitter',
-              href: 'https://github.com/Humberd/MicroTwitter',
-              technologies: ['Angular', 'TypeScript', 'Spring', 'Kotlin', 'PostgreSQL', 'Docker', 'Jenkins'],
-              description: 'A minimalistic Twitter clone with its core functionalities, such as: posting, commenting, liking, etc.',
+              description: 'Browser extension, which puts additional functionalities on wykop.pl, such as: comments hiding, infinite scroll, etc.',
             },
           ]}
       />
