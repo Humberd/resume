@@ -22,7 +22,7 @@ const IndexPage = () => (
     <>
       <Meta
         title="Maciej Sawicki - Resume"
-        description="Distinguished Frontend and Angular Expert"
+        description="Distinguished Frontend and Angular Expert. Delivers best quality features to make sure your business makes money."
         url="https://humberd.github.io/resume/"
         imageUrl="https://humberd.github.io/resume/meta/og-image.png"
       />
@@ -54,26 +54,64 @@ const IndexPage = () => (
     </>
 );
 
-const Meta = ({title, description, url, imageUrl}) => (
-  <Helmet>
-    <html lang="en"/>
-    <meta charSet="utf-8"/>
-    <title>{title}</title>
-    <meta name="description" content={description}/>
+const Meta = ({title, description, url, imageUrl}) => {
+  if (description.length <= 100) {
+    throw Error(`LinkedIn wants at least 100 characters of description. Otherwise it gets text from the beginning of the page. Currently it has ${description.length} characters`)
+  }
+  return (
+    <Helmet>
+      <html lang="en"/>
+      <meta charSet="utf-8"/>
+      <title>{title}</title>
+      <meta
+        name="description"
+        content={description}
+      />
 
-    <meta property="og:url" content={url}/>
-    <meta property="og:type" content="website"/>
-    <meta property="og:title" content={title}/>
-    <meta property="og:description" content={description}/>
-    <meta property="og:image" content={imageUrl}/>
+      <meta
+        property="og:url"
+        content={url}
+      />
+      <meta
+        property="og:type"
+        content="website"
+      />
+      <meta
+        property="og:title"
+        content={title}
+      />
+      <meta
+        property="og:description"
+        content={description}
+      />
+      <meta
+        property="og:image"
+        content={imageUrl}
+      />
 
-    <meta name="twitter:card" content="summary_large_image"/>
-    <meta property="twitter:url" content={url}/>
-    <meta name="twitter:title" content={title}/>
-    <meta name="twitter:description" content={description}/>
-    <meta name="twitter:image" content={imageUrl}/>
-  </Helmet>
-)
+      <meta
+        name="twitter:card"
+        content="summary_large_image"
+      />
+      <meta
+        property="twitter:url"
+        content={url}
+      />
+      <meta
+        name="twitter:title"
+        content={title}
+      />
+      <meta
+        name="twitter:description"
+        content={description}
+      />
+      <meta
+        name="twitter:image"
+        content={imageUrl}
+      />
+    </Helmet>
+  )
+}
 
 const HeaderSegment = () => (
     <Header {...{
