@@ -20,16 +20,12 @@ import { Enjoyments } from "../components/segments/enjoyments"
 
 const IndexPage = () => (
     <>
-      <Helmet>
-        <html lang="en"/>
-        <meta charSet="utf-8"/>
-        <title>Maciej Sawicki - Resume</title>
-        <meta
-            name="description"
-            content="Web based Resume created in React allowing pdf printing."
-        />
-      </Helmet>
-
+      <Meta
+        title="Maciej Sawicki - Resume"
+        description="Distinguished Frontend and Angular Expert"
+        url="https://humberd.github.io/resume/"
+        imageUrl="https://humberd.github.io/resume/meta/og-image.png"
+      />
       <Layout>
         <HeaderSegment/>
 
@@ -57,6 +53,27 @@ const IndexPage = () => (
       </Layout>
     </>
 );
+
+const Meta = ({title, description, url, imageUrl}) => (
+  <Helmet>
+    <html lang="en"/>
+    <meta charSet="utf-8"/>
+    <title>{title}</title>
+    <meta name="description" content={description}/>
+
+    <meta property="og:url" content={url}/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content={title}/>
+    <meta property="og:description" content={description}/>
+    <meta property="og:image" content={imageUrl}/>
+
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta property="twitter:url" content={url}/>
+    <meta name="twitter:title" content={title}/>
+    <meta name="twitter:description" content={description}/>
+    <meta name="twitter:image" content={imageUrl}/>
+  </Helmet>
+)
 
 const HeaderSegment = () => (
     <Header {...{
