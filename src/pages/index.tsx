@@ -269,6 +269,29 @@ const WorkHistorySegment = () => (
           entries={[
             {
               date: {
+                from: '2021.09',
+                to: '2021.11'
+              },
+              positions: ['Senior Frontend Engineer'],
+              shortDescription: `I was a solo Frontend Engineer, who implemented features,
+              such as: ~50 pages long pdf generation, i18n, real-time charts
+              optimized to display tens of thousands points, and more.`,
+              company: 'Plumettaz',
+              projects: [{
+                name: 'IntelliJet™',
+                description: `A web application to monitor work and generate pdf reports
+                running on a low-spec Android tablet for a microwave-sized device that
+                blows telecommunication cables in preinstalled ducts.`,
+                position: 'Frontend',
+                technologies: [
+                  'React',
+                  'JavaScript',
+                  'TypeScript'
+                ]
+              }]
+            },
+            {
+              date: {
                 from: '2019.11',
                 to: 'Current',
               },
