@@ -195,7 +195,7 @@ const EnjoymentsSegment = () => (
     >
       <Enjoyments
         entries={[
-          "Singing && Playing Piano",
+          "Singing & Playing Piano",
           "Travelling",
           "Running Marathons",
         ]}
