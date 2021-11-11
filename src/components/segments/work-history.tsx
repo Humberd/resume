@@ -10,11 +10,11 @@ export interface WorkHistoryProps {
 }
 
 export const WorkHistory = (props: WorkHistoryProps) => (
-    <div>
+    <ol>
       {props.entries.map(it => (
           <WorkEntry {...it} key={it.date.from}/>
       ))}
-    </div>
+    </ol>
 );
 
 export interface WorkEntryProps {
