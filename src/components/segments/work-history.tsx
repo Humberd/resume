@@ -65,7 +65,7 @@ const WorkProject = (props: WorkProjectProps) => (
       <span className="project-name">{props.name}</span>
       <HorizontalSeparator/>
       <span className="project-position">{props.position}</span>
-      <p className="project-technologies">{props.technologies.join(', ')}</p>
+      <p className="project-technologies">[{props.technologies.join(', ')}]</p>
       <p className="project-description">{removeDuplicatedWhiteSpaces(props.description)}</p>
     </li>
 );

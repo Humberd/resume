@@ -1,7 +1,7 @@
-import * as React from 'react';
-import './personal-projects.scss';
-import { UnbreakableList } from '../unbreakableList';
-import { HorizontalSeparator } from '../horizontal-separator';
+import * as React from "react"
+import "./personal-projects.scss"
+import { UnbreakableList } from "../unbreakableList"
+import { HorizontalSeparator } from "../horizontal-separator"
 
 export interface PersonalProjectsProps {
   entries: PersonalProjectEntryProps[];
@@ -36,7 +36,7 @@ const PersonalProjectEntry = (props: PersonalProjectEntryProps) => (
           {props.href.replace('https://', '')}
         </a>
       </header>
-      <p className="technologies">{props.technologies.join(', ')}</p>
+      <p className="technologies">[{props.technologies.join(', ')}]</p>
       <p className="description">{props.description}</p>
     </li>
 );
