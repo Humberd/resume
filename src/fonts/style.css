@@ -48,14 +48,6 @@
 
 @font-face {
     font-family: 'Gill Sans';
-    src: url('GillSans-CondensedRegular.woff2') format('woff2'),
-        url('GillSans-CondensedRegular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Gill Sans';
     src: url('GillSans-MediumItalic.woff2') format('woff2'),
         url('GillSans-MediumItalic.woff') format('woff');
     font-weight: 500;
