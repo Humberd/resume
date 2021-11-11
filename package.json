@@ -1,7 +1,7 @@
 {
   "name": "resume",
   "description": "Print-optimized React version of my Resume",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "author": "Maciej Sawicki",
   "license": "MIT",
   "scripts": {
