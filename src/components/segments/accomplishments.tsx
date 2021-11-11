@@ -3,6 +3,7 @@ import "./accomplishments.scss"
 import { UnbreakableList } from "../unbreakableList"
 import { DateEntry } from "./date-entry"
 import { HorizontalSeparator } from "../horizontal-separator"
+import { removeDuplicatedWhiteSpaces } from "../utils"
 
 export interface AccomplishmentsProps {
   entries: AccomplishmentEntryProps[];
@@ -49,7 +50,7 @@ const AccomplishmentEntry = (props: AccomplishmentEntryProps) => {
         )}
       </DateEntry>
 
-      {props.description && <p className="description">{props.description}</p>}
+      {props.description && <p className="description">{removeDuplicatedWhiteSpaces(props.description || '')}</p>}
 
       <UnbreakableList>
         {props.places.map(it => (

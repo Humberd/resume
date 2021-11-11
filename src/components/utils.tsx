@@ -17,7 +17,7 @@ export function getIcon(name: string) {
  * Replaces every occurrence of `**text**` to a `<strong>text</strong>`
  */
 export function pseudoMarkdownToReact(value: string): React.ReactNode[] {
-  const splittedValue = value.split('**');
+  const splittedValue = removeDuplicatedWhiteSpaces(value).split('**');
 
   return splittedValue.map((piece, index) => {
     if (isEven(index)) {
@@ -31,4 +31,11 @@ export function pseudoMarkdownToReact(value: string): React.ReactNode[] {
 
 export function isEven(value: number) {
   return value %2 === 0;
+}
+
+export function removeDuplicatedWhiteSpaces(text: string): string {
+  console.log(text)
+  let s = text.trim().replace(/\s{2,}/g, ' ')
+  console.log(s);
+  return s
 }

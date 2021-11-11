@@ -505,7 +505,7 @@ const PersonalProjectsSegment = () => (
               name: 'Salary Comparator',
               href: 'https://github.com/Humberd/salary-comparator',
               technologies: ['Kotlin', 'Jetpack Compose'],
-              description: 'Android Application converting my salary expectations from one currency to another in a given time frame. For example USD/year to EUR/day'
+              description: 'Android Application converting my salary expectations from one currency to another in a given time frame. For example USD/year to EUR/day.'
             },
             {
               name: 'Erepublik game bot',
