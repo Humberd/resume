@@ -4,6 +4,9 @@ let pageScripts;
  * reason. The variable contains the scripts the Gatsby internals, https://github.com/gatsbyjs/gatsby/blob/d9cf5a21403c474846ebdf7a0508902b9b8a2ea9/packages/gatsby/cache-dir/static-entry.js#L270-L283,
  * puts into the head and post body. We will be relying on this undocumented variable until it does not work anymore as the alternative is
  * to read the webpack.stats.json file and parse it ourselves.
+ *
+ * @see https://github.com/itmayziii/gatsby-plugin-no-javascript/issues/17#issuecomment-809372048
+ * @see https://gist.github.com/joaocarloscabral/1173496642a15772d13815126ee1dc73
  */
 export function onRenderBody({ scripts }) {
   if (process.env.NODE_ENV !== 'production') { // During a gatsby development build (gatsby develop) we do nothing.
