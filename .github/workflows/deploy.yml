@@ -36,30 +36,32 @@ jobs:
          git config --local user.email "action@github.com"
          git config --local user.name "GitHub Action"
 
-      - name: Get npm cache directory
-        id: npm-cache
-        run: |
-          echo "::set-output name=dir::$(npm config get cache)"
-
-      - name: Cache node modules
-        id: cache-node-modules
-        uses: actions/cache@v2
-        env:
-          cache-name: cache-node-modules
-        with:
-          path: ${{ steps.npm-cache.outputs.dir }}
-          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-build-${{ env.cache-name }}-
-            ${{ runner.os }}-build-
-            ${{ runner.os }}-
-
-      - name: Install from Cache
-        if: steps.cache-node-modules.outputs.cache-hit == 'true'
-        run: npm install
-
-      - name: Install from Web
-        if: steps.cache-node-modules.outputs.cache-hit != 'true'
+#      - name: Get npm cache directory
+#        id: npm-cache
+#        run: |
+#          echo "::set-output name=dir::$(npm config get cache)"
+#
+#      - name: Cache node modules
+#        id: cache-node-modules
+#        uses: actions/cache@v2
+#        env:
+#          cache-name: cache-node-modules
+#        with:
+#          path: ${{ steps.npm-cache.outputs.dir }}
+#          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('package-lock.json') }}
+#          restore-keys: |
+#            ${{ runner.os }}-build-${{ env.cache-name }}-
+#            ${{ runner.os }}-build-
+#            ${{ runner.os }}-
+#
+#      - name: Install from Cache
+#        if: steps.cache-node-modules.outputs.cache-hit == 'true'
+#        run: npm install
+#
+#      - name: Install from Web
+#        if: steps.cache-node-modules.outputs.cache-hit != 'true'
+#        run: npm ci
+      - name: "Install dependencies
         run: npm ci
 
       # Runs a set of commands using the runners shell
