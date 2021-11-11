@@ -32,13 +32,5 @@ module.exports = {
       options: {
       },
     },
-    /**
-     * Doesn't work for now
-     * @see https://github.com/itmayziii/gatsby-plugin-no-javascript/issues/17
-     */
-    'gatsby-plugin-no-javascript'
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
   ],
 };
