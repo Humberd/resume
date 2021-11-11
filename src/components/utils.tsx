@@ -34,8 +34,6 @@ export function isEven(value: number) {
 }
 
 export function removeDuplicatedWhiteSpaces(text: string): string {
-  console.log(text)
   let s = text.trim().replace(/\s{2,}/g, ' ')
-  console.log(s);
   return s
 }
