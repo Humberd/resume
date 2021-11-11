@@ -50,6 +50,9 @@ jobs:
             ${{ runner.os }}-build-
             ${{ runner.os }}-
 
+      - name: debug
+        run: echo "${{steps.cache-node-modules}}"
+
       - name: Install from Cache
         if: steps.cache-node-modules.outputs.cache-hit == 'true'
         run: npm install
