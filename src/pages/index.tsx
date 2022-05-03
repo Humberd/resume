@@ -98,13 +98,12 @@ const HeaderSegment = () => (
       name: 'Maciej Sawicki',
       downloadUrl:
         'https://github.com/Humberd/resume/raw/gh-pages/Maciej%20Sawicki%20-%20Resume.pdf',
-      profession: 'Technical Team Lead | Senior Frontend Engineer',
-      description: `Throughout the career I've learned how to cooperate with people
-      and when to say 'No' if a feature has flaws. By being the creator and the first user of a functionality
-      I pay close attention to a design and UX, and predict various scenarios that had not been caught before.
-      Afterwards, I work with analysts and designers to find the best solution in a given timeframe.
-      Among other things I enjoy doing are: leading people, training interns, passing knowledge,
-      presenting in front of an audience and learning other technologies.
+      profession: 'Senior Frontend Engineer',
+      description: `I'm an experienced engineer, who specializes in frontend development.
+      I am fluent with both JavaScript and Typescript. I worked with a variety of technologies,
+      the most notable being React, React Native and Angular. I worked on a variety of projects,
+      both large and small, in some of which I expanded my knowledge of backend development in Java and Node.js.
+      It makes me an ideal candidate to make a job done, regardless of the technology.
       `,
     }}
   />
@@ -247,29 +246,8 @@ const WorkHistorySegment = () => (
       entries={[
         {
           date: {
-            from: '2021.09',
-            to: '2021.11',
-          },
-          positions: ['Senior Frontend Engineer'],
-          shortDescription: `I was a solo Frontend Engineer, who implemented features,
-              such as: ~50 pages long pdf generation, i18n, real-time charts
-              optimized to display tens of thousands points, and more.`,
-          company: 'Plumettaz',
-          projects: [
-            {
-              name: 'OptiJet™',
-              description: `A web application to monitor work and generate pdf reports
-                running on a low-spec Android tablet for a microwave-sized device that
-                blows optical cables in preinstalled ducts.`,
-              position: 'Frontend',
-              technologies: ['React', 'JavaScript', 'TypeScript'],
-            },
-          ],
-        },
-        {
-          date: {
             from: '2019.11',
-            to: 'Current',
+            to: '2021.12',
           },
           positions: ['Technical Team Lead', 'Senior Frontend Engineer'],
           shortDescription: `I was a Leader and a Developer in a team of 8 in a project of 30.
@@ -283,6 +261,27 @@ const WorkHistorySegment = () => (
               technologies: ['Angular', 'TypeScript', 'Jest'],
               position: 'Frontend',
               description: `Web system for managing end-to-end production orders.`,
+            },
+          ],
+        },
+        {
+          date: {
+            from: '2021.09',
+            to: '2021.11',
+          },
+          positions: ['Senior Frontend Engineer'],
+          shortDescription: `I was hired to fix reoccurring problems with a product called OptiJet.
+                 My goal was to implement and optimize: internationalization, generation of 50 pages long pdf, 
+                 real-time charts displaying tens of thousands event data points.
+                 The challenge I faced was that I had to make this work on a low-en Android tablet released in 2014.`,
+          company: 'Plumettaz',
+          projects: [
+            {
+              name: 'OptiJet™',
+              description: `A microwave-sized device that blows optical cables in preinstalled pipes with
+                  a web application to control and monitor its work.`,
+              position: 'Frontend',
+              technologies: ['React', 'JavaScript', 'TypeScript'],
             },
           ],
         },
