@@ -11,7 +11,7 @@ export interface ListProps {
  * split between 2 pages when printing to pdf
  */
 export const UnbreakableList = (props: ListProps) => (
-    <ul className={'generic-list ' + (props.className || '')}>
-      {props.children}
-    </ul>
+  <ul className={'generic-list ' + (props.className || '')}>
+    {props.children}
+  </ul>
 );

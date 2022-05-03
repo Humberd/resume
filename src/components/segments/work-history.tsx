@@ -1,27 +1,27 @@
-import * as React from "react"
-import "./work-history.scss"
-import { UnbreakableList } from "../unbreakableList"
-import { HorizontalSeparator } from "../horizontal-separator"
-import { DateEntry } from "./date-entry"
-import { removeDuplicatedWhiteSpaces } from "../utils"
+import * as React from 'react';
+import './work-history.scss';
+import { UnbreakableList } from '../unbreakableList';
+import { HorizontalSeparator } from '../horizontal-separator';
+import { DateEntry } from './date-entry';
+import { removeDuplicatedWhiteSpaces } from '../utils';
 
 export interface WorkHistoryProps {
-  entries: WorkEntryProps[]
+  entries: WorkEntryProps[];
 }
 
 export const WorkHistory = (props: WorkHistoryProps) => (
-    <ol>
-      {props.entries.map(it => (
-          <WorkEntry {...it} key={it.date.from}/>
-      ))}
-    </ol>
+  <ol>
+    {props.entries.map((it) => (
+      <WorkEntry {...it} key={it.date.from} />
+    ))}
+  </ol>
 );
 
 export interface WorkEntryProps {
   date: {
-    from: string,
+    from: string;
     to: string;
-  },
+  };
   positions: string[];
   shortDescription?: string;
   company: string;
@@ -29,28 +29,28 @@ export interface WorkEntryProps {
 }
 
 const WorkEntry = (props: WorkEntryProps) => (
-    <li className="work-details entries-group">
-      <DateEntry date={props.date}>
-        <h3 className="position">
-          {props.positions.map((position, index)=> (
-              <div key={position}>
-                {position}
-                {index !== props.positions.length - 1 && <span>,</span>}
-              </div>
-          ))}
-        </h3>
-        <span className="separator">-</span>
-        <span className="company">{props.company}</span>
-      </DateEntry>
-      <p>{removeDuplicatedWhiteSpaces(props.shortDescription || '')}</p>
-
-      {props.shortDescription && <h5 className="projects-header">Projects:</h5>}
-      <UnbreakableList className="projects">
-        {props.projects.map(it => (
-            <WorkProject {...it} key={it.name}/>
+  <li className="work-details entries-group">
+    <DateEntry date={props.date}>
+      <h3 className="position">
+        {props.positions.map((position, index) => (
+          <div key={position}>
+            {position}
+            {index !== props.positions.length - 1 && <span>,</span>}
+          </div>
         ))}
-      </UnbreakableList>
-    </li>
+      </h3>
+      <span className="separator">-</span>
+      <span className="company">{props.company}</span>
+    </DateEntry>
+    <p>{removeDuplicatedWhiteSpaces(props.shortDescription || '')}</p>
+
+    {props.shortDescription && <h5 className="projects-header">Projects:</h5>}
+    <UnbreakableList className="projects">
+      {props.projects.map((it) => (
+        <WorkProject {...it} key={it.name} />
+      ))}
+    </UnbreakableList>
+  </li>
 );
 
 export interface WorkProjectProps {
@@ -61,11 +61,13 @@ export interface WorkProjectProps {
 }
 
 const WorkProject = (props: WorkProjectProps) => (
-    <li className="work-project">
-      <span className="project-name">{props.name}</span>
-      <HorizontalSeparator/>
-      <span className="project-position">{props.position}</span>
-      <p className="project-technologies">[{props.technologies.join(', ')}]</p>
-      <p className="project-description">{removeDuplicatedWhiteSpaces(props.description)}</p>
-    </li>
+  <li className="work-project">
+    <span className="project-name">{props.name}</span>
+    <HorizontalSeparator />
+    <span className="project-position">{props.position}</span>
+    <p className="project-technologies">[{props.technologies.join(', ')}]</p>
+    <p className="project-description">
+      {removeDuplicatedWhiteSpaces(props.description)}
+    </p>
+  </li>
 );

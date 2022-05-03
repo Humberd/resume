@@ -1,10 +1,9 @@
 .language-entry {
+  &:not(:last-child) {
+    margin-bottom: 8px;
+  }
 
-	&:not(:last-child) {
-		margin-bottom: 8px;
-	}
-
-	.lang-name {
-		font-weight: 500;
-	}
+  .lang-name {
+    font-weight: 500;
+  }
 }

@@ -1,29 +1,29 @@
 @mixin changeFontSize($fontSize) {
-	font-size: $fontSize;
-	line-height: $fontSize * 1.618;
+  font-size: $fontSize;
+  line-height: $fontSize * 1.618;
 }
 
 @mixin resetButtonStyles() {
-	border: none;
-	margin: 0;
-	padding: 0;
-	width: auto;
-	overflow: visible;
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  overflow: visible;
 
-	background: transparent;
-	color: inherit;
-	font: inherit;
-	line-height: normal;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
 }
 
 @mixin forMobileDevice() {
-	@media screen and (max-width: 792px) {
-		@content;
-	}
+  @media screen and (max-width: 792px) {
+    @content;
+  }
 }
 
 @mixin forPrinter() {
-	@media print {
-		@content;
-	}
+  @media print {
+    @content;
+  }
 }

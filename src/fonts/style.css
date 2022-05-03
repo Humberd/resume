@@ -1,88 +1,87 @@
 @font-face {
-    font-family: 'Gill Sans';
-    src: url('GillSans-Medium.woff2') format('woff2'),
-        url('GillSans-Medium.woff') format('woff');
-    font-weight: 500;
-    font-style: normal;
+  font-family: 'Gill Sans';
+  src: url('GillSans-Medium.woff2') format('woff2'),
+    url('GillSans-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Gill Sans';
-    src: url('GillSans-Bold.woff2') format('woff2'),
-        url('GillSans-Bold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
+  font-family: 'Gill Sans';
+  src: url('GillSans-Bold.woff2') format('woff2'),
+    url('GillSans-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Gill Sans';
-    src: url('GillSans-Italic.woff2') format('woff2'),
-        url('GillSans-Italic.woff') format('woff');
-    font-weight: normal;
-    font-style: italic;
+  font-family: 'Gill Sans';
+  src: url('GillSans-Italic.woff2') format('woff2'),
+    url('GillSans-Italic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
 }
 
 @font-face {
-    font-family: 'Gill Sans';
-    src: url('GillSans-BoldItalic.woff2') format('woff2'),
-        url('GillSans-BoldItalic.woff') format('woff');
-    font-weight: bold;
-    font-style: italic;
+  font-family: 'Gill Sans';
+  src: url('GillSans-BoldItalic.woff2') format('woff2'),
+    url('GillSans-BoldItalic.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
 }
 
 @font-face {
-    font-family: 'Gill Sans';
-    src: url('GillSans-Light.woff2') format('woff2'),
-        url('GillSans-Light.woff') format('woff');
-    font-weight: 300;
-    font-style: normal;
+  font-family: 'Gill Sans';
+  src: url('GillSans-Light.woff2') format('woff2'),
+    url('GillSans-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Gill Sans';
-    src: url('GillSans-CondensedBold.woff2') format('woff2'),
-        url('GillSans-CondensedBold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
+  font-family: 'Gill Sans';
+  src: url('GillSans-CondensedBold.woff2') format('woff2'),
+    url('GillSans-CondensedBold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Gill Sans';
-    src: url('GillSans-MediumItalic.woff2') format('woff2'),
-        url('GillSans-MediumItalic.woff') format('woff');
-    font-weight: 500;
-    font-style: italic;
+  font-family: 'Gill Sans';
+  src: url('GillSans-MediumItalic.woff2') format('woff2'),
+    url('GillSans-MediumItalic.woff') format('woff');
+  font-weight: 500;
+  font-style: italic;
 }
 
 @font-face {
-    font-family: 'Gill Sans';
-    src: url('GillSans-LightItalic.woff2') format('woff2'),
-        url('GillSans-LightItalic.woff') format('woff');
-    font-weight: 300;
-    font-style: italic;
+  font-family: 'Gill Sans';
+  src: url('GillSans-LightItalic.woff2') format('woff2'),
+    url('GillSans-LightItalic.woff') format('woff');
+  font-weight: 300;
+  font-style: italic;
 }
 
 @font-face {
-    font-family: 'Gill Sans';
-    src: url('GillSans-Heavy.woff2') format('woff2'),
-        url('GillSans-Heavy.woff') format('woff');
-    font-weight: 900;
-    font-style: normal;
+  font-family: 'Gill Sans';
+  src: url('GillSans-Heavy.woff2') format('woff2'),
+    url('GillSans-Heavy.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Gill Sans';
-    src: url('GillSans.woff2') format('woff2'),
-        url('GillSans.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'Gill Sans';
+  src: url('GillSans.woff2') format('woff2'),
+    url('GillSans.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Gill Sans';
-    src: url('GillSans-HeavyItalic.woff2') format('woff2'),
-        url('GillSans-HeavyItalic.woff') format('woff');
-    font-weight: 900;
-    font-style: italic;
+  font-family: 'Gill Sans';
+  src: url('GillSans-HeavyItalic.woff2') format('woff2'),
+    url('GillSans-HeavyItalic.woff') format('woff');
+  font-weight: 900;
+  font-style: italic;
 }
-

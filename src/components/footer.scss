@@ -1,15 +1,15 @@
-@import "../pages/utils";
+@import '../pages/utils';
 
 .footer-consent {
-	@include changeFontSize(0.8rem);
-	line-height: 1.1;
-	text-align: justify;
+  @include changeFontSize(0.8rem);
+  line-height: 1.1;
+  text-align: justify;
 
-	/**
+  /**
 		There is no way to position footer at the bottom to the last page.
 		This is why you have to adjust the required margin every time you change something.
 	 */
-	@include forPrinter {
-		margin-top: 0cm;
-	}
+  @include forPrinter {
+    margin-top: 0cm;
+  }
 }

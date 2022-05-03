@@ -1,18 +1,18 @@
-import * as React from "react"
+import * as React from 'react';
 
-import "./segment.scss"
-import { getIcon } from "../utils"
+import './segment.scss';
+import { getIcon } from '../utils';
 
 export interface SegmentProps {
-  header: SegmentHeaderProps,
-  children: React.ReactNode
+  header: SegmentHeaderProps;
+  children: React.ReactNode;
 }
 
 export const Segment = (props: SegmentProps) => (
-    <section className="segment entries-group">
-      <SegmentHeader {...props.header}/>
-      {props.children}
-    </section>
+  <section className="segment entries-group">
+    <SegmentHeader {...props.header} />
+    {props.children}
+  </section>
 );
 
 export interface SegmentHeaderProps {
@@ -23,13 +23,9 @@ export interface SegmentHeaderProps {
 const SegmentHeader = (props: SegmentHeaderProps) => (
   <header className="segment--header">
     <div className="icon-wrapper">
-      <img
-        className="icon"
-        src={getIcon(props.icon)}
-        aria-hidden={true}
-      />
+      <img className="icon" src={getIcon(props.icon)} aria-hidden={true} />
     </div>
     <h2>{props.title}</h2>
-    <div className="highlight-border"/>
+    <div className="highlight-border" />
   </header>
-)
+);

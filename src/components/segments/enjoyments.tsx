@@ -1,12 +1,10 @@
-import * as React from "react"
-import { UnbreakableList } from "../unbreakableList"
+import * as React from 'react';
+import { UnbreakableList } from '../unbreakableList';
 
 export interface EnjoymentsProps {
-  entries: string[]
+  entries: string[];
 }
 
 export const Enjoyments = (props: EnjoymentsProps) => (
-  <UnbreakableList>
-    {props.entries.join(', ')}
-  </UnbreakableList>
-)
+  <UnbreakableList>{props.entries.join(', ')}</UnbreakableList>
+);

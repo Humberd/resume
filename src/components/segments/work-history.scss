@@ -1,33 +1,32 @@
-@import "../../pages/utils";
+@import '../../pages/utils';
 
 .work-details {
-	.position {
-		font-weight: 600;
-		@include changeFontSize(1.1rem);
-		color: var(--theme-color);
-	}
+  .position {
+    font-weight: 600;
+    @include changeFontSize(1.1rem);
+    color: var(--theme-color);
+  }
 
-	.separator {
-		margin: 0 8px;
-	}
+  .separator {
+    margin: 0 8px;
+  }
 
-	.company {
-		font-weight: 500;
-		white-space: nowrap;
-	}
+  .company {
+    font-weight: 500;
+    white-space: nowrap;
+  }
 
-	.projects-header {
-		margin-top: 16px;
-	}
+  .projects-header {
+    margin-top: 16px;
+  }
 }
 
 .work-project {
+  &:not(:last-child) {
+    margin-bottom: var(--entry-spacing);
+  }
 
-	&:not(:last-child) {
-		margin-bottom: var(--entry-spacing);
-	}
-
-	.project-name {
-		font-weight: 500;
-	}
+  .project-name {
+    font-weight: 500;
+  }
 }

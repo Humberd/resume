@@ -8,27 +8,27 @@ export interface EducationProps {
 }
 
 export const Education = (props: EducationProps) => (
-    <UnbreakableList>
-      {props.entries.map(it => (
-          <EducationEntry {...it} key={it.date.from}/>
-      ))}
-    </UnbreakableList>
+  <UnbreakableList>
+    {props.entries.map((it) => (
+      <EducationEntry {...it} key={it.date.from} />
+    ))}
+  </UnbreakableList>
 );
 
 export interface EducationEntryProps {
   date: {
-    from: string,
-    to: string
-  },
-  degree: string,
-  school: string
+    from: string;
+    to: string;
+  };
+  degree: string;
+  school: string;
 }
 
 export const EducationEntry = (props: EducationEntryProps) => (
-    <li className="education-details entries-group">
-      <DateEntry date={props.date}>
-        <p className="degree">{props.degree}</p>
-      </DateEntry>
-      <p className="school">{props.school}</p>
-    </li>
+  <li className="education-details entries-group">
+    <DateEntry date={props.date}>
+      <p className="degree">{props.degree}</p>
+    </DateEntry>
+    <p className="school">{props.school}</p>
+  </li>
 );

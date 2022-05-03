@@ -1,64 +1,63 @@
-@import "../pages/utils";
+@import '../pages/utils';
 
 .header {
-	margin-bottom: 20px;
+  margin-bottom: 20px;
 
-	.main-header {
-		display: flex;
-		align-items: center;
+  .main-header {
+    display: flex;
+    align-items: center;
 
-		.name {
-			@include changeFontSize(2.9rem);
-			font-weight: bold;
-			color: var(--theme-color);
-		}
+    .name {
+      @include changeFontSize(2.9rem);
+      font-weight: bold;
+      color: var(--theme-color);
+    }
 
-		a.download {
-			@include resetButtonStyles();
-			@include changeFontSize(17px);
+    a.download {
+      @include resetButtonStyles();
+      @include changeFontSize(17px);
 
-			border: 2px solid var(--theme-color);
+      border: 2px solid var(--theme-color);
 
-			margin-left: auto;
-			padding: 5px 15px;
-			border-radius: 7px;
-			background-color: #fff;
-			z-index: 10;
+      margin-left: auto;
+      padding: 5px 15px;
+      border-radius: 7px;
+      background-color: #fff;
+      z-index: 10;
 
-			transition: background-color 100ms ease-in-out;
+      transition: background-color 100ms ease-in-out;
 
-			@include forPrinter {
-				display: none;
-			}
+      @include forPrinter {
+        display: none;
+      }
 
-			@include forMobileDevice {
-				position: fixed;
-				bottom: 0;
-				right: 0;
-				margin: 20px;
-			}
+      @include forMobileDevice {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        margin: 20px;
+      }
 
-			&:hover,
-			&:focus{
-				background-color: #efefef;
-				text-decoration: none;
-			}
+      &:hover,
+      &:focus {
+        background-color: #efefef;
+        text-decoration: none;
+      }
 
-			&:active {
-				background-color: #e7e7e7;
-			}
-		}
-	}
+      &:active {
+        background-color: #e7e7e7;
+      }
+    }
+  }
 
-	.profession {
-		@include changeFontSize(1.5rem);
-		font-weight: 500;
-		color: var(--theme-color);
-		margin-bottom: 10px;
-	}
+  .profession {
+    @include changeFontSize(1.5rem);
+    font-weight: 500;
+    color: var(--theme-color);
+    margin-bottom: 10px;
+  }
 
-	.description {
-		text-align: justify;
-	}
-
+  .description {
+    text-align: justify;
+  }
 }

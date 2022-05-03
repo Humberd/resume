@@ -1,9 +1,9 @@
-@import "../pages/utils";
+@import '../pages/utils';
 
 .generic-list {
-	& > * {
-		@include forPrinter {
-			break-inside: avoid;
-		}
-	}
+  & > * {
+    @include forPrinter {
+      break-inside: avoid;
+    }
+  }
 }

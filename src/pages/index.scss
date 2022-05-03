@@ -1,33 +1,33 @@
-@import "utils";
+@import 'utils';
 
 :root {
-	--text-color--primary: #222;
-	--text-color--secondary: #727272;
-	--theme-color: #3d414e;
-	--secondary-color: #05919e;
-	--tertiary-color: #8ede87;
-	--border-color: #d5d6d6;
-	--segments-spacing: 40px;
-	--entries-group-spacing: 30px;
-	--entry-spacing: 20px;
+  --text-color--primary: #222;
+  --text-color--secondary: #727272;
+  --theme-color: #3d414e;
+  --secondary-color: #05919e;
+  --tertiary-color: #8ede87;
+  --border-color: #d5d6d6;
+  --segments-spacing: 40px;
+  --entries-group-spacing: 30px;
+  --entry-spacing: 20px;
 }
 
 .columns {
-	display: grid;
-	grid-template-columns: 2fr 1fr;
-	grid-column-gap: var(--segments-spacing);
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-column-gap: var(--segments-spacing);
 
-	@include forMobileDevice {
-		display: block;
-	}
+  @include forMobileDevice {
+    display: block;
+  }
 }
 
 .entries-group {
-	margin-bottom: var(--entries-group-spacing);
+  margin-bottom: var(--entries-group-spacing);
 }
 
 .spacer {
-	@include forPrinter {
-		height: 50px;
-	}
+  @include forPrinter {
+    height: 50px;
+  }
 }

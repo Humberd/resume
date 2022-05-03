@@ -1,19 +1,18 @@
 .technology-entry {
+  &:not(:last-child) {
+    margin-bottom: 13px;
+  }
 
-	&:not(:last-child) {
-		margin-bottom: 13px;
-	}
+  .title {
+    font-weight: 500;
+  }
 
-	.title {
-		font-weight: 500;
-	}
+  .list-of-technologies {
+    display: flex;
+    flex-wrap: wrap;
 
-	.list-of-technologies {
-		display: flex;
-		flex-wrap: wrap;
-
-		.technology {
-			margin-right: 2px;
-		}
-	}
+    .technology {
+      margin-right: 2px;
+    }
+  }
 }

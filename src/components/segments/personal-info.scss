@@ -1,22 +1,21 @@
-@import "../../pages/utils";
+@import '../../pages/utils';
 
 .personal-info-entry {
-	line-height: 1;
+  line-height: 1;
 
-	&:not(:last-child) {
-		margin-bottom: 8px;
-	}
+  &:not(:last-child) {
+    margin-bottom: 8px;
+  }
 
-	.link {
-		display: inline-flex;
-		align-items: center;
-	}
+  .link {
+    display: inline-flex;
+    align-items: center;
+  }
 
-	.title-image {
-		width: 20px;
-		height: 20px;
-		margin-right: 10px;
-		user-select: none;
-	}
+  .title-image {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    user-select: none;
+  }
 }
-

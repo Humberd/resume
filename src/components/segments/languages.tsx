@@ -8,11 +8,11 @@ export interface LanguagesProps {
 }
 
 export const Languages = (props: LanguagesProps) => (
-    <UnbreakableList>
-      {props.entries.map(it => (
-          <LanguageEntry {...it} key={it.name}/>
-      ))}
-    </UnbreakableList>
+  <UnbreakableList>
+    {props.entries.map((it) => (
+      <LanguageEntry {...it} key={it.name} />
+    ))}
+  </UnbreakableList>
 );
 
 export interface LanguageEntryProps {
@@ -21,9 +21,9 @@ export interface LanguageEntryProps {
 }
 
 export const LanguageEntry = (props: LanguageEntryProps) => (
-    <li className="language-entry">
-      <span className="lang-name">{props.name}</span>
-      <HorizontalSeparator/>
-      <span>{props.level}</span>
-    </li>
+  <li className="language-entry">
+    <span className="lang-name">{props.name}</span>
+    <HorizontalSeparator />
+    <span>{props.level}</span>
+  </li>
 );

@@ -1,9 +1,9 @@
-@import "../../pages/utils";
+@import '../../pages/utils';
 
 .education-details {
-	.degree {
-		@include changeFontSize(1.1rem);
-		font-weight: bold;
-		color: var(--theme-color);
-	}
+  .degree {
+    @include changeFontSize(1.1rem);
+    font-weight: bold;
+    color: var(--theme-color);
+  }
 }

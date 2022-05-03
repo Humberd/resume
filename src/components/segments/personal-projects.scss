@@ -1,15 +1,15 @@
-@import "../../pages/utils";
+@import '../../pages/utils';
 
 .personal-project-entry {
-	.personal-project-header-section {
-		display: flex;
+  .personal-project-header-section {
+    display: flex;
 
-		.name {
-			font-weight: 500;
-		}
-	}
+    .name {
+      font-weight: 500;
+    }
+  }
 
-	.project-link {
-		@include changeFontSize(0.9rem);
-	}
+  .project-link {
+    @include changeFontSize(0.9rem);
+  }
 }

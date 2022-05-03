@@ -6,7 +6,5 @@ export interface FooterProps {
 }
 
 export const Footer = (props: FooterProps) => (
-    <p className="footer-consent">
-      {props.consent}
-    </p>
+  <p className="footer-consent">{props.consent}</p>
 );

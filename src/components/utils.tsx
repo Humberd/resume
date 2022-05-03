@@ -1,4 +1,4 @@
-import * as React from "react"
+import * as React from 'react';
 
 export function getIcon(name: string) {
   if (!name) {
@@ -6,10 +6,10 @@ export function getIcon(name: string) {
   }
 
   try {
-    return require(`../images/${name}`).default
+    return require(`../images/${name}`).default;
   } catch (e) {
     console.warn(`Icon ${name} does not exist`);
-    return ''
+    return '';
   }
 }
 
@@ -21,19 +21,18 @@ export function pseudoMarkdownToReact(value: string): React.ReactNode[] {
 
   return splittedValue.map((piece, index) => {
     if (isEven(index)) {
-      return <span key={index}>{piece}</span>
+      return <span key={index}>{piece}</span>;
     }
 
-    return <strong key={index}>{piece}</strong>
-  })
-
+    return <strong key={index}>{piece}</strong>;
+  });
 }
 
 export function isEven(value: number) {
-  return value %2 === 0;
+  return value % 2 === 0;
 }
 
 export function removeDuplicatedWhiteSpaces(text: string): string {
-  let s = text.trim().replace(/\s{2,}/g, ' ')
-  return s
+  let s = text.trim().replace(/\s{2,}/g, ' ');
+  return s;
 }
