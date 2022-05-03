@@ -246,6 +246,21 @@ const WorkHistorySegment = () => (
       entries={[
         {
           date: {
+            from: '2021.12',
+            to: 'current'
+          },
+          positions: ['Senior Software Engineer'],
+          company: 'Deloitte',
+          projects: [{
+            name: 'Call Center',
+            technologies: ['TypeScript', 'React', 'Twilio'],
+            position: 'Frontend and Backend',
+            description: `I was responsible for implementing features in a Twilio-based software, according to the client's needs.
+              This included the development of React plugin and cloud functions.`
+          }]
+        },
+        {
+          date: {
             from: '2019.11',
             to: '2021.12',
           },
@@ -270,16 +285,14 @@ const WorkHistorySegment = () => (
             to: '2021.11',
           },
           positions: ['Senior Frontend Engineer'],
-          shortDescription: `I was hired to fix reoccurring problems with a product called OptiJet.
-                 My goal was to implement and optimize: internationalization, generation of 50 pages long pdf, 
-                 real-time charts displaying tens of thousands event data points.
-                 The challenge I faced was that I had to make this work on a low-en Android tablet released in 2014.`,
           company: 'Plumettaz',
           projects: [
             {
               name: 'OptiJet™',
-              description: `A microwave-sized device that blows optical cables in preinstalled pipes with
-                  a web application to control and monitor its work.`,
+              description: `I was hired to fix reoccurring problems with a product called OptiJet.
+                 My goal was to implement and optimize: internationalization, generation of 50 pages long pdf, 
+                 real-time charts displaying tens of thousands event data points.
+                 The challenge I faced was that I had to make this work on a low-en Android tablet released in 2014.`,
               position: 'Frontend',
               technologies: ['React', 'JavaScript', 'TypeScript'],
             },
@@ -293,7 +306,7 @@ const WorkHistorySegment = () => (
           positions: ['Fullstack Engineer'],
           shortDescription: `Apart from regular programming duties
               I was also responsible for: creating and reviewing frontend-related recruitment tasks, 
-              doing interviews, training interns and representing the company in 
+              performing interviews, training interns and representing the company in 
               trade show booths during several events.`,
           company: 'Acaisoft',
           projects: [
