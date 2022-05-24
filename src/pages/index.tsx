@@ -127,8 +127,8 @@ const PersonalInfoSegment = () => (
         {
           title: 'Email',
           icon: 'email.svg',
-          value: 'maciej.sawicki@pm.me',
-          href: 'mailto:maciej.sawicki@pm.me',
+          value: 'maciej.sawicki@protonmail.com',
+          href: 'mailto:maciej.sawicki@protonmail.com',
         },
         {
           title: 'GitHub',
