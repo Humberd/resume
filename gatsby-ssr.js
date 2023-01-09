@@ -64,7 +64,7 @@ function getPostBodyComponentsNoJS(postBodyComponents, pluginOptions) {
       return false;
     }
 
-    if (postBodyComponent.props.src.indexOf('polyfill') > -1) {
+    if (postBodyComponent.props.src?.indexOf('polyfill') > -1) {
       return false
     }
 
