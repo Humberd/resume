@@ -21,6 +21,9 @@
     "type": "git",
     "url": "https://github.com/Humberd/resume"
   },
+  "engines": {
+    "node": "18.12.1"
+  },
   "private": false,
   "dependencies": {
     "gatsby": "4.1.3",
