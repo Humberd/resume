@@ -28,6 +28,12 @@
 
 .spacer {
   @include forPrinter {
-    height: 50px;
+    height: 70px;
+  }
+}
+
+.spacer2 {
+  @include forPrinter {
+    height: 120px;
   }
 }

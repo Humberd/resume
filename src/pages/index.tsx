@@ -52,11 +52,14 @@ const IndexPage = () => (
         </UnbreakableList>
       </div>
 
+      {/* Artificial spacer so that printing works */}
+      <div className="spacer" />
       <EducationSegment />
       <AccomplishmentsSegment />
-      {/* Artificial spacer so that printing works */}
-      {/*<div className="spacer" />*/}
       <OthersSegment />
+
+      {/* Artificial spacer so that printing works */}
+      <div className="spacer2" />
       <PersonalProjectsSegment />
 
       <FooterSegment />
