@@ -30,11 +30,11 @@ const IndexPage = () => (
       <HeaderSegment />
 
       <div className="columns">
-        <UnbreakableList>
+        <ul>
           <li>
             <WorkHistorySegment />
           </li>
-        </UnbreakableList>
+        </ul>
 
         <UnbreakableList>
           <li>
@@ -55,7 +55,7 @@ const IndexPage = () => (
       <EducationSegment />
       <AccomplishmentsSegment />
       {/* Artificial spacer so that printing works */}
-      <div className="spacer" />
+      {/*<div className="spacer" />*/}
       <OthersSegment />
       <PersonalProjectsSegment />
 
