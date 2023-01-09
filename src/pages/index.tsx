@@ -246,8 +246,25 @@ const WorkHistorySegment = () => (
       entries={[
         {
           date: {
-            from: '2021.12',
+            from: '2022.09',
             to: 'current'
+          },
+          positions: ['Senior Frontend Engineer'],
+          company: 'BioWink GmbH',
+          projects: [{
+            name: 'Clue website',
+            technologies: ['TypeScript', 'React', 'Gatsby'],
+            position: 'Frontend',
+            description: `I maintained and added features to a helloclue.com,
+              an encyclopedia website for Period and Cycle tracking app.
+              It consists of thousands of articles from Contentful, supports 5 languages
+              and allows web payment.`
+          }]
+        },
+        {
+          date: {
+            from: '2021.12',
+            to: '2022.08'
           },
           positions: ['Senior Software Engineer'],
           company: 'Deloitte',
@@ -255,8 +272,9 @@ const WorkHistorySegment = () => (
             name: 'Call Center',
             technologies: ['TypeScript', 'React', 'Twilio'],
             position: 'Frontend and Backend',
-            description: `I was responsible for implementing features in a Twilio-based software, according to the client's needs.
-              This included the development of React plugin and cloud functions.`
+            description: `I was responsible for implementing features in a Twilio-based software 
+              for handling and automating phone calls.
+              This included development of React plugin and cloud functions.`
           }]
         },
         {
