@@ -252,16 +252,9 @@ const WorkHistorySegment = () => (
             from: '2022.08',
             to: 'current',
           },
-          positions: ['Senior Fullstack Engineer'],
+          positions: ['Senior Frontend Engineer'],
           company: 'BioWink GmbH',
           projects: [
-            {
-              name: 'Payment microservice',
-              technologies: ['Kotlin', 'Java', 'Spring'],
-              position: 'Backend',
-              description: `Created a microservice responsible for handling web payments.
-            It integrated with Paddle payment processing platform.`,
-            },
             {
               name: 'Clue website',
               technologies: ['TypeScript', 'React', 'Gatsby'],
