@@ -249,10 +249,10 @@ const WorkHistorySegment = () => (
       entries={[
         {
           date: {
-            from: '2022.09',
+            from: '2022.08',
             to: 'current'
           },
-          positions: ['Senior Frontend Engineer'],
+          positions: ['Senior Fullstack Engineer'],
           company: 'BioWink GmbH',
           projects: [{
             name: 'Clue website',
@@ -262,12 +262,18 @@ const WorkHistorySegment = () => (
               an encyclopedia website for Period and Cycle tracking app.
               It consists of thousands of articles from Contentful, supports 5 languages
               and allows web payment.`
+          }, {
+            name: 'Payment microservice',
+            technologies: ['Kotlin', 'Java', 'Spring'],
+            position: 'Backend',
+            description: `Created a microservice responsible for handling web payments.
+            It integrated with Paddle payment processing platform.`
           }]
         },
         {
           date: {
             from: '2021.12',
-            to: '2022.08'
+            to: '2022.07'
           },
           positions: ['Senior Software Engineer'],
           company: 'Deloitte',
