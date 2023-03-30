@@ -250,41 +250,46 @@ const WorkHistorySegment = () => (
         {
           date: {
             from: '2022.08',
-            to: 'current'
+            to: 'current',
           },
           positions: ['Senior Fullstack Engineer'],
           company: 'BioWink GmbH',
-          projects: [{
-            name: 'Clue website',
-            technologies: ['TypeScript', 'React', 'Gatsby'],
-            position: 'Frontend',
-            description: `I maintained and added features to a helloclue.com,
+          projects: [
+            {
+              name: 'Payment microservice',
+              technologies: ['Kotlin', 'Java', 'Spring'],
+              position: 'Backend',
+              description: `Created a microservice responsible for handling web payments.
+            It integrated with Paddle payment processing platform.`,
+            },
+            {
+              name: 'Clue website',
+              technologies: ['TypeScript', 'React', 'Gatsby'],
+              position: 'Frontend',
+              description: `I maintained and added features to a helloclue.com,
               an encyclopedia website for Period and Cycle tracking app.
               It consists of thousands of articles from Contentful, supports 5 languages
-              and allows web payment.`
-          }, {
-            name: 'Payment microservice',
-            technologies: ['Kotlin', 'Java', 'Spring'],
-            position: 'Backend',
-            description: `Created a microservice responsible for handling web payments.
-            It integrated with Paddle payment processing platform.`
-          }]
+              and allows web payment.`,
+            },
+          ],
         },
         {
           date: {
             from: '2021.12',
-            to: '2022.07'
+            to: '2022.07',
           },
           positions: ['Senior Software Engineer'],
           company: 'Deloitte',
-          projects: [{
-            name: 'Call Center',
-            technologies: ['TypeScript', 'React', 'Twilio'],
-            position: 'Frontend and Backend',
-            description: `I was responsible for implementing features in a Twilio-based software 
+          projects: [
+            {
+              name: 'Call Center',
+              technologies: ['TypeScript', 'React', 'Twilio'],
+              position: 'Frontend and Backend',
+              description: `I was responsible for implementing features in a Twilio-based software 
               for handling and automating phone calls.
-              This included development of React plugin and cloud functions.`
-          }]
+              This included development of React plugin and cloud functions.`,
+            },
+          ],
         },
         {
           date: {
