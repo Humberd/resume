@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { Link } from './link';
 
 export function getIcon(name: string) {
   if (!name) {
@@ -14,25 +15,47 @@ export function getIcon(name: string) {
 }
 
 /**
- * Replaces every occurrence of `**text**` to a `<strong>text</strong>`
+ * Replaces every occurrence of:
+ * * `**text**` to a `<strong>text</strong>`
+ * * [text](url) to a `<a href="url">text</a>`
  */
 export function pseudoMarkdownToReact(value: string): React.ReactNode[] {
-  const splittedValue = removeDuplicatedWhiteSpaces(value).split('**');
+  const result: React.ReactNode[] = [];
+  let i = 0;
 
-  return splittedValue.map((piece, index) => {
-    if (isEven(index)) {
-      return <span key={index}>{piece}</span>;
+  while (i < value.length) {
+    if (value[i] === '*' && value[i + 1] === '*') {
+      let j = i + 2;
+      while (j < value.length && value[j] !== '*' && value[j + 1] !== '*') {
+        j++;
+      }
+
+      result.push(<strong key={i}>{value.substring(i + 2, j)}</strong>);
+      i = j + 2;
+    } else if (value[i] === '[') {
+      let j = i + 1;
+      while (j < value.length && value[j] !== ']') {
+        j++;
+      }
+
+      const text = value.substring(i + 1, j);
+      const url = value.substring(j + 2, value.indexOf(')', j + 2));
+
+      result.push(
+        <Link href={url} key={i}>
+          {text}
+        </Link>
+      );
+      i = value.indexOf(')', j + 2) + 1;
+    } else {
+      result.push(value[i]);
+      i++;
     }
+  }
 
-    return <strong key={index}>{piece}</strong>;
-  });
-}
-
-export function isEven(value: number) {
-  return value % 2 === 0;
+  return result;
 }
 
 export function removeDuplicatedWhiteSpaces(text: string): string {
-  let s = text.trim().replace(/\s{2,}/g, ' ');
-  return s;
+  return text.trim().replace(/\s{2,}/g, ' ');
 }

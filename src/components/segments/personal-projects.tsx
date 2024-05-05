@@ -2,6 +2,7 @@ import * as React from 'react';
 import './personal-projects.scss';
 import { UnbreakableList } from '../unbreakableList';
 import { HorizontalSeparator } from '../horizontal-separator';
+import { Link } from '../link';
 
 export interface PersonalProjectsProps {
   entries: PersonalProjectEntryProps[];
@@ -27,14 +28,9 @@ const PersonalProjectEntry = (props: PersonalProjectEntryProps) => (
     <header className="personal-project-header-section">
       <h4 className="name">{props.name}</h4>
       <HorizontalSeparator />
-      <a
-        className="project-link"
-        href={props.href}
-        target={'_blank'}
-        rel="noopener noreferrer"
-      >
+      <Link className="project-link" href={props.href}>
         {props.href.replace('https://', '')}
-      </a>
+      </Link>
     </header>
     <p className="technologies">[{props.technologies.join(', ')}]</p>
     <p className="description">{props.description}</p>

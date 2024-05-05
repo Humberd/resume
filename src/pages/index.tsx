@@ -259,7 +259,7 @@ const WorkHistorySegment = () => (
               name: 'Clue website',
               technologies: ['TypeScript', 'React', 'Gatsby'],
               position: 'Frontend',
-              description: `I maintained and added features to a helloclue.com,
+              description: `I maintained and added features to a [helloclue.com](https://helloclue.com),
               an encyclopedia website for Period and Cycle tracking app.
               It consists of thousands of articles from Contentful, supports 5 languages
               and allows web payment.`,

@@ -3,7 +3,7 @@ import './work-history.scss';
 import { UnbreakableList } from '../unbreakableList';
 import { HorizontalSeparator } from '../horizontal-separator';
 import { DateEntry } from './date-entry';
-import { removeDuplicatedWhiteSpaces } from '../utils';
+import { pseudoMarkdownToReact, removeDuplicatedWhiteSpaces } from '../utils';
 
 export interface WorkHistoryProps {
   entries: WorkEntryProps[];
@@ -67,7 +67,7 @@ const WorkProject = (props: WorkProjectProps) => (
     <span className="project-position">{props.position}</span>
     <p className="project-technologies">[{props.technologies.join(', ')}]</p>
     <p className="project-description">
-      {removeDuplicatedWhiteSpaces(props.description)}
+      {pseudoMarkdownToReact(removeDuplicatedWhiteSpaces(props.description))}
     </p>
   </li>
 );

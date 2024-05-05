@@ -4,6 +4,7 @@ import { UnbreakableList } from '../unbreakableList';
 import { DateEntry } from './date-entry';
 import { HorizontalSeparator } from '../horizontal-separator';
 import { removeDuplicatedWhiteSpaces } from '../utils';
+import { Link } from '../link';
 
 export interface AccomplishmentsProps {
   entries: AccomplishmentEntryProps[];
@@ -36,7 +37,7 @@ const AccomplishmentEntry = (props: AccomplishmentEntryProps) => {
           from: props.date,
         }}
       >
-        {!props.url ? header : <a href={props.url}>{header}</a>}
+        {!props.url ? header : <Link href={props.url}>{header}</Link>}
 
         {props.role && (
           <>
