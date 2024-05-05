@@ -3,7 +3,11 @@ import './work-history.scss';
 import { UnbreakableList } from '../unbreakableList';
 import { HorizontalSeparator } from '../horizontal-separator';
 import { DateEntry } from './date-entry';
-import { pseudoMarkdownToReact, removeDuplicatedWhiteSpaces } from '../utils';
+import {
+  getIcon,
+  pseudoMarkdownToReact,
+  removeDuplicatedWhiteSpaces,
+} from '../utils';
 
 export interface WorkHistoryProps {
   entries: WorkEntryProps[];
@@ -24,8 +28,14 @@ export interface WorkEntryProps {
   };
   positions: string[];
   shortDescription?: string;
-  company: string;
+  company: WorkEntryCompany;
   projects: WorkProjectProps[];
+}
+
+export interface WorkEntryCompany {
+  name: string;
+  icon?: string;
+  iconSize?: 'small';
 }
 
 const WorkEntry = (props: WorkEntryProps) => (
@@ -40,7 +50,16 @@ const WorkEntry = (props: WorkEntryProps) => (
         ))}
       </h3>
       <span className="separator">-</span>
-      <span className="company">{props.company}</span>
+      <div className="company">
+        <span className="company-name">{props.company.name}</span>
+        {props.company.icon && (
+          <img
+            className={`company-logo ${props.company.iconSize ?? ''}`}
+            src={getIcon(props.company.icon)}
+            aria-hidden={true}
+          />
+        )}
+      </div>
     </DateEntry>
     <p>{removeDuplicatedWhiteSpaces(props.shortDescription || '')}</p>
 

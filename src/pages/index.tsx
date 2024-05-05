@@ -253,7 +253,10 @@ const WorkHistorySegment = () => (
             to: 'current',
           },
           positions: ['Frontend Engineer'],
-          company: 'Google',
+          company: {
+            name: 'Google',
+            icon: 'google.svg',
+          },
           projects: [
             {
               name: 'Google Cloud - Flow Analyzer',
@@ -271,7 +274,10 @@ const WorkHistorySegment = () => (
             to: '2023.01',
           },
           positions: ['Senior Frontend Engineer'],
-          company: 'BioWink GmbH',
+          company: {
+            name: 'BioWink GmbH',
+            icon: 'biowink.svg',
+          },
           projects: [
             {
               name: 'Clue website',
@@ -290,7 +296,11 @@ const WorkHistorySegment = () => (
             to: '2022.07',
           },
           positions: ['Senior Software Engineer'],
-          company: 'Deloitte',
+          company: {
+            name: 'Deloitte',
+            icon: 'deloitte.svg',
+            iconSize: 'small',
+          },
           projects: [
             {
               name: 'Call Center',
@@ -312,7 +322,10 @@ const WorkHistorySegment = () => (
               My responsibilities were: frontend feature design and implementation,
               frontend core architecture, code reviews, reporting to the management and
               performing weekly presentations.`,
-          company: 'SDI Media',
+          company: {
+            name: 'SDI Media',
+            icon: 'sdi.png',
+          },
           projects: [
             {
               name: 'SPS - Single Production System',
@@ -328,7 +341,10 @@ const WorkHistorySegment = () => (
             to: '2021.11',
           },
           positions: ['Senior Frontend Engineer'],
-          company: 'Plumettaz',
+          company: {
+            name: 'Plumettaz',
+            icon: 'plumettaz.svg',
+          },
           projects: [
             {
               name: 'OptiJet™',
@@ -351,7 +367,10 @@ const WorkHistorySegment = () => (
               I was also responsible for: creating and reviewing frontend-related recruitment tasks, 
               performing interviews, training interns and representing the company in 
               trade show booths during several events.`,
-          company: 'Acaisoft',
+          company: {
+            name: 'Acaisoft',
+            icon: 'acaisoft.webp',
+          },
           projects: [
             {
               name: 'User management portal',
@@ -408,7 +427,10 @@ const WorkHistorySegment = () => (
             to: '2017.03',
           },
           positions: ['Frontend Developer'],
-          company: 'Transition Technologies',
+          company: {
+            name: 'Transition Technologies',
+            icon: 'tt.png',
+          },
           projects: [
             {
               name: 'Social meetings app',

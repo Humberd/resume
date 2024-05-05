@@ -10,10 +10,26 @@
   .separator {
     margin: 0 8px;
   }
-
+  
   .company {
-    font-weight: 500;
-    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    height: 26px;
+    
+    .company-name {
+      font-weight: 500;
+      white-space: nowrap;
+    }
+
+    .company-logo {
+      align-self: center;
+      margin-left: 12px;
+      height: 24px;
+
+      &.small {
+        height: 16px;
+      }
+    }
   }
 
   .projects-header {
