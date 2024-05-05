@@ -249,8 +249,26 @@ const WorkHistorySegment = () => (
       entries={[
         {
           date: {
-            from: '2022.08',
+            from: '2023.10',
             to: 'current',
+          },
+          positions: ['Frontend Engineer'],
+          company: 'Google',
+          projects: [
+            {
+              name: 'Google Cloud - Flow Analyzer',
+              technologies: ['TypeScript', 'Bazel'],
+              position: 'Frontend',
+              description: `I was a part of a core team responsible for launching
+             new Google Cloud product called [Flow Analyzer](https://cloud.google.com/network-intelligence-center/docs/flow-analyzer/overview).
+             It visualizes network traffic and helps to troubleshoot network issues.`,
+            },
+          ],
+        },
+        {
+          date: {
+            from: '2022.08',
+            to: '2023.01',
           },
           positions: ['Senior Frontend Engineer'],
           company: 'BioWink GmbH',
