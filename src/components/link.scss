@@ -1,4 +1,4 @@
-@import '../pages/utils';
+@use '../pages/utils' as *;
 
 .app-link {
 	text-decoration: underline;

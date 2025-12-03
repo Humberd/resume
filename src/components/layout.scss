@@ -1,4 +1,4 @@
-@import '../pages/utils';
+@use '../pages/utils' as *;
 
 html {
   font-family: 'Gill Sans', sans-serif;

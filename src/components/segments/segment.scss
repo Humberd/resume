@@ -1,4 +1,4 @@
-@import '../../pages/utils';
+@use '../../pages/utils' as *;
 
 .segment--header {
   @include changeFontSize(1.2rem);

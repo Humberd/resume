@@ -1,4 +1,4 @@
-@import '../pages/utils';
+@use '../pages/utils' as *;
 
 .header {
   margin-bottom: 20px;

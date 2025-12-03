@@ -1,4 +1,4 @@
-@import '../pages/utils';
+@use '../pages/utils' as *;
 
 .footer-consent {
   @include changeFontSize(0.8rem);
