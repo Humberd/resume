@@ -22,7 +22,7 @@
     "url": "https://github.com/Humberd/resume"
   },
   "engines": {
-    "node": "24.11.1"
+    "node": "20.12.2"
   },
   "private": false,
   "dependencies": {
