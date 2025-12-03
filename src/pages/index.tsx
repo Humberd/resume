@@ -125,7 +125,7 @@ const PersonalInfoSegment = () => (
           title: 'Address',
           icon: 'place.svg',
           value: 'Warsaw, Poland',
-          href: 'https://goo.gl/maps/fSBP7oMDgsZUzzmq6',
+          href: 'https://maps.app.goo.gl/FGbPR76L7mTc8xba8',
         },
         {
           title: 'Email',
