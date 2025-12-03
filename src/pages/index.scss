@@ -17,7 +17,7 @@
    * Increase the value if the footer is too high, decrease if it goes to the next page.
    * A4 page height is 29.7cm, so max value is roughly that minus content above footer.
    */
-  --print-footer-margin-top: 14cm;
+  --print-footer-margin-top: 12cm;
 }
 
 .columns {
