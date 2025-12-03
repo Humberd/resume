@@ -102,7 +102,7 @@ const HeaderSegment = () => (
       downloadUrl:
         'https://github.com/Humberd/resume/raw/gh-pages/Maciej%20Sawicki%20-%20Resume.pdf',
       profession: 'Senior Frontend Engineer',
-      description: `Frontend engineer with 10+ years of experience building high-impact web and mobile applications. 
+      description: `Frontend engineer with 8+ years of experience building high-impact web and mobile applications. 
       Currently at Google, where I lead frontend development for a Cloud product. 
       Expert in React, Angular, and TypeScript with a proven track record of delivering scalable solutions 
       for millions of users. Comfortable across the full stack with hands-on backend experience in Java and Node.js. 
