@@ -6,6 +6,10 @@
 > The project is my Resume written in React.
 It is print-optimized, so you can print it either physically or to pdf.
 
+## Requirements
+
+Node: v20 is required. It's because of gatsby not supporting newer versions.
+
 ## Install
 
 ```sh
