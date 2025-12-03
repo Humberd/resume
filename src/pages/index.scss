@@ -10,6 +10,14 @@
   --segments-spacing: 40px;
   --entries-group-spacing: 30px;
   --entry-spacing: 20px;
+
+  /**
+   * FOOTER POSITIONING FOR PRINT
+   * Adjust this value to push the footer to the bottom of the last page.
+   * Increase the value if the footer is too high, decrease if it goes to the next page.
+   * A4 page height is 29.7cm, so max value is roughly that minus content above footer.
+   */
+  --print-footer-margin-top: 14cm;
 }
 
 .columns {
@@ -26,14 +34,3 @@
   margin-bottom: var(--entries-group-spacing);
 }
 
-.spacer {
-  @include forPrinter {
-    height: 70px;
-  }
-}
-
-.spacer2 {
-  @include forPrinter {
-    height: 120px;
-  }
-}

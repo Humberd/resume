@@ -5,11 +5,8 @@
   line-height: 1.1;
   text-align: justify;
 
-  /**
-		There is no way to position footer at the bottom to the last page.
-		This is why you have to adjust the required margin every time you change something.
-	 */
   @include forPrinter {
-    margin-top: 14cm;
+    // Uses the CSS variable defined in index.scss for easy adjustment
+    margin-top: var(--print-footer-margin-top);
   }
 }
