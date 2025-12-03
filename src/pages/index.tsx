@@ -102,12 +102,11 @@ const HeaderSegment = () => (
       downloadUrl:
         'https://github.com/Humberd/resume/raw/gh-pages/Maciej%20Sawicki%20-%20Resume.pdf',
       profession: 'Senior Frontend Engineer',
-      description: `I'm an experienced engineer, who specializes in frontend development.
-      I am fluent with both JavaScript and Typescript. I worked with a variety of technologies,
-      the most notable being React, React Native and Angular. I worked on a variety of projects,
-      both large and small, in some of which I expanded my knowledge of backend development in Java and Node.js.
-      It makes me an ideal candidate to make a job done, regardless of the technology.
-      `,
+      description: `Frontend engineer with 10+ years of experience building high-impact web and mobile applications. 
+      Currently at Google, where I lead frontend development for a Cloud product. 
+      Expert in React, Angular, and TypeScript with a proven track record of delivering scalable solutions 
+      for millions of users. Comfortable across the full stack with hands-on backend experience in Java and Node.js. 
+      Known for turning complex technical challenges into elegant, user-focused products.`,
     }}
   />
 );
