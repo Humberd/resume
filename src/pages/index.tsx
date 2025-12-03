@@ -315,6 +315,28 @@ const WorkHistorySegment = () => (
         },
         {
           date: {
+            from: '2021.09',
+            to: '2021.11',
+          },
+          positions: ['Senior Frontend Engineer'],
+          company: {
+            name: 'Plumettaz',
+            icon: 'plumettaz.svg',
+          },
+          projects: [
+            {
+              name: 'OptiJet™',
+              description: `I was hired to fix reoccurring problems with a product called OptiJet.
+                 My goal was to implement and optimize: internationalization, generation of 50 pages long pdf, 
+                 real-time charts displaying tens of thousands event data points.
+                 The challenge I faced was that I had to make this work on a low-en Android tablet released in 2014.`,
+              position: 'Frontend',
+              technologies: ['React', 'JavaScript', 'TypeScript'],
+            },
+          ],
+        },
+        {
+          date: {
             from: '2019.11',
             to: '2021.12',
           },
@@ -333,28 +355,6 @@ const WorkHistorySegment = () => (
               technologies: ['Angular', 'TypeScript', 'Jest'],
               position: 'Frontend',
               description: `Web system for managing end-to-end production orders.`,
-            },
-          ],
-        },
-        {
-          date: {
-            from: '2021.09',
-            to: '2021.11',
-          },
-          positions: ['Senior Frontend Engineer'],
-          company: {
-            name: 'Plumettaz',
-            icon: 'plumettaz.svg',
-          },
-          projects: [
-            {
-              name: 'OptiJet™',
-              description: `I was hired to fix reoccurring problems with a product called OptiJet.
-                 My goal was to implement and optimize: internationalization, generation of 50 pages long pdf, 
-                 real-time charts displaying tens of thousands event data points.
-                 The challenge I faced was that I had to make this work on a low-en Android tablet released in 2014.`,
-              position: 'Frontend',
-              technologies: ['React', 'JavaScript', 'TypeScript'],
             },
           ],
         },
