@@ -260,7 +260,7 @@ const WorkHistorySegment = () => (
           projects: [
             {
               name: 'Google Cloud - Flow Analyzer',
-              technologies: ['TypeScript', 'Bazel'],
+              technologies: ['TypeScript', 'Angular', 'Java', 'Bazel'],
               position: 'Frontend',
               description: `I was a part of a core team responsible for launching
              new Google Cloud product called [Flow Analyzer](https://cloud.google.com/network-intelligence-center/docs/flow-analyzer/overview).
