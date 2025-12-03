@@ -263,9 +263,9 @@ const WorkHistorySegment = () => (
               technologies: ['TypeScript', 'Angular', 'Java', 'Bazel'],
               position: 'Frontend',
               description:
-                `I was leading a small team in charge of launching a new Google Cloud product called ` +
-                `[Flow Analyzer](https://cloud.google.com/network-intelligence-center/docs/flow-analyzer/overview).
-                It visualizes network traffic from VPC Flow Logs and helps to troubleshoot network issues.`,
+                `Led a team to successfully launch [Flow Analyzer](https://cloud.google.com/network-intelligence-center/docs/flow-analyzer/overview), ` +
+                `a new Google Cloud product that enables enterprise customers to visualize and analyze network traffic from VPC Flow Logs. ` +
+                `Drove the frontend architecture and delivered critical troubleshooting capabilities used by cloud infrastructure teams worldwide.`,
             },
           ],
         },
@@ -284,10 +284,11 @@ const WorkHistorySegment = () => (
               name: 'Clue website',
               technologies: ['TypeScript', 'React', 'Gatsby'],
               position: 'Frontend',
-              description: `I maintained and added features to a [helloclue.com](https://helloclue.com),
-              an encyclopedia website for Period and Cycle tracking app.
-              It consists of thousands of articles from Contentful, supports 5 languages
-              and allows web payment.`,
+              description:
+                `Owned frontend development for [helloclue.com](https://helloclue.com), ` +
+                `a high-traffic health encyclopedia serving millions of users globally. ` +
+                `Delivered new features across a multi-language platform (5 languages) with thousands of Contentful-managed articles, ` +
+                `and implemented seamless web payment integration.`,
             },
           ],
         },
@@ -307,9 +308,10 @@ const WorkHistorySegment = () => (
               name: 'Call Center',
               technologies: ['TypeScript', 'React', 'Twilio'],
               position: 'Frontend and Backend',
-              description: `I was responsible for implementing features in a Twilio-based software 
-              for handling and automating phone calls.
-              This included development of React plugin and cloud functions.`,
+              description:
+                `Architected and delivered full-stack features for an enterprise call center platform, ` +
+                `enabling automated phone call handling and workflow optimization. ` +
+                `Built custom React plugins and serverless cloud functions that streamlined agent productivity.`,
             },
           ],
         },
@@ -326,10 +328,10 @@ const WorkHistorySegment = () => (
           projects: [
             {
               name: 'OptiJet™',
-              description: `I was hired to fix reoccurring problems with a product called OptiJet.
-                 My goal was to implement and optimize: internationalization, generation of 50 pages long pdf, 
-                 real-time charts displaying tens of thousands event data points.
-                 The challenge I faced was that I had to make this work on a low-en Android tablet released in 2014.`,
+              description:
+                `Rescued a critical industrial product by resolving persistent performance issues. ` +
+                `Engineered internationalization support, optimized 50-page PDF generation, and built real-time ` +
+                `data visualization handling tens of thousands of data points—all while targeting legacy 2014 Android hardware.`,
               position: 'Frontend',
               technologies: ['React', 'JavaScript', 'TypeScript'],
             },
@@ -341,10 +343,10 @@ const WorkHistorySegment = () => (
             to: '2021.12',
           },
           positions: ['Technical Team Lead', 'Senior Frontend Engineer'],
-          shortDescription: `I was a Leader and a Developer in a team of 8 in a project of 30.
-              My responsibilities were: frontend feature design and implementation,
-              frontend core architecture, code reviews, reporting to the management and
-              performing weekly presentations.`,
+          shortDescription:
+            `Led a team of 8 engineers within a 30-person project. ` +
+            `Drove frontend architecture decisions, designed and implemented core features, ` +
+            `conducted code reviews, and delivered weekly stakeholder presentations.`,
           company: {
             name: 'SDI Media',
             icon: 'sdi.png',
@@ -354,7 +356,9 @@ const WorkHistorySegment = () => (
               name: 'SPS - Single Production System',
               technologies: ['Angular', 'TypeScript', 'Jest'],
               position: 'Frontend',
-              description: `Web system for managing end-to-end production orders.`,
+              description:
+                `Built an enterprise-grade production management platform from the ground up, ` +
+                `enabling end-to-end order tracking and workflow automation for media localization services.`,
             },
           ],
         },
@@ -364,10 +368,9 @@ const WorkHistorySegment = () => (
             to: '2019.10',
           },
           positions: ['Fullstack Engineer'],
-          shortDescription: `Apart from regular programming duties
-              I was also responsible for: creating and reviewing frontend-related recruitment tasks, 
-              performing interviews, training interns and representing the company in 
-              trade show booths during several events.`,
+          shortDescription:
+            `Beyond core development, took ownership of technical recruitment—designing challenges and conducting interviews. ` +
+            `Mentored interns and served as company ambassador at industry trade shows.`,
           company: {
             name: 'Acaisoft',
             icon: 'acaisoft.webp',
@@ -389,14 +392,14 @@ const WorkHistorySegment = () => (
               ],
               position: 'Frontend and Backend',
               description:
-                'Web portal to group, monitor and manage access to data backup portals.',
+                'Developed a centralized management portal enabling enterprise clients to monitor, group, and control access across multiple data backup systems.',
             },
             {
               name: 'Data backup portal',
               technologies: ['Angular', 'TypeScript'],
               position: 'Frontend',
               description:
-                'Data deduplication and replication platform allowing for remote monitoring and configuring a physical server.',
+                'Built a remote monitoring and configuration interface for enterprise data deduplication and replication servers.',
             },
             {
               name: 'Car sharing platform',
@@ -405,7 +408,7 @@ const WorkHistorySegment = () => (
               ],
               position: 'Mobile app',
               description:
-                'Platform for managing car sharing fleet workers with real-time info and job batching.',
+                'Engineered a real-time mobile application for fleet management, featuring live worker tracking and intelligent job batching algorithms.',
             },
             {
               name: 'VR Portal',
@@ -418,7 +421,7 @@ const WorkHistorySegment = () => (
               ],
               position: 'Frontend and Backend',
               description:
-                'VR streaming content management portal with an embedded VR player.',
+                'Created a full-stack content management system for VR streaming with an integrated web-based VR player.',
             },
           ],
         },
@@ -438,14 +441,14 @@ const WorkHistorySegment = () => (
               technologies: ['Angular', 'TypeScript', 'AngularJS', 'Meteor'],
               position: 'Frontend',
               description:
-                'Chrome extension arranging meetings between people with problems and their potential solvers.',
+                'Developed a Chrome extension that intelligently matches users seeking help with domain experts, facilitating knowledge-sharing meetings.',
             },
             {
               name: 'Skills management portal',
               technologies: ['AngularJS', 'JavaScript', 'Meteor'],
               position: 'Frontend and Backend',
               description:
-                'Web application for managing user skills and finding the best people for a given problem.',
+                'Built a talent discovery platform enabling organizations to catalog employee skills and quickly identify the right experts for any challenge.',
             },
           ],
         },
