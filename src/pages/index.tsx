@@ -262,9 +262,10 @@ const WorkHistorySegment = () => (
               name: 'Google Cloud - Flow Analyzer',
               technologies: ['TypeScript', 'Angular', 'Java', 'Bazel'],
               position: 'Frontend',
-              description: `I was a part of a core team responsible for launching
-             new Google Cloud product called [Flow Analyzer](https://cloud.google.com/network-intelligence-center/docs/flow-analyzer/overview).
-             It visualizes network traffic and helps to troubleshoot network issues.`,
+              description:
+                `I was leading a small team in charge of launching a new Google Cloud product called ` +
+                `[Flow Analyzer](https://cloud.google.com/network-intelligence-center/docs/flow-analyzer/overview).
+                It visualizes network traffic from VPC Flow Logs and helps to troubleshoot network issues.`,
             },
           ],
         },
